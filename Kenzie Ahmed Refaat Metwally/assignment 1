@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Detailed Navigation Bar</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple HTML-only website navigation bar with logo, links and search">
+    <meta name="keywords" content="HTML, navigation bar, logo, search, basic HTML, links">
+</head>
+
+<body>
+
+
+    <table border="0" width="100%">
+        <tr>
+
+            <td>
+                <img src="https://i.postimg.cc/RhNTzZ5Y/3a76600d-4976-4198-bd44-be6f05e47cce.jpg" alt="Logo" width="80"
+                    height="40">
+            </td>
+
+
+            <td>
+                <a href="index.html">Home</a> |
+                <a href="about.html">About Us</a> |
+                <a href="services.html">Services</a> |
+                <a href="products.html">Products</a> |
+                <a href="projects.html">Projects</a> |
+                <a href="blog.html">Blog</a> |
+                <a href="careers.html">Careers</a> |
+                <a href="contact.html">Contact Us</a>
+            </td>
+
+
+            <td align="right">
+                <form action="search.html" method="get">
+                    <input type="text" name="query" placeholder="Search...">
+                    <input type="submit" value="Search">
+                </form>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3">
+                Welcome to our website! | <a href="faq.html">FAQs</a> | <a href="support.html">Support</a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
