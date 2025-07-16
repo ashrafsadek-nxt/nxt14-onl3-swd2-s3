@@ -1,0 +1,176 @@
+	<!DOCTYPE html>  <!-- Declares the document type as HTML5. -->
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8"> <!--Sets the character encoding to UTF-8. This allows the page to display all characters, including Arabic, emojis, etc.-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes your page responsive (fits all screen sizes, especially mobile).-->
+	    <meta http-equiv="X-UA-Compatible" content="IE=7">  <!--Tells Internet Explorer to act like version 7. This is outdated and not needed for modern sites(for old ones only).-->
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Tells Internet Explorer to use the latest available engine ("edge mode") -->
+	    <meta name="description" content="Learn HTML basics with fun examples."> <!-- Sets the page description (used by search engines) ("desc mode") -->
+	    <meta name="keywords" content="HTML, CSS, web development"> <!--Lists keywords for SEO. Modern search engines (like Google) mostly ignore this, but it's fine to include.-->
+	    <meta http-equiv="refresh" content="5"> <!--Refreshes the current page every 5 seconds.-->
+	    <!--<meta http-equiv="refresh" content="0; url=http://Google.com">--> <!--Immediately redirects the user to http://Google.com. wait 0 seconds then redirect to Google.--> 
+	    <title>My website</title> <!--Sets the title shown in the browser tab. Also used as the clickable title in Google search.-->
+	    <!--Linkes(Configurations) added in head (libraries)-->
+	    <link rel="stylesheet" href="style.css"> <!--Links your CSS file to the HTML. this is how you style your page (colors, fonts, layout).-->
+	    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> <!--Adds a favicon (tiny icon in browser tab). favicon.ico must exist in your project folder.-->
+	    <link rel="stylesheet" href=""> <!--empty stylesheet link (will do nothing). to add another CSS file.-->
+	</head>
+	<body>
+		<!--transition in the same page-->
+	    <a href="#bottom" id = "top">Bottom</a>
+	    <!--Semantic Tags(for organization)--> <!--After writing a semantic tag always there is a new line-->
+	    <header>
+	        <h1>My Website</h1> <!--Main title of the page.-->
+	        <h2>My Website</h2> <!--Subtitle or secondary title.-->
+	        <h3>My Website</h3> <!--Tertiary title, used for sections or subsections.-->
+	        <h4>My Website</h4> <!--Quaternary title, used for smaller sections.-->
+	        <h5>My Website</h5> <!--Quinary title, used for even smaller sections.-->
+	        <h6>My Website</h6> <!--Senary title, used for the smallest sections.-->
+	        <nav>Navigation</nav> <!--Navigation bar (links to other pages).-->
+	    </header>
+	    <footer>
+	        <p>© 2025 My Website</p> <!--Footer text (copyright, contact info, etc.).-->
+	        <a href="http://127.0.0.1:5500/contact.html">Contact Us</a> <!--Link to another page or website.-->
+	    </footer>
+	    <div> <!-- not semantic tag-->
+	        <section>Section</section>
+	        <article>Article</article>
+	        <aside>Aside</aside>
+	        <label for=""></label> <!--Label for form input.-->
+	        <span>Inline Text</span> <!--Generic inline container for text. Used for styling or scripting.-->
+	        
+	    </div>
+	    <!--Typography Tages-->
+	    <p><small>Small Font</small></p>
+	    <pre><mark>Highlighted Text</mark></pre> <!--allow space before the begining of the sentance-->
+	    <i>italic</i> <em>italic</em> <!--Italic text. <i> is for visual style, <em> is for emphasis (better for accessibility).-->
+	    <b>bold</b> <strong>bold</strong> <!--Bold text. <b> is for visual style, <strong> is for importance (better for accessibility).-->
+	    <u>underline</u> <ins>underline</ins> <!--Underlined text. <u> is for visual style, <ins> is for inserted text (better for accessibility).-->
+	    <!--Transition between pages-->
+	    <a href="contact.html">Contact us</a>
+	    <a href="product/about.html">About us</a>
+	    <!--Lists-->
+	    <!--unordered list-->
+	    <ul type = "circle"> 
+	      <li>Item 1</li> <!--list item-->
+	      <li>Item 2</li>
+	      <li>Item 3</li>
+	    </ul>
+	    <ul style="list-style: none;"> 
+	      <li style="display: inline;">Item 1</li>
+	      <li style="display: inline;">Item 2</li>
+	      <li style="display: inline;">Item 3</li>
+	    </ul>
+	    <!--ordered list-->
+	    <ol type = "I"> 
+	      <li>Item 1</li> <!--list item-->
+	      <li>Item 2</li>
+	      <li>Item 3</li>
+	    </ol>
+	    <ol type = "A" start="5"> 
+	      <li>Item 1</li>
+	      <li>Item 2</li>
+	      <li>Item 3</li>
+	    </ol>
+	    <!--defination or describtion list-->
+	    <dl> 
+	      Gender:
+	      <dt>Male</dt> <!--describtion title-->
+	      <dd>Ahmed</dd> <!--describtion details-->
+	      <dd>Mohamed</dd>
+	      <dt>Female</dt>
+	      <dd>Kenzy</dd>
+	      <dd>Hana</dd>
+	    </dl>
+	    <!--nested list-->
+	    <ul style="list-style: none;">
+	      <li style="display: inline;"><a href="https://www.amazon.com/">Amazon</a></li>
+	      <li style="display: inline;"><a href="https://www.google.com/">Google</a></li>
+	      <li style="display: inline;">
+	        <ul style="list-style: none; display: inline;">
+	          <li style="display: inline;"><a href="https://www.facebook.com/">Facebook</a></li>
+	          <li style="display: inline;"><a href="https://www.twitter.com/">Twitter</a></li>
+	        </ul>
+	      </li>
+	      <li style="display: inline;"><a href="https://www.youtube.com/">YouTube</a></li>
+	      <input type="text" placeholder="Search...">
+	    </ul>
+	    <!--tables-->
+	    <table border="1">
+	      <tr> <!--table row-->
+	        <th colspan="3">Name</th>  <!--table header with colspan-->
+	        <th rowspan="2">Age</th> <!--table header-->
+	      </tr>
+	      <tr>
+	        <th>First Name</th>
+	        <th>Second Name</th>
+	        <th>Last Name</th>
+	      </tr>
+	      <tr>
+	        <td>Habiba</td> <!--table data cell-->
+	        <td>Mohamed</td>
+	        <td>Elawadly</td>
+	        <td>19</td>
+	      </tr>
+	      <tr>
+	        <td>Yasien</td>
+	        <td>Mohamed</td>
+	        <td>Elawadly</td>
+	        <td>15</td>
+	      </tr>
+	      <tr>
+	        <td>Hamza</td>
+	        <td>Mohamed</td>
+	        <td>Elawadly</td>
+	        <td>12</td>
+	      </tr>
+	    </table>
+	    <br>
+	    <table border="1">
+	      <tr> 
+	        <th>Name</th> 
+	        <th colspan="2">Address</th>
+	        <th>ID</th>
+	      </tr>
+	      <tr>
+	        <td>Habiba</td>
+	        <td colspan="2">Cairo</td>
+	        <td>11</td>
+	      </tr>
+	      <tr>
+	        <td rowspan="2">Yasien</td> 
+	        <td colspan="3">none</td>
+	      </tr>
+	      <tr>
+	        <td>Cairo</td>
+	        <td>Giza</td>
+	        <td>22</td>
+	      </tr>
+	      <tr>
+	        <td colspan="4">none</td>
+	      </tr>
+	    </table>
+	    <!--media-->
+	    <!--images-->
+	    <img src="assets/Images/try image.jpg" alt="this is an image" width="200" > <!--Image with alt text and size-->
+	    <a href="https://www.dunkindonuts.com/ "><img src="assets/Images/try image.svg" alt="this is an image" width="200"></a> <!--Image with link, alt text and size-->
+	    <br>
+	    <!--videos-->
+	    <video src="assets/Videos/try video.mp4" width="200" controls muted loop autoplay></video>
+	    <video width="200" controls muted loop autoplay> <!--best way-->
+	      <source src="assets/Videos/try video.mp4" type="video/mp4"> <!--Video with controls, muted, loop, autoplay and source-->
+	      <source src="assets/Videos/try video.mp4" type="video/ogg"> <!--Video with multiple sources-->
+	    </video>
+	    <br>
+	    <!--audio-->
+	    <audio src="assets/audio/try audio.mp3" controls muted loop autoplay></audio>
+	    <audio controls muted loop autoplay> <!--best way-->
+	      <source src="assets/audio/try audio.mp3" type="audio/mpeg"> <!--Video with controls, muted, loop, autoplay and source-->
+	      <source src="assets/audio/try audio.mp3" type="audio/ogg"> <!--Video with multiple sources-->
+	    </audio>
+	    <!--transition in the same page-->
+	    <a href="#top" id = "bottom">Top</a>
+
+	</body>
+	</html>
+	
