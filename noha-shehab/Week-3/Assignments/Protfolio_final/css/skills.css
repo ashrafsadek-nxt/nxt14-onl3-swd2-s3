@@ -1,0 +1,224 @@
+.skills {
+  padding: 80px 0;
+  background: #f8e7e9;
+  position: relative;
+}
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.content {
+  width: 100%;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.skills-header h1 span {
+  position: relative;
+  display: inline-block;
+}
+
+.skills-header h1 span::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(30deg, #fb1d3a, #d84955, #a41329, #8b0930);
+  border-radius: 2px;
+}
+
+.skills-header p {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.skills-list:last-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto 60px auto; /* Center the entire grid */
+}
+
+.skill-item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+.skill-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-color: #fb1d3a;
+}
+
+.skill-item > div:first-child {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(30deg, #fb1d3a, #d84955, #a41329, #8b0930);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+.skill-details {
+  flex: 1;
+}
+.skill-details span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skill-progress {
+  width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.skill-progress-bar {
+  height: 100%;
+  background: linear-gradient(30deg, #fb1d3a, #d84955, #a41329, #8b0930);
+  border-radius: 5px;
+  width: 0;
+  animation: fill-progress 2s ease-in-out forwards;
+  animation-delay: 0.8s;
+  position: relative;
+}
+
+.skill-progress-bar::after {
+  content: attr(data-progress) "%";
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  opacity: 0;
+  animation: show-percentage 0.5s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+.skill-progress-bar[data-progress="90"] {
+  --progress-width: 90%;
+}
+
+.skill-progress-bar[data-progress="85"] {
+  --progress-width: 85%;
+}
+
+.skill-progress-bar[data-progress="40"] {
+  --progress-width: 40%;
+}
+
+.skill-progress-bar[data-progress="75"] {
+  --progress-width: 75%;
+}
+
+.skill-progress-bar[data-progress="70"] {
+  --progress-width: 70%;
+}
+
+.skill-progress-bar[data-progress="65"] {
+  --progress-width: 65%;
+}
+
+@keyframes fill-progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--progress-width);
+  }
+}
+
+@keyframes show-percentage {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-soft-item {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  height: 100px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.skill-soft-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-color: #fb1d3a;
+}
+.skill-soft-item > div:first-child {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(30deg, #fb1d3a, #d84955, #a41329, #8b0930);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+.skills-header p {
+  line-height: 1.6;
+  font-size: 1.4rem;
+  margin: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
