@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-style: none;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: poppins;
+}
+
+body {
+  height: 100vh;
+  background: url(assets/background-pic.jpg);
+  padding: 2rem 3.5rem;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.27);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  min-width: 300px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+a.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: poppins;
+  font-weight: 500;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 5rem;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 4px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.27);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 15px;
+  box-shadow: 0 0 5px #fff;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+  padding: 50px 5%;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 300;
+}
+.hero-text {
+  width: 70%;
+}
+
+.hero-text span {
+  font-size: 2rem;
+  color: black;
+  font-weight: 700;
+}
+
+.hero-text p {
+  margin: 10px 0 20px;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.2s;
+}
+.btn:hover {
+  padding: 11px 11px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 40px;
+  box-shadow: 0 0 5px #fff;
+  font-weight: 700;
+}
+
+.social-icons {
+  margin-left: 20px;
+}
+
+.social-icons svg {
+  display: inline-flex;
+  padding: 5px;
+  transition: 0.2s;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+}
+
+.social-icons svg:hover {
+  box-shadow: 0 0 5px #fff;
+  cursor: pointer;
+}
+
+.hero-img {
+  width: 23vw;
+  height: 23vw;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-img:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  width: 25vw;
+  height: 25vw;
+}
+
+
+
