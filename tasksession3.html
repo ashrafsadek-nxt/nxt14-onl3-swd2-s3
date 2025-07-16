@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- form -->
+         <!-- اكشن يعني فين هيروح الداتا اللي هتتبعت
+         method يعني ايه الطريقه اللي هتتبعت بيها الداتا -->
+         <!-- get  يعني هتبعت الداتا في اليو ار وبتظهر البيانات ومبيعملش سيكيوريتي على الباسورد
+         post  يعني هتبعت الداتا في جسم الرساله ومبيظهرش البيانات ومبيعمل سيكيوريتي على الباسورد -->
+<form action="index.html" method="get" target="_blank">
+   <!-- target يعني فين هتفتح الصفحه لو حطينا _blank هتفتح في تاب جديد -->
+   <!-- name يعني اسم الفورم وده مهم جدا لو عايزين نعمل ريكوست للداتا من الداتا بيز -->
+   <input type="hidden" name="form_name" value="my_form"> 
+   <!-- هيدن يعني مش هيظهر للمستخدم -->
+   <h1>form</h1>
+  <!-- كلهم ان لاين -->
+   <div>
+    <label for="username">name</label>
+    <input type="text" name="username" id="username" required placeholder="enter your name" required autofocus autocomplete="additional-name" >
+    </div> 
+   <!-- ارقام وحروف وعلامات لكن الارقام لا يتم عليها عمليه حسابيه -->
+ <div>
+  <label for="password">password</label>
+   <input type="password" name="password" id="password" required minlength="10">
+   </div>
+   <div>
+    ,<input type="image" name="" id="" width="" height="">
+   </div>
+  <input type="color" name=" " id=" " > <br>
+  <!-- النيم بتروح للداتا بيز لكن بلاس هولدر لا مجرد اسم -->
+  <input type="number" name="" id="" placeholder="age" disabled><br>
+  <input type="date" name="" id=""><br>
+  <input type="time" name="" id=""><br>
+  <input type="search" name="" id =""><br>
+  <input type="email" name=" " id=""><br>
+  <input type="file" name=" " id=""><br>
+   <div>
+    <input type="range" name="" id="" min="1" max="100">
+     </div>
+       <div>
+    <input type="tel" name="" id="">
+     </div>
+  <div>
+    <input type="url" name="" id="">
+     </div>
+       <div>
+    <input type="submit" value="save">
+     <input type="reset" value="delete">
+     </div>
+     <div>
+    <input type="time" name="" id="">
+     </div>
+<div>
+    <span>gender</span>
+    <input type="radio" name="gender" id="male" checked>
+    <label for="male">male</label>
+    <input type="radio" name="gender" id="female">
+    <label for="female">female</label>
+     </div>
+     <div>
+    <input type="checkbox" name="" id="">
+     </div>
+      <div>
+    <input type="hidden" name="coupon" id="" value="1000">
+     </div>
+      <div>
+    <input type="text" name="" id="" list="cities" >
+    <datalist id="cities">
+      <option value="cairo">
+      <option value="giza">
+      <option value="fesal">
+      <option value="dokki">
+    </datalist>
+     </div>
+     <div>
+      <select name="" id="">
+        <option value="cairo">cairo</option>
+        <option value="giza">giza</option>
+        <option value="fesal">fesal</option>
+        <option value="dokki">dokki</option>
+      </select>
+     </div>
+     <div>
+      <textarea name="" id="" cols="5" rows="5"></textarea>
+      <input type="button" value="click me" onclick="alert('hello')">
+     </div>
+</form>
+    </body>
+</html>
