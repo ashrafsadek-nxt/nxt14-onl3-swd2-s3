@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+        <link rel="style sheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Forms">
+        <meta name="keywords" content="Forms">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <form action="Task1.html" method="get" target="_blank">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required autofocus>
+            </div>
+            <br>
+            <div>
+                <label for="password">password</label>
+                <input type="password" name="pass" id="password" required minlength="8">
+            </div>
+            <br>
+            <div>
+                <label for="color">Colour</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <br>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" placeholder="age">
+            </div>
+            <br>
+            <div>
+                <label for="birthdate">Date of birth</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+            <br>
+             <div>
+                <label for="SignUpTime"> Time of sign up</label>
+                <input type="time" name="signUpTime" id="SignUpTime">
+            </div>
+            <br>
+             <div>
+                <label for="search">Search for branch </label>
+                <input type="search" name="search" id="search">
+            </div>
+            <br>
+             <div>
+                <label for="CVFile">Upload the CV</label>
+                <input type="file" name="CVFile" id="CVFile">
+            </div>
+            <br>
+             <div>
+                <label for="ExperienceYears">Years of Experience </label>
+                <input type="range" name="ExperienceYears" id="ExperienceYears" min="0" max="15">
+            </div>
+            <br>
+             <div>
+                <label for="mobileNo">Mobile number</label>
+                <input type="tel" name="MobileNO" id="mobileNo">
+            </div>
+            <br>
+             <div>
+                <label for="Linkedin">Linkedin URL</label>
+                <input type="URL" name="Linkedin" id="Linkedin">
+            </div>
+            <br>
+             <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <br>
+             <div>
+                <span>Select gender</span>
+                <br>
+                <input type="radio" name="gender" id="Male" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Female" value="Female">
+                <label for="Female">Female</label>
+            </div>
+            <br>
+             <div>
+                <span>Select interests</span>
+                <br>
+                <label for="drawing">Drawing</label>
+                <input type="checkbox" name="interests" id="drawing" value="drawing">
+                <label for="reading">Reading</label>
+                <input type="checkbox" name="interests" id="reading" value="raeding">
+                <label for="singing">Singing</label>
+                <input type="checkbox" name="interests" id="singing" value="singing">
+                <label for="sports">Sports</label>
+                <input type="checkbox" name="interests" id="sports" value="sports">
+            </div>
+            <br>
+             <div>
+                <label for="copoun">copoun</label>
+                <input type="hidden" name="copoun" id="copoun" value="100">
+            </div>
+            <br>
+             <div>
+                <span>Select goverment</span>
+                <input list="city">
+                <datalist id="city">
+                     <option value="cairo"></option>
+                     <option value="giza"></option>
+                     <option value="Fayoum"></option>
+                     <option value="Aswan"></option>
+                     <option value="Luxor"></option>
+                </datalist>
+            </div>
+            <br>
+            <br>
+             <div>
+                <input type="submit" name="submit" id="submit" value="save">
+                <input type="reset" name="reset" id="reset" value="delete">
+            </div>
+        </form>
+    </body>
+
+</html>
