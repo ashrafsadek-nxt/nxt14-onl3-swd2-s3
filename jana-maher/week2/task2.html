@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+</head>
+<body>
+	<!--form--> <!--take informations from the user and make the code dynamic-->
+	<form action="form.html" method="get" target="_blank" validate enctype="multipart/form-data">
+		<div>
+			<label for="username">username</label>
+			<input type="text" name="username" id="username" placeholder="enter your username" required autofocus autocomplete="address-level1">
+		</div>
+		<div>
+			<label for="password">password</label>
+			<input type="password" name="password" id="password" placeholder="enter your password" minlength="8" maxlength="10" required>
+		</div>
+		<div>
+			<label for="img">image</label>
+			<input type="image" name="image" id="img" placeholder="insert an image" height="" width="">
+		</div>
+		<div>
+			<input type="color" name="" id="" placeholder="select a color">
+		</div>
+		<div>
+			<input type="number" name="" id="" placeholder="enter a number">
+		</div>
+		<div>
+			<input type="date" name="" id="" placeholder="select a date">
+		</div>
+		<div>
+			<input type="time" name="" id="" placeholder="select a time">
+		</div>
+		<div>
+			<input type="week" name="" id="" placeholder="select a week">
+		</div>
+		<div>
+			<input type="month" name="" id="" placeholder="select a month">
+		</div>
+		<div>
+			<input type="search" name="" id="" placeholder="search">
+		</div>
+		<div>
+			<input type="file" name="" id="" accept="image/*">
+		</div>
+		<div>
+			<input type="range" name="" id="" min="0" max="5">
+		</div>
+		<div>
+			<input type="tel" name="" id="" placeholder="enter your phone number" disabled>
+		</div>
+		<div>
+			<input type="url" name="" id="" placeholder="enter your website URL">
+		</div>
+		<div>
+			<input type="email" name="" id="" placeholder="enter your email">
+		</div>
+		<div>
+			<input type="button" name="" id="" value="click me">
+		</div>
+		<div>
+			<input type="hidden" name="discount" value="100" id="">
+		</div>
+		<div>
+		    <span><b>Gender</b></span>
+			<input type="radio" name="gender" value="male" id="male">
+			<label for="male">male</label>
+			<input type="radio" name="gender" value="female" id="female" checked>
+			<label for="female">female</label>
+		</div>
+		<div>
+			<span><b>Hobbies</b></span>
+			<label for="swimming">swimming</label>
+			<input type="checkbox" name="hobby" value="swimming" id="swimming">
+			<label for="reading">reading</label>
+			<input type="checkbox" name="hobby" value="reading" id="reading" checked>
+			<label for="singing">singing</label>
+			<input type="checkbox" name="hobby" value="singing" id="singing">
+		</div>
+		<div>
+			<input type="text" name="" id="" list="cities" placeholder="select city">
+			<datalist id="cities">
+				<option value="Cairo" disabled>
+				<option value="Giza">
+				<option value="Alexandria">
+				<option value="Aswan">
+			</datalist>
+		</div>
+		<div>
+			<select name="" id="" multiple>
+				<option selected>choose city</option>
+				<option value="Cairo" disabled>Cairo</option>
+				<option value="Giza">Giza</option>
+				<option value="Alexandria">Alexandria</option>
+				<option value="Aswan">Aswan</option>
+			</select>
+		</div>
+		<div>
+			<textarea name="" id="" cols="10" rows="5"></textarea>
+		</div>
+		<div>
+			<input type="submit" value="save"> <!--refresh the site-->
+			<input type="reset" value="delete"> <!--doesn't refresh-->
+		</div>
+		
+
+</body>
+</html>
