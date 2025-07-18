@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/Assignment3.css">
+</head>
+<body>
+<header>
+  <img src="/images/icons8-facebook-96.png" alt="Facebook Logo" class="logo" />  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">About</a></li>
+
+    </ul>
+  </nav>
+</header>
+
+    <div class="registration-container">
+        <h2>Creat a new account</h2>
+        <p>It’s quick and easy</p>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="first name" required>
+                <input type="text" placeholder="surname" required>
+            </div>
+            <input type="email" placeholder="Mobile number or email address" required>
+            <input type="password" placeholder="New password" required>
+            <label>Date of birth</label>
+            <input type="date" required>
+            <label>Gender</label>
+            <div class="Gender-group">
+            <label><input type="radio" name="Gender" value="female" required>Female</label>
+            <label><input type="radio" name="Gender" value="male" required>Male</label>
+             <label><input type="radio" name="Gender" value="custom" required>Custom</label>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p class="login-link">Already have an account? <a href="#">Log In</a></p>
+
+        </form>
+
+    </div>
+    <footer>
+  &copy; 2025 Facebook. All rights reserved.
+</footer>
+
+</body>
+</html>
