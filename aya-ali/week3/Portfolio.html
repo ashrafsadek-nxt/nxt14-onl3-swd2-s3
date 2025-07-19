@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aya Ali | Portfolio</title>
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #35505e;
+      padding: 10px 20px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left img {
+      width: 100px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .navbar {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .navbar li {
+      margin: 0 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .navbar a:hover {
+      background-color: #7c4627;
+      border-radius: 5px;
+    }
+
+    .nav-right input[type="search"] {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    footer {
+      background-color: #35505e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <img src="img/image.png" alt="My Photo">
+      <ul class="navbar">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <input type="search" placeholder="Search...">
+    </div>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a student at <b>Faculty of Computers</b>. I'm passionate about technology, especially web development.</p>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ol>
+      <li>Using Git and GitHub</li>
+      <li>Building structured and semantic web pages</li>
+      <li>C++ – problem solving</li>
+      <li>Self-learning</li>
+    </ol>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <p>Here is an example of a table I created:</p>
+    <table border="1">
+      <tr>
+        <th>Project Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Pet Adoption</td>
+        <td>A form that lets users adopt a pet.</td>
+      </tr>
+      <tr>
+        <td>HTML Table Page</td>
+        <td>Practiced tables and cell alignment.</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+      <label for="topic">Topic:</label>
+      <select id="topic" name="topic">
+        <option value="question">Question</option>
+        <option value="project">Project Idea</option>
+      </select><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aya Ali. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
