@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav style="display: flex;  align-items: center; justify-content: space-around;">
+
+        <img src="./me.jpg" alt="My profile picture" width="70" style="border-radius: 50%;">
+
+        <ul style="display: flex; gap: 100px; list-style: none;">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <form style="display: inline;">
+            <input type="search" name="ser" id="ser">
+            <button>search</button>
+        </form>
+
+    </nav>
+    <hr >
+    <main>
+        <h1>Mostafa Ibrahim Deif</h1>
+        <p>My name is Mostafa Deif. I am a fourth-year Computer Science student. I am interested in web development, and I focus on front-end development.
+            <br>
+           I enjoy learning new technologies and improving my coding skills. I am passionate about creating interactive and user-friendly websites.
+        </p>
+           <table border="1px">
+                <tr>
+                    <th>Name</th>
+                    <td>Mostafa</td>
+                </tr>
+                <tr>
+                    <th>age</th>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <th>Job</th>
+                    <td>Front-end develper</td>
+                </tr>
+                <tr>
+                    <th>Adress</th>
+                    <td>Cairo, Helwan</td>
+                </tr>
+           </table>
+    </main>
+    <section>
+        <h2>Contact Me</h2>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+
+    </section>
+    <hr>
+
+    <footer >
+         <!-- icons -->
+        <div>
+            <a href="#"><i class="fa-brands fa-facebook icon"></i> </a>
+            <a href="#"><i class="fa-brands fa-square-instagram icon"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter icon"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube icon"></i></a>
+        </div>
+        <div>
+            <button>dark mode</button>
+        </div>
+        <div><button>AR/EN</button></div>
+        <div style="text-align: center;">Copyright ©</div>
+    </footer>
+</body>
+</html>
