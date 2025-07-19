@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container .title {
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.container .title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 5px;
+}
+
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.registerForm {
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+}
+
+.registerForm .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #1e40af;
+}
+
+.registerForm input {
+  height: 45px;
+  width: 100%;
+  border: 1px solid #93c5fd;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.registerForm input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+.gender-details {
+  margin: 20px 0;
+}
+
+.gender-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1e40af;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.category label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.category input[type='radio'] {
+  display: none;
+}
+
+.dot {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #dbeafe;
+  display: inline-block;
+  position: relative;
+}
+
+input[type='radio']:checked ~ .dot {
+  background: #2563eb;
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button input {
+  padding: 10px 25px;
+  font-size: 18px;
+  color: white;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button input:hover {
+  opacity: 0.9;
+}
