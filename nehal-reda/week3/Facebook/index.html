@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="stylesheet" href="assects/css/style.css">
+    <link rel="icon" href="assects/images/facebook.png">
+</head>
+
+<body>
+
+
+    <div class="all">
+
+        <div class="home">
+            <a href="https://www.facebook.com" target="_blank">
+                <div class="logo">
+                    <img src="assects/images/facebook.png" alt="" width="30" height="30">
+                </div>
+            </a>
+            <div class="end">
+                <div class="end_of_page">
+                    <h1>Brining the world closer together</h1>
+                </div>
+
+                <footer class="footer-lang">
+                    <div class="languages">
+                        <a href="#">English (UK)</a>
+                        <a href="#">Français (France)</a>
+                        <a href="#">Español</a>
+                        <a href="#">Deutsch</a>
+                        <a href="#">العربية</a>
+                        <a href="#">Italiano</a>
+                        <a href="#">Português (Brasil)</a>
+                        <a href="#">हिन्दी</a>
+                        <a href="#">中文(简体)</a>
+                        <button class="plus-btn">+</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <div class="facebook">
+            <form action="">
+                <div class="login">
+                    <h3>Log in to Facbook</h3>
+                    <p>Forget password ?</p>
+                </div>
+                <div class="login_btn">
+                    <input type="text" name="" id="username" placeholder="Email or phone" class="input1">
+                    <input type="text" placeholder="Password" class="input1">
+                </div>
+                <input type="submit" value="Login" class="login_btn2" placeholder="login">
+
+                <div class="or">
+                    <hr>
+                    <p>Or</p>
+                    <hr>
+                </div>
+
+
+            </form>
+
+            <form action="" class="form2">
+                <div class="register">
+                    <h3>Create a new account</h3>
+                    <p>It's free and always will be</p>
+                </div>
+                <div class="name">
+                    <input type="text" placeholder="First name" class="input1">
+                    <input type="text" placeholder="Surname" class="input1">
+                </div>
+                <input type="text" placeholder="Mobile number or Email address" class="input2">
+                <input type="text" placeholder="New password" class="input2">
+
+
+
+
+                <div class="birth">
+                    <p class="p1">Birthday</p>
+                    <p class="p2">Why do i need to provide my date of birth ?</p>
+                </div>
+
+
+                <div class="choose_date">
+                    <select name="" id="day" class="day">
+                        <option value="" disabled selected hidden>Day</option>
+
+                    </select>
+                    <select name="" id="month" class="month">
+                        <option value="" disabled selected hidden>Month</option>
+
+                    </select>
+                    <select name="" id="year" class="year">
+                        <option value="" disabled selected hidden>Year</option>
+
+                    </select>
+                </div>
+                <div class="gender">
+                    <span style="color: black; font-weight: bold;">Sex</span>
+                    <label for="male">Male</label>
+                    <input type="radio" name=" gender" id="male">
+                    <label for="female">female</label>
+                    <input type="radio" name=" gender" id="female">
+                </div>
+
+
+                <div class="end2">
+                    People who use our service may have uploaded your contact information to Facebook. <span>
+                        <a href="https://en-gb.facebook.com/help/637205020878504">Learn more.</a>
+                    </span>
+
+                    By clicking Sign Up, you agree to our <span><a
+                            href="https://en-gb.facebook.com/legal/terms/update">Terms</a></span>, <span><a
+                            href="https://en-gb.facebook.com/about/privacy/update">Privacy Policy</a></span> and
+                    <span><a href="https://en-gb.facebook.com/policies/cookies/">Cookies
+                            Policy</a></span>. You may receive SMS
+                    notifications from us and can opt out at any time.
+                </div>
+
+                <input type="submit" value="Sign Up" placeholder="Sign Up" class="send_data">
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        const daySelect = document.getElementById('day');
+        for (let i = 1; i <= 31; i++) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = i;
+            daySelect.appendChild(option);
+        }
+
+
+        const monthSelect = document.getElementById('month');
+        const months = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+        ];
+        for (let i = 0; i < months.length; i++) {
+            const option = document.createElement('option');
+            option.value = i + 1;
+            option.textContent = months[i];
+            monthSelect.appendChild(option);
+        }
+
+        const yearSelect = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        for (let y = currentYear; y >= 1960; y--) {
+            const option = document.createElement('option');
+            option.value = y;
+            option.textContent = y;
+            yearSelect.appendChild(option);
+        }
+    </script>
+
+</body>
+
+</html>
