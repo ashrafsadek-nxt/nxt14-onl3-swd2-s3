@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- form -->
+    <form action="contact.html" method="get" target="_blank" novalidate enctype="">
+        <div>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" required autofocus autocomplete="address-level1">
+        </div>
+    
+        <div>
+            <label for="gen">gender</label>
+            <input type="text" name="gen" id="gen" value="male" disabled>
+        </div>
+    
+        <div>
+            <label for="pwd">password</label>
+            <input type="password" name="password" id="pwd" required minlength="10">
+        </div>
+
+        <input type="color" name="" id="">
+        <input type="number" name="" id="" placeholder="age">
+        <input type="date" name="" id="">
+        <input type="time" name="" id="">
+        <input type="search" name="" id="">
+    
+        <div>
+            <label for="swim">swim</label>
+            <input type="checkbox" name="hobby" id="swim" value="سباحة" checked>
+        </div>
+    
+        <div>
+            <input type="text" name="" id="" list="city">
+            <datalist id="city">
+                <option value="cairo">
+                <option value="giza">
+                <option value="alex">
+                <option value="tanta">
+            </datalist>
+        </div>
+    
+        <div>
+            <select name="" id="" multiple>
+                <option selected>choose country</option>
+                <option value="ca" disabled>cairo</option>
+                <option value="gi">giza</option>
+                <option value="alex">alex</option>
+                <option value="gi">tanta</option>
+            </select>
+        </div>
+    
+        <div>
+            <textarea name="" id="" cols="15" rows="9" minlength="10" maxlength="20"></textarea>
+        </div>
+    
+        <div>
+            <input type="button" value="sssssss">
+        </div>
+    
+        <input type="submit" value="save">
+        <input type="reset" value="delete">
+    </form>
+</body>
+</html>

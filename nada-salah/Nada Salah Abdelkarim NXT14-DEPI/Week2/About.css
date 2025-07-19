@@ -1,0 +1,145 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #081420;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #c0cee1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 350px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li a {
+    color: #03080e;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #060f18;
+}
+
+.navbar ul li .nested-ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li .nested-ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li .nested-ul li:last-child {
+    margin-right: 0;
+}
+
+.navbar ul li .nested-ul li a {
+    font-size: 0.9em;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0d1521;
+    color: #fff;
+    margin-right: 8px;
+    width: 150px;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-label {
+    color: #ecf0f1;
+    font-size: 0.9em;
+}
+
+.content {
+    flex-grow: 1;
+    padding-left: 350px;
+    padding-top: 100px;
+    font-family: Arial, sans-serif;
+    color: #c0cee1;
+}
+
+.Last {
+    background-color: #1f2937;
+    color: rgba(255, 255, 255, 0.805);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Last p {
+    margin: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: rgba(255, 255, 255, 0.805);
+    font-size: 28px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+    transform: scale(1.1);
+}

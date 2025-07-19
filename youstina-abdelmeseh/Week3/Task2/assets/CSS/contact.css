@@ -1,0 +1,18 @@
+#contact-content{
+    transition: all 0.3s ease;
+    flex:1;
+    background-color: #617891;
+    width:550px;
+    min-height: 500px;
+    border-radius: 15px;
+    margin:30px 0px 70px 460px;
+    padding: 25px 25px 55px 25px;
+    color:white;
+    font-size: 20px;
+}
+#contact-content:hover{
+    transform: scale(1.1);
+}
+#contact-space, #contact{
+    padding:10px;
+}

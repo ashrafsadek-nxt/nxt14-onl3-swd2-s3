@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fixed Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      width: 50%;
+    }
+
+    .navbar {
+      background-color: rgb(19, 18, 28);
+      color: white;
+      padding: 15px 30px;
+    }
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo, .search {
+      font-weight: bold;
+      color: white;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .links a {
+      text-decoration:none;
+      color: rgb(32, 130, 201);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .links a:hover {
+      color: #75c6e9;
+    }
+
+    .twitter-list {
+      margin-top: 10px;
+      padding-left: 140px; 
+    }
+
+    .twitter-list ul {
+      list-style: none;
+      margin: 0;
+      padding: 10px 15px;
+      background-color: rgb(14, 17, 23);
+      text-align: center;
+    }
+
+    .twitter-list ul li {
+      color: white;
+      padding: 5px 0;
+      transition: color 0.3s;
+    }
+
+    .twitter-list ul li:hover {
+      color: rgb(240, 92, 105);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="top-row">
+      <div class="logo">Logo</div>
+
+      <div class="links">
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="https://www.twitter.com">Twitter</a>
+      </div>
+
+      <div class="search">Search</div>
+    </div>
+
+    <div class="twitter-list">
+      <ul>
+        <li>Home feed</li>
+        <li>Explore</li>
+        <li>Notification</li>
+        <li>Messages</li>
+        <li>Profile</li>
+        <li>Tweet composer</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
