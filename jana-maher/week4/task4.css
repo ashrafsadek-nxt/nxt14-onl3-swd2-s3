@@ -1,0 +1,19 @@
+div {
+  display:inline-block;
+  width: 24%; 
+  background: #3B0014;
+  color: #F0E7C2;
+  padding: 40px 0;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  div {
+    width: 48%;
+    
+  }
+}
+@media only screen and (max-width: 576px) {
+  div {
+    width: 100%;
+  }
+}
