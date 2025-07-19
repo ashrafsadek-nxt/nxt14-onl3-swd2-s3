@@ -1,0 +1,24 @@
+img {
+    width: 24vw;
+}
+body {
+    background-color: lightblue;
+}
+
+@media only screen and (max-width: 768px) {
+    img {
+        width: 48vw;
+    }
+    body {
+        background-color: rgb(83, 155, 250);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+        width: 97vw;
+    }
+    body {
+        background-color: rgb(116, 241, 13);
+    }
+}
