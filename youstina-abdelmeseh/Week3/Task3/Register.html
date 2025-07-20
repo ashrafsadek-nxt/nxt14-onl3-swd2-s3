@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="assets/CSS/register.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Register">
+        <meta name="keywords" content="Register">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+         <header>
+            <nav style="background-color: rgb(255, 240, 220); display:flex; top:0px;">
+               <svg style="width: 50px; height: 50px; margin:0px 150px 0px 20px; align-self:center; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                       <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
+                       <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
+                       <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
+                </svg>
+                <div style="display: inline-flex; align-items: center;" id="Nav-bar">
+                   <ul style="list-style: none;" id="Links">
+                         <li style="display: inline; margin:30px;"> <a href="">Python</a></li>
+                         <li style="display: inline; margin:30px;"> <a href="">C#</a></li>
+                         <li style="display: inline; margin:30px;"> <a href="">HTML</a></li>
+                         <li style="display: inline; margin:30px;"> <a href="">CSS</a></li>   
+                   </ul>
+                   <div id="Drop-Down">
+                       <button id="Drop">Services</button>
+                       <div id="dropdown-content">
+                          <a href="">Fields</a>
+                          <a href="">Places</a>
+                          <a href="">Instructors</a>
+                       </div>
+                   </div>
+                   <div id="Search-form">
+                    <input id="search-space" type="search" placeholder="search">
+                   </div>
+                </div>
+            </nav>
+        </header>
+        <div class="signup">
+        <h2 id="join1">Sign up</h2>
+        <h3 id="join2">join us to start the journey.</h3>
+        <form action="Register.html" target="_parent" method="get">
+          <label for="firstname">Firstname</label>
+         <br>
+         <input type="text" id="firstname" name="firstname" placeholder="First name" required>
+         <br>
+         <label for="secondname">Second name</label>
+         <br>
+         <input type="text" id="secondname" name="second name" placeholder="Second name" required>
+         <br>
+         <label for="email">Email</label>
+         <br>
+         <input type="email" id="email" name="email" placeholder="Email" required>
+         <br>
+         <label for="passsign">Password</label>
+         <br>
+         <input type="password" id="passsign" name="password" placeholder="Password" required minlength="8" maxlength="15">
+         <br>
+         <label for="conpass">Confirm password</label>
+         <br>
+         <input type="password" id="conpass" name="confirm password" placeholder="Confirm password" required minlength="8" maxlength="15">
+         <br>
+         <label for="date">Birth date</label>
+         <br>
+         <input type="date">
+         <br>
+         <input type="submit" value="Submit">
+         <input type="reset" value="Reset">
+        </form>
+      </div>
+       <footer>
+             <div id="footer-content">
+                <p id="Copyright">&copy; 2025 Learn it. All rights reserved</p>  
+                <ul style="list-style: none ;" id="footer-links">
+                  <li><a href="https://www.facebook.com">
+                    <svg style="width: 30px; height:30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
+                  </svg>
+                    </a></li>
+                  <li><a href="https://www.linkedin.com">
+                    <svg style="width: 30px; height:30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                    </svg>
+                  </a></li>
+                  <li><a href="https://www.instagram.com">
+                   <svg style="width: 30px; height:30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                  </a></li>
+               </ul>
+               <select id="language">
+                  <option value="en">English</option>
+                  <option value="ar">العربية</option>
+               </select>
+             </div>
+        </footer>
+    </body>
+</html>
