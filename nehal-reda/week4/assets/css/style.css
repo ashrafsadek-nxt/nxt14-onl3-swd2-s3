@@ -1,0 +1,120 @@
+:root {
+    --bg-dark: #2c3e50;
+    --card-top: #fbc168;
+    --card-bottom: #1f2a40;
+    --btn-color: #f1ac3c;
+    --name-color: #56c5ff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.title span {
+    color: var(--name-color);
+}
+
+.slider-container {
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+}
+
+.card {
+    background: var(--card-top);
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 280px;
+    max-width: 300px;
+    flex: 0 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info {
+    background: var(--card-bottom);
+    padding: 15px;
+    color: #e3e8f0;
+}
+
+.info h3 {
+    color: var(--name-color);
+}
+
+.info p {
+    font-size: 14px;
+}
+
+.info button {
+    background-color: var(--btn-color);
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .card {
+        flex: 1 1 calc(33.333% - 40px);
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 576px) {
+    .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .card {
+        flex: 1 1 calc(33.333% - 40px);
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        min-width: 90vw;
+        max-width: 95vw;
+    }
+}
