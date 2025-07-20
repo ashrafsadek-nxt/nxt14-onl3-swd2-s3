@@ -1,0 +1,28 @@
+div{
+margin-right: auto;
+margin-left: auto;
+max-width: fit-content;
+padding:1vh ;
+}
+.parent {
+ border-style: solid;
+ height: auto;
+ border: 1px solid black;
+background-color: #e2b6b7;
+}
+.child{
+align-items: center;
+}
+label{
+    display: block;
+}
+body{
+     background-color: #b77f80;
+
+}
+#submit{
+    background-color: #a55166;
+    border-color: #a55166;
+color: aliceblue;
+
+}
