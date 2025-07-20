@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title> form </title>
+</head>
+<body>
+<form action="index.html" method="get">
+<div>
+    <label for="username">username</label>
+    <input type="text "name ="username"id="username">
+</div>
+<div>
+    <label for="email">email</label>
+    <input type="email" value="email"name = "email" id="email">
+</div>
+<div>
+    <label for="password">password</label>
+    <input type="password" value="pass" id="password" name="password">
+</div>
+<div>
+    <label for="file">cv</label>
+    <input type="file" value="cv" name="cv" id="file">
+</div>
+<div>
+    <label for="age">age</label>
+    <input type="number" value="age" name="age" id="age">
+</div>
+<div>
+    <label for="city">choose your city</label>
+    <input type="text" name="choose your city"list="city">
+    <datalist id="city">
+        <option value="cairo">cairo</option>
+        <option value="alex">alex</option>
+        <option value="giza">giza</option>
+
+    </datalist>
+</div>
+<div>
+    <span>GENDER</span>
+    <label for="female">female</label>
+    <input type="radio" name="gender" id="female">
+    <label for="male">male</label>
+    <input type="radio" name="gender" id="male">
+</div>
+<div>
+    <textarea name="" id="box" cols="20" rows="10" minlength="30" maxlength="50"></textarea>
+</div>
+<div>
+    <input type="submit" value="save">
+    <input type="reset" value="delete">
+</div>
+
+</form>
+
+</body>

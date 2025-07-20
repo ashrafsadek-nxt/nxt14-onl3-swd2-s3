@@ -1,0 +1,33 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+h1{
+    margin-left: 20px;
+    color: cadetblue;
+}
+nav {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+img {
+    margin-left: 20px;
+}
+p{
+    margin-left: 20px;
+    color: cadetblue;
+    font-size:x-large;
+}
+td, th {
+    border: 1px solid ;
+    text-align: left;
+    padding: 8px;
+
+}
+table{
+    border-collapse: collapse;
+}
