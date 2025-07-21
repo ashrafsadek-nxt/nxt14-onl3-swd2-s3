@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> learn form</title>
+</head>
+<body>
+
+  <form action="" method="" enctype=">
+
+    <!-- Text Input -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <!-- Number -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="10" max="100"><br><br>
+
+    <!-- Date -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- Time -->
+    <label for="appointment">Appointment Time:</label>
+    <input type="time" id="appointment" name="appointment"><br><br>
+
+    <!-- URL -->
+    <label for="website">Website:</label>
+    <input type="url" id="website" name="website"><br><br>
+
+    <!-- Tel -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <!-- File Upload -->
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume" name="resume"><br><br>
+
+    <!-- Hidden Field -->
+    <input type="hidden" name="user_id" value="12345">
+
+    <!-- Radio Buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <!-- Checkboxes -->
+    <p>Skills:</p>
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label>
+
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label>
+
+    <input type="checkbox" id="js" name="skills" value="JavaScript">
+    <label for="js">JavaScript</label><br><br>
+
+    <!-- Select (Dropdown) -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="">--Select--</option>
+      <option value="eg">Egypt</option>
+      <option value="ksa">Saudi Arabia</option>
+      <option value="us">USA</option>
+    </select><br><br>
+
+    <!-- Textarea -->
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your message here..."></textarea><br><br>
+
+    <!-- Reset and Submit -->
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
