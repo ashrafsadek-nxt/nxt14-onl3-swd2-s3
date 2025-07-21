@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    background-color: rgb(231, 228, 228);
+}
+.nav {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color:#1778F2;
+    color: white;
+    position: sticky;
+     top: 0;
+     z-index: 999;
+     height: 70px;
+
+}
+.logo{
+    display: flex;
+}
+.logo img {
+    padding-left: 10px;
+  text-align: center;
+  padding-top: 45px;
+  height: 35px;
+  width: 35px;
+}
+
+.logo h1 {
+    padding-left: 5px;
+  font-size: 40px;
+  font-family: poppins;
+}
+.lang-toggle {
+    display: flex;
+    /* background-color: rgb(40, 43, 218); */
+    color: white;
+    border-radius: 8px;
+    
+}
+.lang-toggle :hover {
+    background-color: rgb(3, 6, 156);
+}
+.lan{
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(40, 43, 218);
+}
+.log{
+   border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(40, 43, 218);
+}
+.main h1 {
+    text-align: center;
+    color:#1778F2;
+    font-family: "Poppins", sans-serif;
+    font-size:70px;
+    font-size: bold;
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+.container {
+    margin-bottom: 100px;
+    border-radius: 10px;
+ background-color: white;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.3);
+ margin: 10px 450px;
+
+}
+.container h2{
+    font-size: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+.container p{
+    color: rgb(126, 126, 126);
+    margin-top: 5px;
+}
+.name{
+    margin: 10px;
+    justify-content: space-between;
+}
+.fname{
+    text-align: left;
+     font-size: 16px;
+    width: 200px;
+    height: 40px;
+    gap: 10px;
+    border-radius: 6px;
+    border: 2px solid black;
+    border-color: rgb(207, 207, 207) rgb(207, 207, 207);
+  
+}
+.sname{
+    gap: 10px;
+      text-align: left;
+     font-size: 16px;
+    width: 200px;
+    height: 40px;
+    border-radius: 6px;
+    border: 2px solid black;
+    border-color: rgb(207, 207, 207) rgb(207, 207, 207);
+}
+.date{
+    margin: 10px;
+   justify-content: space-between;
+}
+.date p{
+     text-align: left;
+     font-size: 15px;
+     padding-left: 20px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    color: rgb(61, 61, 61);
+}
+
+.day{
+    
+     font-size: 14px;
+    gap: 10px;
+     width: 130px;
+    height: 40px;
+    border-radius: 6px;
+ border: 2px solid black;
+    border-color: rgb(207, 207, 207) rgb(207, 207, 207);
+    
+}
+
+.month{
+     font-size: 14px;
+    gap: 10px;
+     width: 130px;
+    height: 40px;
+    border-radius: 6px;
+ border: 2px solid black;
+    border-color: rgb(207, 207, 207) rgb(207, 207, 207);
+}
+.year{
+     font-size: 14px;
+    gap: 10px;
+ width: 130px;
+    height: 40px;
+    border-radius: 6px;
+     border: 2px solid black;
+    border-color: rgb(207, 207, 207);
+}
+
+.gender{
+
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    
+  }
+.box{
+    margin-top: 1px;
+    padding-top: 15px;
+    width: 170px;
+    height: 30px;
+    padding-left: 5px;
+    flex: 1;
+    gap: 10px;
+    text-align: left;
+    border: 2px solid #ccd0d5;
+    border-radius: 6px;
+    font-size: 18px;
+  }
+
+  .email{
+    margin: 10px;
+        width: 420px;
+    height: 40px;
+     border-radius: 6px;
+     border: 2px solid black;
+    border-color: rgb(207, 207, 207) ;
+    font-size: 18px;
+    padding-left: 5px;
+  }
+ .pass{
+     font-size: 18px;
+    padding-left: 5px;
+    margin: 10px;
+        width: 420px;
+    height: 40px;
+     border-radius: 6px;
+     border: 2px solid black;
+    border-color: rgb(207, 207, 207) ;
+  }
+.pree{
+
+    font-size: 10px;
+    color: rgb(126, 126, 126);
+}
+.butt{
+    background-color: rgb(13, 207, 13);
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    align-items: center;
+    font-size: bold;
+     font-family: "Poppins", sans-serif;
+     font-size: 20px;
+     color: white;
+     text-align: center;
+ border-radius: 6px;
+     border: 2px solid  rgb(13, 207, 13);
+
+}
+.footer {
+  background-color: white;
+  color: #2049ff;
+  padding: 20px 40px;
+  font-size: 13px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  width: 1000;
+  margin-top: 100px;
+}
+
+.footer hr{
+    padding-left: 0px;
+}
+.footer-languages,
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.footer span:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  color: #666;
+  font-size: 12px;
+  margin-top: 10px;
+}
