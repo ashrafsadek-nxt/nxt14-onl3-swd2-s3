@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Sign Up</h1>
+        <p>It’s quick and easy.</p>
+        <form action="#" method="post">
+            <input type="text" name="firstname" placeholder="First name" required>
+            <input type="text" name="lastname" placeholder="Last name" required><br>
+
+            <input type="text" name="email" placeholder="Mobile number or email" required><br>
+
+            <input type="password" name="password" placeholder="New password" required><br>
+
+            <label>Date of birth</label><br>
+            <select name="day">
+                <option value="">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <!-- Add more -->
+            </select>
+            <select name="month">
+                <option value="">Month</option>
+                <option value="1">Jan</option>
+                <option value="2">Feb</option>
+                <!-- Add more -->
+            </select>
+            <select name="year">
+                <option value="">Year</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <!-- Add more -->
+            </select><br><br>
+
+            <label>Gender</label><br>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="custom"> Custom</label><br><br>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #1877f2;
+    margin-bottom: 5px;
+}
+
+form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label {
+    font-size: 14px;
+}
+
+button {
+    background-color: #42b72a;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #36a420;
+}
