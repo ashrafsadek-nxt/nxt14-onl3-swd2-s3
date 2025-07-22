@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style=" text-align: center; align-content: center;">Form:</h1>
+    <hr style="margin-left: 15%;margin-right: 15%;">
+    <br>
+        <form action="index.html" method="get" style="margin-left: 15%; margin-right: 15%;">
+            <div style="display: flex; gap: 150px;">
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" style="width: 200px;" placeholder="enter your name" required>
+                </div>
+                <div>
+                    <label for="ph">Your Phone</label>
+                    <input type="tel" name="phone" id="ph" style="width:200px ;" placeholder="enter your phone" required>
+                </div>
+                <div>
+                    <label for="age">Your Age</label>
+                    <input type="number" name="age" id="age" style="width:200px ;" placeholder="enter your age">
+                </div>
+                </div>
+                <br>
+                <div style="display: flex; gap: 200px;">
+                    <div>
+                        <label for="email">Your email</label>
+                        <input type="email" name="email" id="email" style="width:200px ;" placeholder="enter your email" required>
+                    </div>
+                    <div>
+                        <label for="id">Your ID</label>
+                        <input type="number" name="id" id="id" style="width:200px ;" placeholder="enter your id">
+                    </div>
+                    <div>
+                        <label for="date" style="margin-left: 20px;">The data:</label>
+                        <input type="date" name="data" id="date" placeholder="enter data" style="width: 200px;margin-left: 20px;">
+                    </div>
+                    
+                </div>
+                <br>
+                <div style="display: flex; gap: 200px;">
+                    <div>
+                        <label for="password">Your Password:</label>
+                        <input type="password" name="password" id="password" placeholder="enter your password" style="width: 200px;">
+                    </div>
+                    <div>
+                        <label for="datalist">Choose or Write:</label>
+                        <input type="text" list="city" placeholder=" choose or write the City" id="datalist">
+                        <datalist id="city" style="width: 200px;">
+                            <option value="Cairo"></option>
+                            <option value="zagazig"></option>
+                            <option value="Banha"></option>
+                        </datalist> 
+                    </div>
+                    <div>
+                        <label for="message" >Your Message:</label>
+                        <textarea  rows="10" cols="30" placeholder="enter your message" id="message" ></textarea>
+                    </div>
+                        
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <input type="submit" value="send">
+                    <input type="reset" value="delete" style="margin-left: 30px;">
+                </div>
+            </form>
+</body>
+</html>
