@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      text-align: center;
+    }
+
+    #face {
+      background-color: #1877F2;
+      color: white;
+      padding: 15px 0;
+      font-size: 28px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #1c1e21;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 30%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #1877F2;
+      box-shadow: 0 0 5px rgba(24, 119, 242, 0.3);
+    }
+
+    #log {
+      width: 30%;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 6px;
+      background-color: #1877F2;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #log:hover {
+      background-color: #155fc9;
+    }
+
+    .acc {
+      width: 20%;
+      margin: 15px auto;
+      padding: 10px;
+      border-radius: 6px;
+      background-color: #42b72a;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .acc:hover {
+      background-color: #36a420;
+    }
+
+    h4,
+    div {
+      color: #606770;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="face">
+    Facebook
+  </nav>
+
+  <div>
+    <h2>Log in to Facebook</h2>
+  </div>
+
+  <div>
+    <input type="text" placeholder="Email address or phone number" autofocus required>
+  </div>
+
+  <div>
+    <input type="password" placeholder="Password" required>
+  </div>
+
+  <div id="log">
+    Log In
+  </div>
+
+  <div>
+    <h4>or</h4>
+  </div>
+
+  <div class="acc">
+    Create New Account
+  </div>
+
+  <div>
+    Forgotten account?
+  </div>
+
+  <div>
+    Not now
+  </div>
+
+</body>
+</html>
