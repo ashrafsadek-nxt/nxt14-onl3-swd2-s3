@@ -1,0 +1,21 @@
+div{
+    background: blue;
+    width: 24%;
+    height: 300px;
+    display: inline-block;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    div {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+    div {
+    width: 100%;
+  }
+}

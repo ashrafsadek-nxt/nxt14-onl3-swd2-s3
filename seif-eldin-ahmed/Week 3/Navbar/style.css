@@ -1,0 +1,28 @@
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}

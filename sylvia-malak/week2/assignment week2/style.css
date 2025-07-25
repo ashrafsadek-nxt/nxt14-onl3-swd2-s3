@@ -1,0 +1,254 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #FAF8F1;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #535231;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #D8968F;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  color: #535231;
+}
+
+.dropbtn:hover {
+  color: #D8968F;
+}
+
+.dropcont {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #EDFCCC;
+  padding: 10px;
+  min-width: 120px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  flex-direction: column;
+}
+
+.dropcont a {
+  display: block;
+  padding: 5px 0;
+  color: #535231;
+}
+.dropcont a:hover {
+  background-color: #CAD19F;
+  color: #000;
+}
+
+.dropdown:hover .dropcont {
+  display: flex;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-right input {
+  padding: 5px;
+  border: 1px solid #A2AC80;
+  border-radius: 4px;
+  background-color: #FAF8F1;
+  font-size: 14px;
+  width: 300px;
+}
+
+.navbar-right button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #D8968F;
+  color: #FAF8F1;
+}
+
+.navbar-right button:hover {
+  background-color: #A2AC80;
+}
+
+
+.content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #FAF8F1;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #535231;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.mainpic {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  background-color: #FAF8F1;
+  padding: 20px;
+}
+
+.mainpic:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+
+.tech-table {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #EDFCCC;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #535231;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.tech-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tech-table th,
+.tech-table td {
+  padding: 15px 25px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.tech-table th {
+  background-color: #D8968F;
+  color: #FAF8F1;
+  font-size: 18px;
+  text-align: left;
+}
+
+.tech-table tr:nth-child(even) {
+  background-color: #FAF8F1;
+}
+
+.tech-table tr:nth-child(odd) {
+  background-color: #CAD19F;
+}
+
+
+.footer {
+  background-color: #FAF8F1;
+  color: #f1f1f1;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.footer-social img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #535231;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.darkMode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.mode {
+  margin-top: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.mode button,
+.mode select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: #D8968F;
+  color: #FAF8F1;
+}
+
+

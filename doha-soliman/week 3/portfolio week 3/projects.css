@@ -1,0 +1,49 @@
+body{
+    background: #D8E3E7;
+}
+.proj h1{
+    color: #496A74;
+    font-weight: bold;
+    margin: 60px;
+}
+
+.pro{
+    display: flex;
+}
+.pro1{
+    background: #89A6A8;
+    height: 120px;
+    width: 120px;
+    padding: 60px;
+    border-radius: 60px;
+    text-align: top;
+    margin: 90px;
+    display: inline;
+    
+}
+.pro2{
+    background: #89A6A8;
+    height: 120px;
+    width: 120px;
+    padding: 60px;
+    border-radius: 60px;
+    text-align: top;
+    margin: 90px;
+    display: inline;
+
+}
+.pro3{
+    background: #89A6A8;
+    height: 120px;
+    width: 120px;
+    padding: 60px;
+    border-radius: 60px;
+    text-align: top;
+    margin: 90px;
+    display: inline;
+
+}
+.pro h3{
+    color: #496A74;
+    font-weight: bold;
+}

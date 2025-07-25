@@ -1,0 +1,95 @@
+   #portfolio-content{
+     flex:1;
+     margin: 30px;
+     position: relative;
+     height: auto;
+   }
+   #experiences th{
+     background-color: #25344F;
+     color:white;
+   }
+   #experiences td{
+      background-color: #617891;
+      color:white;
+      padding-left: 7px;
+   }
+   #content{
+    font-size:25px;
+   }
+   #portfolio-start{
+    transition: all 0.3s ease;
+    position:absolute;
+    right:130px;
+    top:400px;
+    width:550px;
+    height: auto;
+    background-color:#6F4D38 ;
+    color:white;
+    padding:10px 15px 10px 15px;
+    border-radius: 15px;
+    z-index: 2;
+   }
+   #portfolio-start:hover{
+    transform: scale(1.1);
+   }
+  #experiences{
+   width:450px;
+   height:280px;
+   font-size:25px;
+   margin-left: 60px;
+  }
+  #front-image{
+  transition: all 0.3s ease;
+  width:700px;
+  height:480px;
+  margin-left: 50px;
+}
+#front-image:hover{
+   transform: scale(1.1);
+}
+#portfolio-table{
+position: relative;
+top:480px;
+transition: all 0.3s ease;
+width: 450px;
+height:280px;
+margin-left:30px;
+}
+#portfolio-table:hover{
+ transform: scale(1.1);
+}
+#portfolio-tech{
+  transition: all 0.3s ease;
+  position: relative;
+  bottom: 140px;
+  left:600px;
+  width:650px;
+  height:330px;
+  margin-top: 300px;
+  background-color:#D5B893 ;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(27, 27, 27);
+}
+#portfolio-tech:hover{
+   transform: scale(1.1);
+}
+#portfolio-tech li{
+  opacity: 0.8;
+  transition: all 0.3s ease;
+ display:inline ;
+ padding: 20px;
+ background-color:#6F4D38;
+ color:white;
+ border-radius: 15px;
+}
+#portfolio-tech ul{
+  display:flex;
+  flex-wrap: wrap;
+  gap:50px;
+}
+#portfolio-tech li:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        font-size: 0;
+      }
+      .box {
+        display: inline-block;
+        background-color: #be6fe2;
+        margin: 1%;
+        height: 100px;
+        width: 23%;
+      }
+
+      @media only screen and (max-width: 992px) {
+        .box {
+          width: 48%;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .box {
+          width: 98%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+      <div class="box">box 4</div>
+    </div>
+  </body>
+</html>

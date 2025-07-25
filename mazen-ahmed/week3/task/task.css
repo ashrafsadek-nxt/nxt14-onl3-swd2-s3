@@ -1,0 +1,74 @@
+img{
+height: 20px;
+width: 20px;
+border-radius:50%;
+}
+nav {
+    height: 20hv;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #d00c0c, #e59279);
+    padding: 10px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color: white;
+}
+.links{
+    display: flex;
+    align-items: center;
+}
+.links ul a{
+    text-decoration: none;
+    color: white;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+    gap:10px;
+    text-decoration: none;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search .fa-moon {
+    margin-left: 10px;
+}
+footer{
+display:flex;
+justify-content: space-between;
+background: linear-gradient(to right, #d00c0c, #e59279);
+padding: 10px;
+color: white;
+}
+.copy_right{
+    display: flex;
+    align-items: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+  
+
+}
+.content ul{
+    display: flex;
+    list-style: none;
+    gap:10px;
+    text-decoration: none;
+
+}
+.langage{
+    display: flex ;
+align-items: center;
+border-radius: 10px;
+padding: 10px;
+background-color: #e59279;
+
+}
+

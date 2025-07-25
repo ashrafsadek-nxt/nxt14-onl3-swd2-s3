@@ -1,0 +1,173 @@
+nav {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 72, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.login {
+    background-color: rgb(15, 222, 15);
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+}
+
+select {
+
+    background-color: rgb(15, 222, 15);
+    border-radius: 5px;
+    height: 30px;
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(232, 229, 229);
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 72, 255);
+    font-size: 3rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 550px;
+    margin-right: 550px;
+    margin-top: 10px;
+    background-color: whitesmoke;
+}
+
+h3,
+h5 {
+    display: flex;
+    justify-content: center;
+}
+
+h5 {
+    margin-top: -10px;
+    color: gray;
+}
+
+.divider {
+    margin-top: -5px;
+    width: 100%;
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+.textfield {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.text {
+    height: 28px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+}
+
+.dob-selects {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#day,
+#month,
+#year {
+    background-color: white;
+    border-radius: none;
+    width: 120px;
+
+}
+
+.dob-field {
+    margin-top: 10px;
+}
+
+select {
+    border: 1px solid lightgray !important;
+    /* عشان افرض style معين */
+
+}
+
+.radio {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.mal,
+.fem,
+.cust {
+    display: flex;
+    border: 1px solid lightgray !important;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    width: 120px;
+    height: 28px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gender {
+    margin-top: 10px;
+}
+.data{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.dat{
+    width: 93%;
+    height: 28px;
+    border-radius: 5px;
+       border: 1px solid lightgray !important;
+}
+.info {
+    display: flex;
+  margin-top: 10px;
+  font-size: 13px;
+  color: gray;
+  white-space: pre-wrap;     /* يخلي الكلام ينزل تحت وما يكسرش التنسيق */
+  word-wrap: break-word;     /* يمنع الكلمة الطويلة من الخروج */
+  max-width: 100%;           /* يضمن أنه يلتزم بحدود العنصر الأب */
+padding: 0px;
+
+}
+.sigh_up{
+ display: flex;
+ justify-content: center;
+ height: 40px;
+ width: 100%;
+ 
+}
+.in-sighn{
+background-color: rgb(15, 222, 15); 
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+border-radius: 5px;
+}
+.account{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,35 @@
+body{
+    background: #D8E3E7;
+}
+.proj h1{
+    color: #496A74;
+    font-weight: bold;
+    margin: 60px;
+}
+
+.project{
+    display: flex;
+}
+.pro{
+    background: #89A6A8;
+    height: 120px;
+    width: 120px;
+    padding: 60px;
+    border-radius: 60px;
+    text-align: top;
+    margin: 90px;
+    display: inline;
+    
+}
+
+.project h3{
+    color: #496A74;
+    font-weight: bold;
+}
+@media screen and (max-width:900px) {
+    .project{
+    display: flex;
+    flex-direction: column;
+}
+    
+}

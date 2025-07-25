@@ -1,0 +1,81 @@
+         html,body {
+            height: 100%;
+            margin: 0px;;
+            background-color:white ;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           }
+           
+           body {
+            display: flex;
+            flex-direction: column;
+           }
+            nav{
+              display: flex;
+              align-items: center; 
+              justify-content:space-between; 
+              top:0px; 
+            }
+           #Nav-bar{
+            display: inline-flex;
+            align-items: center;
+           }
+           #Links li{
+            display: inline;
+            margin:30px;
+            font-size: 20px;
+           }
+           #Links a{
+            text-decoration: none;
+            color: white;
+           }
+           #Links a:hover{
+            text-decoration: underline;
+           }
+           #profile-image{
+            width:70px;
+            height: 80px;
+            border-radius: 50px;
+            margin:5px 20px 5px 20px;
+           }
+           #Search-form{
+           margin:0px 20px 0px 500px;
+           }
+           #search-space{
+            padding: 10px;
+           }
+           #search-button{
+            height:40px;
+           }
+           #footer-links li{
+            display: inline;
+            margin:20px 40px 20px 40px;
+           }
+           #footer-links a{
+            text-decoration: none;
+           }
+           #footer-content{
+           margin-left: 35%;
+           }
+           header,Footer{
+           background-color: #632024;
+           color: white;
+           }
+           #Copyright{
+           position: absolute;
+           top:10px;
+           left:30px;
+           }
+           footer{
+            position: relative;
+            height: 85px;
+           }
+           #language{
+            position: absolute;
+            right:170px;
+            bottom: 30px;
+            width: 60px;
+            height: 30px;
+           }
+           svg{
+            fill:white;
+           }

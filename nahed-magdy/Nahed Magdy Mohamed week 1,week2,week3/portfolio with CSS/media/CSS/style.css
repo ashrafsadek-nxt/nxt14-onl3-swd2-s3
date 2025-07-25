@@ -1,0 +1,109 @@
+img
+{
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+nav
+{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color:rgba(195, 185, 160,0.5) ;
+}
+select
+{
+    margin-left: 55px;
+    width: 160px;  
+    background-color: rgba(245, 245, 220, 0.8);
+
+}
+ul li input{
+    background-color: rgba(245, 245, 220, 0.8);
+}
+main
+{
+    margin-left: 15%;
+    margin-right: 15%;
+}    
+h1
+{
+    text-align: center;
+    font-size: 60px
+}
+p
+{
+    font-size: 20px;
+}
+#about_me
+{
+        display: flex; 
+        gap: 150px;
+}
+#paragraph_of_about_me
+{
+        display: flex; 
+        margin-top: 20px;
+}
+h3
+{
+    font-size: 30px;;
+}
+iframe
+{
+    width:250px ;
+    height: 180px;
+}
+table
+{
+    border: 2px solid black;
+    margin-top: 130px;
+}
+th,td
+{
+    border: 2px solid black;
+}
+#form
+{
+    display: flex; 
+    gap: 100px;
+}
+footer
+{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#Aboutme
+{
+    background-color: rgba(245, 245, 220, 0.8);
+}
+#education
+{
+    background-color: rgba(245, 245, 220, 0.8);
+}
+#experience{
+    background-color: rgba(245, 245, 220, 0.8); 
+}
+#certification
+{
+    background-color: rgba(245, 245, 220, 0.8); 
+}
+#skills
+{
+    background-color: rgba(245, 245, 220, 0.8); 
+}
+#contact_me
+{
+    background-color: rgba(245, 245, 220, 0.8); 
+}
+#submit_reset input[type="submit"]:first-child
+{
+    background-color: #6ec1e4;
+}
+#submit_reset input[type="reset"]:last-child
+{
+    background-color: #e74c3c;;
+}
+footer
+{
+    background-color:rgba(195, 185, 160,0.5) ;
+}

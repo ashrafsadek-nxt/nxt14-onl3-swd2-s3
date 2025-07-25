@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav-bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark-mode {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+        }
+
+        .navbar {
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar.dark-mode {
+            background-color: #16213e;
+        }
+
+        .navbar .left-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 30px;
+            object-fit: cover;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #bdc3c7;
+        }
+
+        .navbar ul li .nested-ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li .nested-ul li {
+            margin-right: 20px;
+        }
+
+        .navbar ul li .nested-ul li:last-child {
+            margin-right: 0;
+        }
+
+        .navbar ul li .nested-ul li a {
+            font-size: 0.9em;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .search-container input[type="text"] {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            margin-right: 8px;
+            width: 150px;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-container input[type="text"]::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        body.dark-mode .search-container input[type="text"] {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .search-label {
+            color: #ecf0f1;
+            font-size: 0.9em;
+        }
+
+        .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .theme-switch-wrapper em {
+            margin-right: 10px;
+            color: #ecf0f1;
+            font-style: normal;
+            font-size: 0.9em;
+        }
+
+        .theme-switch input[type="checkbox"] {
+            display: none;
+        }
+
+        .theme-switch label {
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .theme-switch label::after {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            transition: left 0.3s ease, background-color 0.3s ease;
+        }
+
+        .theme-switch input:checked + label {
+            background-color: #66bb6a;
+        }
+
+        .theme-switch input:checked + label::after {
+            left: 21px;
+        }
+
+      
+
+        .language-select-container select {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ecf0f1;
+            cursor: pointer;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20fill%3D%22%23ecf0f1%22%20d%3D%22M208.49%2096.49L128%20176l-80.49-79.51a12%2012%200%200%200-17%2017l88%2088a12%2012%200%200%200%2017%200l88-88a12%2012%200%200%200-17-17z%22/%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 16px;
+        }
+
+        body.dark-mode .language-select-container select {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .language-select-container select option {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        body.dark-mode .language-select-container select option {
+            background-color: #0f172d;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-section">
+            <img src="user-profile-avatar-svgrepo-com.svg" alt="User image" class="user-image">
+
+            <ul>
+                <li><a href="https://www.instagram.com/nada_salah287?igsh=cWxodmZjemZybzcx ">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/nada-salah-19a803356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                <li>
+                    <ul class="nested-ul">
+                        <li><a href="https://github.com/NadaSala853">GitHub</a></li>
+                        <li><a href="https://www.amazon.com/">Amazon</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-section">
+            <div class="search-container">
+                <input type="text" placeholder="بحث">
+                <span class="search-label">بحث</span>
+            </div>
+
+            <div class="language-select-container">
+                <select id="language-switcher">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+
+            <div class="theme-switch-wrapper">
+                <em>الوضع الليلي</em>
+                <div class="theme-switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <label for="darkModeToggle"></label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const navbar = document.querySelector('.navbar');
+
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            navbar.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                navbar.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                navbar.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+
+        const languageSwitcher = document.getElementById('language-switcher');
+        languageSwitcher.addEventListener('change', (event) => {
+            console.log('Selected language:', event.target.value);
+            alert('تم تغيير اللغة إلى: ' + event.target.options[event.target.selectedIndex].text + ' (هذا مجرد عرض لواجهة المستخدم ولا يغير المحتوى الفعلي).');
+        });
+    </script>
+</body>
+</html>

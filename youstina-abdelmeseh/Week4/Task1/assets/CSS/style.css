@@ -1,0 +1,19 @@
+div{
+    background-color: blue;
+    border:1px solid black;
+    width:24%;
+    height: 300px;
+    display: inline-block;
+}
+@media only screen and (max-width:991px) { /*will be done when it is smaller than 991px or equal 991px*/
+    div{
+    width:49%;
+    background-color: red;
+       }
+}
+@media only screen and (max-width:599px) { /*will be done when it is smaller than 599px or equal 599px*/
+    div{
+    width:100%;
+    background-color: blueviolet;
+       }
+}

@@ -1,0 +1,44 @@
+nav{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.items
+{
+    display: flex;
+    list-style: none;
+}
+.logos
+{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.dark_mode
+{
+    display: inline;
+    margin-right: 50px;
+}
+ul li input
+{
+    width: 150px;
+    margin-top: 10px;
+}
+footer{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 39%;
+}
+.foooter_icon_social_media
+{
+    display: flex;
+    list-style: none ;
+    gap: 30px;
+    margin-right: 220px;
+}

@@ -1,0 +1,26 @@
+#HomeNav {
+    background-color: yellow;
+}
+
+#nav1 {
+    background-color: aqua;
+    display: inline-flex;
+    height: 50px;
+}
+
+#HomeNavLink {
+    font-size: 20px;
+}
+
+#ProjectImage {
+    height: 400px;
+    width: 400px;
+}
+
+p {
+    font-size: 20px;
+}
+
+#About {
+    background-color: orange;
+}

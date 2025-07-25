@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="contactform">
+  <form >
+
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+    
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+    <label for="country">Country</label>
+
+    <input type="text" id="country" name="country" list="country" placeholder="Your country..">
+    <datalist id="country">
+      <option value="Egypt">
+      <option value="USA">
+      <option value="Canada">
+      <option value="UK">
+      <option value="Australia"> 
+      </option>
+    </datalist>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</body>
+</html>

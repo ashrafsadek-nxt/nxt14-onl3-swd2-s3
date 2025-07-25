@@ -1,0 +1,23 @@
+.Facebook
+{
+    background-color: rgb(32, 32, 216);
+    padding-left: 30px;
+    border-radius: 10px;
+    margin-top: 130px;
+    margin-left: 30px;
+}
+h1{
+    color: white;
+}
+#sign_up input
+{
+    width: 380px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+form
+{
+    border: 5 px solid black;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}

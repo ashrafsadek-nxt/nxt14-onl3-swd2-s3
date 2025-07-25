@@ -1,0 +1,51 @@
+body {
+    background: lightblue;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+.no1 {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+}
+.no2 {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+}
+.no3 {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+}
+.no4 {
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width:600px){
+    .container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 200px;
+}
+    
+}
+@media screen and (max-width:992px){
+    .container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 20px;
+    align-items: center;
+    margin-top: 200px;
+}
+    
+}

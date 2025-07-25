@@ -1,0 +1,52 @@
+.logo:link,
+.logo:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+
+.logo:hover,
+.logo:active {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+  background: linear-gradient(135deg, #72c7ff, #3498db);
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #fff;
+}
+
+#search {
+  color: #000;
+  border: none;
+  border-width: 2.4rem;
+}

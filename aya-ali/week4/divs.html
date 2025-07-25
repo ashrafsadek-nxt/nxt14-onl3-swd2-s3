@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Divs</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
+<style>.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.box {
+  background-color: #426fa3;
+  padding: 40px 0;
+  flex: 1 0 21%;
+  min-width: 200px;
+}
+
+@media (max-width: 991px) {
+  .box {
+    flex: 1 0 45%;
+  }
+}
+
+@media (max-width: 575px) {
+  .box {
+    flex: 1 0 100%;
+  }
+}
+</style>

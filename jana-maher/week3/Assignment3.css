@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f0f2f5;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  width: 100%;
+  background: #00896f;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 40px;
+}
+
+header .logo {
+  height: 40px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #b0a8b9;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.registration-container {
+  background: #b0a8b9;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+  margin: 120px auto 20px;
+}
+
+.registration-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #4b4453;
+}
+
+.registration-container p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.Gender-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.Gender-group label {
+  font-weight: normal;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #00896f;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00c0a3;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-link a {
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  padding: 15px 0;
+  color: #b0a8b9;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+  background-color: #00896f;
+}
