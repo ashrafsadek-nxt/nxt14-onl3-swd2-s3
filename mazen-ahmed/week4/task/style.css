@@ -1,0 +1,42 @@
+.box1 ,.box2 ,.box3 ,.box4{
+    width: 24%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+}
+.container{
+    display: flex;
+    gap:5px;
+    justify-content: center;
+}
+@media only screen and (max-width: 900px){
+    .box1 ,.box2 ,.box3 ,.box4{
+        width: 49%;
+        height: 100px;
+        background-color: red;
+        display: flex;
+    }
+    .container{
+        display: flex;
+        gap:5px;
+        justify-content: center;
+        flex-wrap: wrap;/*imp to shift div to next line*/
+    }
+    
+}
+
+@media  only screen and (max-width: 600px){
+    .box1 ,.box2 ,.box3 ,.box4{
+        width: 100%;
+        height: 100px;
+        background-color: red;
+        display: flex;
+    }
+    .container{
+        display: flex;
+        gap:5px;
+        justify-content: center;
+           flex-wrap: wrap;
+    }
+    
+}

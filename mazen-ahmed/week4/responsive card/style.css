@@ -1,0 +1,154 @@
+body{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.cards{
+
+  position:absolute;
+  display: grid;
+  grid-template-columns:22% 22% 22% 22%;
+  gap: 2%;
+  height: 25%;
+  width: 100%;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-left: 2%;
+  margin-right: 2%;
+  flex-wrap: wrap;
+}
+.card1,.card2,.card3,.card4{
+background-color: rgba(194, 188, 188, 0.214);
+height:100% ;
+border-radius: 15px;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.circle1,.circle2{
+position:absolute;
+height:50vh;
+width: 50vh;
+transform: translate(-50%,-50%);
+max-height: 150px;
+max-width: 150px;
+background:linear-gradient(to right,rgb(217, 0, 255),rgb(220, 178, 236));
+border-radius: 50%;
+z-index: 1;
+filter: blur(3px) brightness(50%);
+}
+.circle1{
+  left:20%;
+  top: 40%;
+}
+.circle2{
+  right: 15%;
+  bottom:15%;
+}
+img{
+  height: 25px;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+p{
+  color: white;
+}
+.number{
+  padding: 10px;
+  margin-top: -15px;
+}
+#numberstring{
+  font-weight:lighter;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+#actualnumber{
+  margin-top: 2px;
+}
+.footer{
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.card1:hover{
+  background-color: rgba(194, 188, 188, 0.5);
+  cursor: pointer;
+  transform: rotate3d(1, 1, 1, 360deg);
+  transition: 1s ease-in-out;
+}
+.card1 .content {
+  transition: opacity 0.5s ease;
+}
+
+.card1:hover .content {
+  opacity: 0;
+  pointer-events: none; /* تمنع التفاعل أثناء الإخفاء */
+}
+.card2:hover{
+  background-color: rgba(194, 188, 188, 0.5);
+  cursor: pointer;
+  transform: rotate3d(1, 1, 1, 360deg);
+  transition: 1s ease-in-out;
+}
+.card2 .content {
+  transition: opacity 0.5s ease;
+}
+
+.card2:hover .content {
+  opacity: 0;
+  pointer-events: none; /* تمنع التفاعل أثناء الإخفاء */
+}
+.card3:hover{
+  background-color: rgba(194, 188, 188, 0.5);
+  cursor: pointer;
+  transform: rotate3d(1, 1, 1, 360deg);
+  transition: 1s ease-in-out;
+}
+.card3 .content {
+  transition: opacity 0.5s ease;
+}
+
+.card3:hover .content {
+  opacity: 0;
+  pointer-events: none; /* تمنع التفاعل أثناء الإخفاء */
+}
+.card4:hover{
+  background-color: rgba(194, 188, 188, 0.5);
+  cursor: pointer;
+  transform: rotate3d(1, 1, 1, 360deg);
+  transition: 1s ease-in-out;
+}
+.card4 .content {
+  transition: opacity 0.5s ease;
+}
+
+.card4:hover .content {
+  opacity: 0;
+  pointer-events: none; /* تمنع التفاعل أثناء الإخفاء */
+  
+}
+@media only screen and (max-width: 1024px){
+  .cards{
+    grid-template-columns: 41% 45%;
+    gap: 10%;
+    margin:20px;
+  }
+}
+@media only screen and (max-width: 600px){
+  .cards{
+    grid-template-columns: 96%;
+  }
+  
+}
