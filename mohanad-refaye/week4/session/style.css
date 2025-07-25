@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  width: 20%;
+  height: 150px;
+  background-color: red;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 90%;
+  }
+}
