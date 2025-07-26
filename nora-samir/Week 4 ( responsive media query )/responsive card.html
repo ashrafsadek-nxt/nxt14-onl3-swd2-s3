@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-UA-compatible"content="IE=7">
+  <meta http-equiv="x-UA-compatible"content="ie=edge">
+  <meta name="description" content="my portfolio">
+  <meta name="Keywords" content="Html,css,meta,learning,software,frontend,portfolio,my cv,nora samir">
+  <title>responsive card</title>
+   <style>
+   body{
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    margin-right: 70px;;
+    background-color:#F6F5EC;
+  
+   }
+    .card{
+    
+      background-color: rgb(246, 243, 240);
+      border: 1px solid black;
+      margin: 10px;
+      text-align: center;
+      width:300px;
+      box-shadow: 0 4px 8px;
+      
+      
+    }
+     img{
+      justify-content: center;
+      display: block;
+      margin: auto;
+      width:100px;
+      margin-top: 5px;;
+      margin-bottom: 5px;;
+      border-radius: 8px;
+      
+    }
+       @media only screen and (max-width:1200px)
+      {
+        body{
+        background-color: rgb(236, 212, 186);
+        display:inline-flex;
+        margin: 20px;
+        text-align: center;
+        
+        
+      }
+      }
+      @media only screen and (max-width:992px)
+      {
+         body{
+          background-color:rgb(243, 153, 171);
+         display:inline-flex;
+        margin: 20px;
+        text-align: center;
+  
+      }
+      }
+      @media only screen and (max-width:576px)
+      {
+         body{
+          background-color:rgb(78, 185, 204);
+         display:block;
+        margin: 20px;
+        text-align: center;
+        
+      }
+      }
+  </style>
+</head>
+<body>
+
+    <div class="card">
+      <img src="F:\nxt_acadmy\Week 4\mountain.jpg" alt="mountain" >
+      <div>
+      <h3>Mountains</h3>
+      <p>Mountains stand tall as timeless symbols of strength and serenity.
+Their majestic peaks remind us that even the hardest climbs lead to the most beautiful views</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="F:\nxt_acadmy\Week 4\city.jpg" alt="city">
+      <div>
+      <h3>City</h3>
+      <p>The city never sleeps — it pulses with energy, dreams, and endless possibilities.
+Beneath the noise and lights, every street tells a story of life in motion. 🌆</p>
+</div>
+    </div>
+    <div class="card">
+      <img src="F:\nxt_acadmy\Week 4\coast.jpg" alt="coast" height="175px">
+      <div>
+      <h3>Coast</h3>
+      <p>The coast whispers peace with every crashing wave and salty breeze.
+It’s where the land meets the soul, and time slows down by the sea. 🌊🌤</p>
+      </div>
+    </div>
+</body>
+</html>
