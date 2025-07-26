@@ -1,0 +1,23 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;
+}
+#name{
+    background-color: lightblue;
+    padding: 20px;
+    flex: 1 1 22%;
+}
+@media (max-width: 1023px)
+{
+    #name{
+        flex: 1 1 45%;
+    }
+}
+@media (max-width: 767px)
+{
+    #name{
+        flex: 1 1 100%;
+    }
+}
