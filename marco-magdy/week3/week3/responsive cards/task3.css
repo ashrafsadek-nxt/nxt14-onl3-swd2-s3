@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.container{
+    display: flex;
+}
+.frame{
+    width: 20%;
+    height: 300px;
+    border-radius:8px;
+    background-color: white;
+    margin: 50px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    box-shadow: 9px 9px 20px rgba(0, 0,0,0.3);
+    border: 1px solid rgba(0, 0,0,0.3) ;
+}
+.frame:hover{
+    transform: translateY(-10px);
+    background-color:rgb(21, 95, 170);
+    color: white;
+}
+.text{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+    margin-top: 40px;
+    transition: all 0.3s ease-in-out;
+    transform: translate(25px, 80px);
+}
+.number{
+    transform: translate(80px, 80px);
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    width: 20px;
+    height: 15px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: rgba(0, 0,0,0.3);
+    transition: all 0.3s ease-in-out;
+}
+.frame:hover .text{
+    color: white;
+}
+.frame:hover .number{
+    color: rgba(255,255,255,0.3);
+}
+
+.up{
+    padding: 5px;
+    padding-top: 1px;
+    height:250px;
+    border-radius: 20px;
+    background-color: rgba(0, 0,0,0.3);
+    transform: translateY(140px);
+    transition: all 0.3s ease-in-out;
+}
+.frame:hover .up{
+    transform: translateY(-25px);
+}
+.frame:hover .text{
+    transform: translate(0px, 0px);
+}
+.frame:hover .number{
+    transform: translate(0px, 0px);
+}
+
+@media  screen and (max-width: 1400px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        }
+    .frame{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        }
+    .frame{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .frame{
+        width: 80%;
+    }
+}

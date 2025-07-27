@@ -1,0 +1,121 @@
+.nav1{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(103, 192, 217);
+}
+.nav2{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(217, 217, 217);
+    height: 3vh;
+ 
+}
+.lang{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    color: rgb(243, 142, 18);
+}
+.nav3{
+    display: flex;
+    justify-content: space-around;
+
+}
+.brand, .search, .links{
+    display: flex;
+    align-items: center;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap:.25em;
+}
+input{
+    width: 30em;
+    height: 5vh;
+   
+}
+.search{
+    position: relative;
+}
+ .search-input{
+    width: 10em;
+    height: 5vh;
+    background-color: rgb(243, 142, 18);
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    margin-left:1em ;
+}
+.fa-magnifying-glass{
+    position:absolute;
+    right: 28%;
+}
+.brand{
+    gap:.5em;
+}
+
+.nav3{
+border-bottom: 1px solid rgb(217, 217, 217);
+position: sticky;
+top: 0;
+z-index: 1;
+}
+.account{
+   position: relative;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    width: 5em;
+    top: 3em;
+    right: 0;
+    background-color: white;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)
+  
+}
+.account:hover .dropdown{
+    display: block;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.dropbtn{
+ cursor: pointer;
+    border: none;
+    outline: none;
+    height: 2em;
+    width: 5em;
+    background-color: rgb(243, 142, 18);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.btndiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid rgb(3, 3, 3);
+    height: 5vh;
+}
+
+

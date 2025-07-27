@@ -1,0 +1,13 @@
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(100px,2fr));
+  gap: 20px;
+}
+
+.card {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #ecc515;
+}

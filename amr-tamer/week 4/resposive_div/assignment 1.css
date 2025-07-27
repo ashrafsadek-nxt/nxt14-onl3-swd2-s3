@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+.mid{
+      background-color: aquamarine;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px 0;
+      border-radius: 10px;
+      width: 23%;
+}
+@media only screen and (max-width: 992px){
+        .mid{
+            width: 45%;
+        }
+
+}
+@media only screen and (max-width: 500px){
+        .mid{
+            width: 90%;
+        }
+}
