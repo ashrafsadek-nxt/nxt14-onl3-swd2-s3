@@ -81,10 +81,16 @@ footer {
     bottom: 0;
     width: 100%;
 }
-.footer-container {
+.footer-links-container {
     display: flex;
     gap: 30px;
     flex: 2;
-    justify-content: center;
     margin: 0 20px;
+}
+select {
+    padding: 5px 5px;
+    border: 1px solid #2d8ba7;
+    border-radius: 5px;
+    color: #2d8ba7;
+    font-weight: bold;
 }
