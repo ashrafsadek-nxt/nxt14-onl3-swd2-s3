@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="icon" href="images/dashboard.png" type="image/png" />
+
+    <title>Noha Dashboard</title>
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/tasks.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar-->
+    <nav class="navbar">
+      <div class="logo">
+        <span>Noha Dashboard</span>
+      </div>
+      <div class="nav-container">
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#Home"><i class="fas fa-th-large"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-folder"></i> Projects</a>
+            </li>
+            <li>
+              <a href="#Tasks"><i class="fas fa-list"></i> Tasks</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-chart-bar"></i> Reports</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="user">
+          <div class="notification">
+            <i class="far fa-bell"></i>
+          </div>
+          <div class="user-admin">
+            <img src="images/NohaShehab.jpg" alt="User Icon" />
+            <div class="user-name">
+              <h3>Noha Shehab</h3>
+              <p>Admin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="Home">
+      <header class="header">
+        <div class="user-info">
+          <h2>Hi Noha</h2>
+          <p>Welcome to Dashboard!</p>
+        </div>
+      </header>
+
+      <!-- Dashboard Cards -->
+      <div class="dashboard-cards">
+        <!-- Profile Card -->
+        <div class="card profile-card" style="grid-area: profile">
+          <div class="card-header">
+            <div class="user-profile">
+              <img src="images/NohaShehab.jpg" alt="Noha Shehab" />
+              <div class="user-details">
+                <h3>Noha Shehab</h3>
+                <p>Computer Engineer Student</p>
+              </div>
+            </div>
+            <div class="three-dots">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>Nohashehab576@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+20 114-0406-675</span>
+            </div>
+          </div>
+
+          <div class="progress-section">
+            <div class="progress-item">
+              <span class="label">Project Completion</span>
+              <span class="percentage">85%</span>
+              <div class="progress-bar">
+                <div class="progress-fill green" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <span class="label">Overall Rating</span>
+              <span class="percentage">80%</span>
+              <div class="progress-bar">
+                <div class="progress-fill red" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tasks Summary Cards -->
+        <div class="card summary-card" style="grid-area: completed">
+          <div class="icon-box completed">
+            <i class="fas fa-check"></i>
+          </div>
+          <div class="summary-info">
+            <span class="count">21</span>
+            <span class="label">Tasks Completed</span>
+          </div>
+        </div>
+        <div class="card summary-card" style="grid-area: inprogress">
+          <div class="icon-box in-progress">
+            <i class="fas fa-edit"></i>
+          </div>
+          <div class="summary-info">
+            <span class="count">21</span>
+            <span class="label">Tasks Inprogress</span>
+          </div>
+        </div>
+
+        <!-- Learning Progress Card -->
+        <div class="card learning-card" style="grid-area: learning">
+          <div class="card-header">
+            <h3>Learning Progress</h3>
+            <div class="three-dots">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </div>
+
+          <div class="learning-amount">
+            <span class="amount">12</span>
+            <span class="period">Courses Completed</span>
+          </div>
+
+          <div class="learning-stats">
+            <div class="stat-item positive">
+              <i class="fas fa-arrow-up"></i>
+              <span class="percentage">25%</span>
+              <span class="label">This Month</span>
+            </div>
+            <div class="stat-item negative">
+              <i class="fas fa-arrow-down"></i>
+              <span class="percentage">5%</span>
+              <span class="label">Last Month</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Tasks Section -->
+    <section class="tasks-section" id="Tasks">
+      <div class="section-header">
+        <h2>Tasks Overview</h2>
+        <button class="add-task-btn">
+          <span> Add Task</span>
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+      <ul class="tasks-lists">
+        <li class="task-item">
+          <div class="task-card">
+            <div class="card-input">
+              <input type="checkbox" id="task1" />
+              <label for="task1">Complete Project Report</label>
+            </div>
+            <div class="task-due-date">
+              <span class="due-date">Due: 2023-10-15</span>
+            </div>
+            <div class="task-actions">
+              <span class="priority high">High Priority</span>
+              <button class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="task-item">
+          <div class="task-card">
+            <div class="card-input">
+              <input type="checkbox" id="task2" />
+              <label for="task2">Revise Data Structures Notes</label>
+            </div>
+            <div class="task-due-date">
+              <span class="due-date">Due: 2025-10-18</span>
+            </div>
+            <div class="task-actions">
+              <span class="priority medium">Medium Priority</span>
+              <button class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="task-item">
+          <div class="task-card">
+            <div class="card-input">
+              <input type="checkbox" id="task3" />
+              <label for="task3">Submit AI Project Proposal </label>
+            </div>
+            <div class="task-due-date">
+              <span class="due-date">Due: 2025-10-18</span>
+            </div>
+            <div class="task-actions">
+              <span class="priority high">High Priority</span>
+              <button class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="task-item">
+          <div class="task-card">
+            <div class="card-input">
+              <input type="checkbox" id="task4" />
+              <label for="task4">Prepare Product for Client</label>
+            </div>
+            <div class="task-due-date">
+              <span class="due-date">Due: 2026-01-15</span>
+            </div>
+            <div class="task-actions">
+              <span class="priority low">low Priority</span>
+              <button class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="task-item">
+          <div class="task-card">
+            <div class="card-input">
+              <input type="checkbox" id="task1" />
+              <label for="task1">Watch all recorded lectures </label>
+            </div>
+            <div class="task-due-date">
+              <span class="due-date">Due: 2023-10-15</span>
+            </div>
+            <div class="task-actions">
+              <span class="priority high">High Priority</span>
+              <button class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="view-all">
+        <button class="view-all-btn">
+          <span>View All Tasks</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <h3>Contact Us</h3>
+          <p>If you have any questions or feedback, feel free to reach out!</p>
+        </div>
+        <div>
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Stay updated with the latest news and updates.</p>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Noha Shehab. @All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-container");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
