@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;   /* Removes all margin (outer spacing) from all elements */
+    padding: 0;  /* Removes all padding (inner spacing) from all elements */
+    box-sizing: border-box; /* resets box-sizing to include padding and border in element's total width and height */
+}
+
+body{
+    background-color: #102B53;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+}
+
+#container{
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+#sign-up-header{
+    color: #50698D;
+    text-align: center;
+    font-size: 1600;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.p-header{
+    color: #7D9FC0;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;;
+    font-size: 10;
+}
+
+#google-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 40px;
+    padding: 0.8rem 1.5rem;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#google-div:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#registration-form{
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-label{
+    color: #50698D;
+    font-weight: 600;
+    margin: 10px 10px 5px 0px;
+}
+
+.form-input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#submit-button{
+    background-color: #50698D;
+    color: #ffffff;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
