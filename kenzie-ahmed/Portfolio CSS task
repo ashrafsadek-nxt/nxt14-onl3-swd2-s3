@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenzie Ahmed | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Kenzie Ahmed</h1>
+        <p>Frontend Developer in Training</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate and creative frontend developer with a growing skillset in HTML, CSS, JavaScript, and web
+            animations. I enjoy building interactive and visually engaging websites. I'm also skilled in tools like
+            Adobe Photoshop and Premiere Pro, and I have experience in leadership and media production roles.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript (Basics)</li>
+            <li>Adobe Photoshop & Premiere Pro</li>
+            <li>Microsoft Excel & PowerPoint</li>
+            <li>Teamwork & Presentation Skills</li>
+        </ul>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Tut Code</h3>
+            <p>A creative platform that helps users practice programming through first-person games. Inspired by King
+                Tut and Egyptian heritage.</p>
+        </div>
+        <div class="project-card">
+            <h3>Mini Game (Web Dev Course)</h3>
+            <p>A browser-based mini-game developed during an intensive web development course using HTML, CSS, and
+                JavaScript.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:kenzie@example.com">kenzie@example.com</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/kenzie</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Kenzie Ahmed</p>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+/* Reset + base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #F2E0DF, #E3B8B8, #FF812B);
+    color: #333;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    text-align: center;
+    background-color: #233808;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: background-color 0.4s ease;
+}
+
+header:hover {
+    background-color: #6a7e4f;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #7D9162;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.skills ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.project-card {
+    background-color: #f3f9ef;
+    padding: 15px;
+    margin-top: 10px;
+    border-left: 5px solid #7D9162;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+    background-color: #e0edd4;
+}
+
+a {
+    color: #7D9162;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #556b3d;
+    text-decoration: underline;
+}
+
+.contact a {
+    display: inline-block;
+    background-color: #7D9162;
+    color: white;
+    padding: 8px 14px;
+    margin-top: 8px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact a:hover {
+    background-color: #6a7e4f;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
