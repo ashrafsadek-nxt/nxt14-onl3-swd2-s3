@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Habiba Elawadly">
+  <meta name ="description" content=">This is my personal portfolio showcasing my skills, projects, and contact information."> 
+  <meta name="keywords" content="portfolio, web development, skills, projects, contact">
+  <link rel="stylesheet" href="assets/CSS/style.css" />
+  <title>Registration page</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 id="sign-up-header">Sign up</h1>
+            <p class="p-header">Join us now!!</p>
+            <div id="google-div">
+                <img src="assets/Images/colored Google.svg" alt="sign up with Google" width="35">
+                <p>Sign up with Google</p>
+            </div>
+            <p class="p-header">or</p>
+        </header>
+        <main>
+            <form action="index.html" method="post" id="registration-form">
+                <label for="first-name" class="form-label">First Name</label>
+                <input type="text" id="first-name" required class="form-input">
+
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="text" id="last-name" required class="form-input">
+
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email"required class="form-input">
+
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" required class="form-input">
+
+                <label for="confirm-password" class="form-label">Confirm Password</label>
+                <input type="password" id="confirm-password" required class="form-input">
+
+                <div id="checkbox-div">
+                    <input type="checkbox" id="terms" required >
+                    <label for="terms" class="form-label">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+
+                <button type="submit" id="submit-button">Sign Up</button>
+            </form>
+        </main>
+        </div>
+    </div>
+</body>
+</html>
