@@ -1,0 +1,634 @@
+:root {
+    --outline: #f7b500;
+    --text-color: #ffffff;
+    --normaltext: gray;
+    --secondry-color: #f7b500;
+    --background-color: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: var(--background-color);
+}
+
+/* ===== NAV ===== */
+nav {
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: black;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav .first {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav h1 {
+    font-size: 50px;
+    color: var(--outline);
+    animation: colorChange 0.1s infinite alternate;
+    cursor: pointer;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+@keyframes colorChange {
+    0% {
+        color: var(--text-color);
+
+    }
+
+    100% {
+        color: var(--secondry-color);
+
+    }
+}
+
+.list1 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: var(--text-color);
+}
+
+.list1 li {
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.list1 li:hover {
+    color: var(--secondry-color);
+    transform: rotate(5deg);
+}
+
+.list1 a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav .second input {
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid var(--outline);
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+    padding-top: 13vh;
+    background: linear-gradient(to right, var(--background-color) 80%, var(--secondry-color) 20%);
+}
+
+.hero .left {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    color: var(--normaltext);
+    position: relative;
+    z-index: 100;
+}
+
+.hero .left .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero .head1 {
+    font-size: 80px;
+    color: var(--text-color);
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--normaltext);
+    width: 0;
+    animation: typing 2s steps(8) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 17ch;
+    }
+
+
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.hero .head2 {
+    font-size: 80px;
+    color: transparent;
+    font-weight: bold;
+    -webkit-text-stroke: 1px gray;
+}
+
+.hero .count {
+    display: flex;
+    gap: 2rem;
+    color: var(--text-color);
+}
+
+.hero .count h3 {
+    font-size: 20px;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+.btn1,
+.btn2 {
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: var(--outline);
+    color: var(--text-color);
+}
+
+.btn2 {
+    background-color: transparent;
+    border: 2px solid var(--outline);
+    color: var(--text-color);
+}
+
+.hero .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: -100px;
+    z-index: 2;
+
+}
+
+
+/* ===== ABOUT ===== */
+.about {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.why {
+    text-align: center;
+}
+
+.why h1 {
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.why hr {
+    width: 45%;
+}
+
+.servx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 250px;
+    height: auto;
+    border: 2px solid var(--secondry-color);
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    border-radius: 1.02em;
+}
+
+.service-box h3 {
+    color: var(--text-color);
+}
+
+.service-box p {
+    color: var(--normaltext);
+    font-size: 14px;
+}
+
+.mid img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-dumbbell,
+.fa-heartbeat,
+.fa-apple-alt,
+.fa-spa {
+    font-size: 2em;
+    color: var(--secondry-color);
+}
+
+.spreate {
+    background: var(--secondry-color);
+    width: 100%;
+    height: 0.5em;
+    border: none;
+}
+
+/* ===== CHOOSE PLAN ===== */
+.choose_plan {
+    margin-top: 5%;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.choose_plan .choose {
+    margin: auto;
+    max-width: 800px;
+}
+
+.choose_plan .choose h1 {
+    color: var(--text-color);
+    font-size: 4rem;
+}
+
+.choose_plan .choose p {
+    color: var(--normaltext);
+}
+
+.fa-check {
+    color: var(--secondry-color);
+}
+
+.plans {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.plan1 {
+    width: 20%;
+    height: 60vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    box-shadow: 0 4px 8px gray;
+    background-color: var(--background-color);
+    border-radius: 1em;
+}
+
+.plan1 hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.plan1 h4 {
+    color: var(--text-color);
+    font-size: 1.2em;
+}
+
+.plan1 p {
+    color: var(--normaltext);
+    text-align: left;
+}
+
+.plan1:hover {
+    background-color: var(--secondry-color);
+}
+
+.plan1:hover .fa-check {
+    color: var(--text-color);
+}
+
+
+/* ===== TEAM ===== */
+.team {
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+    background-image: url(../images/953fac1171d10c9884f64125a8e582ff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+.team .des {
+    text-align: center;
+}
+
+.team .des h1 {
+    color: var(--text-color);
+    font-size: 4rem;
+}
+
+.team .des span {
+    color: var(--secondry-color);
+}
+
+.coaches {
+    margin: 5% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.coach1 {
+    width: 20%;
+    min-width: 200px;
+    background: #111111;
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.coach1:hover {
+    transform: translateY(-5px);
+}
+
+.coach1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.coach1 h3 {
+    color: var(--secondry-color);
+    margin-top: 0.5em;
+}
+
+
+/*====FOOTER=====*/
+footer {
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    /* margin-top: 10%; */
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    align-items: center;
+
+    li {
+        color: var(--normaltext);
+        list-style: none;
+    }
+
+    h1 {
+        font-size: 20px;
+        color: var(--secondry-color);
+    }
+
+    & .first {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        text-align: left;
+        color: var(--normaltext);
+        align-items: start;
+
+        h1 {
+            font-size: 20px;
+            color: var(--secondry-color);
+        }
+    }
+
+    & .second {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+
+        ul {
+            list-style: none;
+        }
+    }
+
+    .second ul,
+    .third ul {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .hero .left,
+    .hero .right {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .btns {
+        justify-content: center;
+    }
+
+    .hero .head1,
+    .hero .head2 {
+        font-size: 50px;
+    }
+
+    .count {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    nav .second input {
+        width: 100px;
+        height: 35px;
+    }
+
+    .list1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .hero {
+        margin-top: 5rem;
+    }
+
+    .hero .head1,
+    .hero .head2 {
+        font-size: 30px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 100%;
+    }
+
+    .count {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .first {
+        flex-direction: column;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero .right img {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    .hero .left h1 {
+        font-size: 32px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 5%;
+    }
+
+    .plan1 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .coaches {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coach1 {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+} */
+@media (max-width: 768px) {
+
+    .team .des h1,
+    .choose_plan .choose h1 {
+        font-size: 2.5rem;
+    }
+
+    .plans,
+    .coaches {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan1,
+    .coach1 {
+        width: 90%;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+
+
+    .servx {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mid img {
+        left: 0;
+        position: static;
+    }
+}
