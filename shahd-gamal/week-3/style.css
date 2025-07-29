@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f4f7;
+  font-family: sans-serif;
+}
+body,
+html {
+  height: 100%;
+}
+
+.outer-container {
+  max-width: 1440px;
+  padding-top: 7.94rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-container {
+  padding: 0 24px;
+  /* gap: 4.8rem; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  align-content: flex-start;
+}
+
+.right-sec {
+  padding-top: 1.25rem;
+  width: 25rem;
+  height: 22.3125rem;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 4px 4px 4.6px -3px rgba(0, 0, 0, 0.01),
+    2px 6px 37px 0 rgba(0, 0, 0, 0.1), 1px 3px 10.6px 0 rgba(0, 0, 0, 0.05);
+  align-items: center;
+  text-align: center;
+}
+
+input[type="email"] {
+  width: 367px;
+  height: 53px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #e8f0fe;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.36);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.email {
+  align-content: center;
+  justify-content: center;
+}
+
+input[type="password"] {
+  width: 367px;
+  height: 53px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  margin-bottom: 13px;
+  color: rgba(0, 0, 0, 0.36);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+input[value="Log in"] {
+  width: 367px;
+  height: 53px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #0866ff;
+  margin-bottom: 13px;
+  color: #fff;
+
+  /* btn */
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+[placeholder] {
+  padding-left: 17px;
+}
+
+.fPass {
+  color: #0866ff;
+
+  /* ques */
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.left-sec {
+  align-self: flex-start;
+  padding-top: 5rem;
+  width: 50%;
+}
+
+.all-right {
+  display: flex;
+  flex-direction: column;
+  height: 25.1125rem;
+}
+
+.all-right p {
+  justify-content: flex-end;
+ 
+  
+}
+
+.border {
+  margin-bottom: 1.56rem;
+  margin-top: 0.94rem;
+  border: 1px solid #d9d9d9;
+}
+
+[value="Create new account"] {
+  width: 12.0625rem;
+  height: 3.3125rem;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  background-color: #42b72a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p{
+  margin-top: auto;
+  align-self: center;
+  
+}
+
+.content p{
+  font-size: 1.7rem;
+}
+span{
+  font-weight: 900;
+}
