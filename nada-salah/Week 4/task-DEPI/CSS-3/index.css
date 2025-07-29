@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.HR {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #1f2937;
+    color: white;
+}
+
+.Text {
+    max-width: 500px;
+}
+
+.image {
+    width: 400px;
+    height: 200px;
+    background-color: #6b7280;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.Data{
+    text-align: center;
+    padding: 50px;
+}
+
+.boX {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.square {
+    width: 130px;
+    height: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+}
+
+
+.wisdom {
+    background-color: #e5e7eb;
+    padding: 50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.Thor {
+    margin-left: 600px;
+    font-weight: bold;
+    display: block;
+   
+}
+
+
+.The-end {
+    background-color: #0557dc;
+    margin: 50px;
+    height: 45px;
+    width: 650px;
+     border-radius: 10px;
+    margin-left: 220px;
+     padding: 30px 50px;
+} 
+
+.h3{
+margin-top: 2px;
+color: aliceblue;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: rgba(255, 255, 255, 0.805);
+    text-align: center;
+    padding: 20px;
+}

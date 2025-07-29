@@ -1,0 +1,17 @@
+div{
+background-color: rgb(29, 159, 159);
+width: 23%;
+height: 250px;
+display: inline-block;
+}
+
+@media only screen and (max-width: 992px){
+    div {
+width: 49%;
+    }
+}
+@media only screen and (max-width: 768px){
+    div {
+width: 100%;
+    }
+}
