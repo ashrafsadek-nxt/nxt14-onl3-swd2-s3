@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="display: flex; align-items: center;">
+                <li style="display: inline;">
+                    <img src="assets/images/logo.jpg">
+                </li>
+                <li style="display: inline;">
+                    <select>
+                        <option selected>information about me</option>
+                        <option value="#aboutme">About me</option>
+                        <option value="#education">Education</option>
+                        <option value="#experience">Experience</option>
+                        <option value="#certification">Certification</option>
+                        <option value="#skills">Skills</option>
+                        <option value="#contact_me">Contact_me</option>
+                    </select> 
+                </li>
+                <li style="display: inline;">
+                    <ul style="display: flex; align-items: center;">
+                        <li style="display: inline;">
+                            <a href="https://www.facebook.com/share/1BjVekFnkK/?mibextid=qi2Omg">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+                                </svg>  
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://www.instagram.com/magdynahed647?igsh=aXN2ZW90ZGp5a3Nu">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="58" height="58" viewBox="0 0 65 65">
+                                    <path d="M 35.75 14 C 15.579 14 14 15.579 14 35.75 L 14 36.25 C 14 56.421 15.579 58 35.75 58 L 36.25 58 C 56.421 58 58 56.421 58 36.25 L 58 35.75 C 58 15.579 56.421 14 36.25 14 L 35.75 14 z M 48.996094 22.5 C 49.825094 22.498 50.498 23.168094 50.5 23.996094 C 50.502 24.825094 49.832906 25.498 49.003906 25.5 C 48.174906 25.502 47.502 24.832906 47.5 24.003906 C 47.498 23.174906 48.167094 22.502 48.996094 22.5 z M 35.976562 26 C 41.498562 25.987 45.987 30.454563 46 35.976562 C 46.013 41.498562 41.545437 45.987 36.023438 46 C 30.501437 46.013 26.013 41.545437 26 36.023438 C 25.987 30.501437 30.454563 26.013 35.976562 26 z M 35.990234 32 C 33.781234 32.006 31.995 33.800766 32 36.009766 C 32.006 38.218766 33.800766 40.005 36.009766 40 C 38.218766 39.995 40.005 38.199234 40 35.990234 C 39.994 33.781234 38.199234 31.995 35.990234 32 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://youtube.com/@nahedmagdy-e7g?si=BayWV6XYg_pQ-52G">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://www.linkedin.com/in/nahed-magdy-969261308">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://github.com/Nahed0000">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li style="display: inline;">
+                    <input type="text"    placeholder="Search" style="display: flex;">
+                </li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <main>
+        <div id="Aboutme">
+            <br>
+            <h1>About me</h1>
+            <div id="about_me">
+                <div id="paragraph_of_about_me">
+                    <p style="display: flex;">
+                        Hi! I’m a passionate Frontend Developer who loves<br>
+                        creating clean, interactive , and user-friendly web<br>
+                        interfaces. I enjoy turning creative ideas into real<br>
+                        digital experiences using HTML, CSS, and <br>JavaScript.<br><br><br>
+                        I’m always eager to learn new technologies and <br>
+                        improve my skills . Whether it’s building<br> responsive  
+                        layouts or solving coding<br> challenges, I love every 
+                        step of the<br> journey in the world of web development.
+                    </p>
+                </div>
+                <div class="intro_to_my_field" >
+                    <h3>Intro To My Field:</h3>
+                    <p>
+                        Watch this short video to learn more <br>
+                        about what I do and why I’m  <br>
+                        passionate about frontend.
+                    </p>
+                    <iframe src="https://www.youtube.com/embed/Zw62a7bXB-Y"></iframe>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div id="education">
+            <br>
+            <h1>Education</h1>
+            <br>
+            <p style="margin-top: 10px; margin-left: 10%;margin-right: 10%;">
+                A student<strong> of Computers and Information – Zagazig University
+                Third-year student –</strong> Computer Science Department
+                2023 – Present
+                Currently studying core subjects such as Programming (C++), Data Structures, Web Development (HTML, CSS, JavaScript), Artificial Intelligence, and Databases.
+            </p>
+            <br>
+            <p style="margin-top: 10px; margin-left: 10%;margin-right: 10%;">
+                I’m passionate about <strong>Frontend Development </strong> and always eager to learn new technologies and tools.
+                I enjoy working on practical projects to improve my coding skills and problem-solving abilities.
+                Actively participating in student activities, teamwork-based projects, and online tech communities.
+                Looking forward to internship opportunities to apply what I’ve learned and gain real-world experienc.
+            </p> 
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div id="experience">
+            <br>
+            <h1>Experience</h1>
+            <p style="margin-top: 50px;margin-left: 10%;margin-right: 10%;">
+                Winter Training at <strong>ITI (Information Technology Institute)</strong>
+                February 2024 – March 2024
+                Attended a winter internship focused on Front-End Development.
+                Completed practical tasks using HTML, CSS, and JavaScript.
+                Gained hands-on experience in responsive design and web development basics.
+            </p>
+            <p  style="margin-top: 50px;margin-left: 10%;margin-right: 10%;">
+                <strong>Digital Egypt Pioneers Initiative – Front-End Track</strong>
+                July 2025 – Present
+                Currently participating in an intensive training program under the Digital Egypt Pioneers initiative.
+                Working on real-world projects to enhance front-end development skills using JavaScript, HTML, CSS, and related technologies.
+                Learning soft skills, freelancing basics, and exploring different career paths
+            </p>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div id="certification">
+            <br>
+            <h1>Certification</h1>
+            <p style="margin-left: 10%;margin-right: 10%;">
+                Winter Training Program – <u>ITI (Information Technology Institute)</u>
+                Completed a winter internship program at ITI, where I gained hands-on experience in Front-End Development and strengthened my technical and teamwork skills.
+                (Jan 2025)
+            </p>
+            <br>
+            <p style="margin-left: 10%;margin-right: 10%;">
+                In Progress:
+                Currently participating in the "Digital Egypt Pioneers"  initiative, aiming to gain more practical skills and certifications in Front-End development.
+                Actively seeking more training opportunities and self-development paths
+            </p> 
+            <br>
+            <br> 
+        </div>
+        <br>
+        <br>
+        <div id="skills">
+            <br> 
+            <h1>Skills</h1>
+            <diV class="parent_technical_skills" >   
+                <section id="skills-container">
+                    <div class="technical-skills">
+                        <h2>Technical Skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    <div class="currently">
+                        <h2>Currently Learning</h2>
+                        <ul>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="soft-skills">
+                        <h2>Soft Skills</h2>
+                        <ul>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                    </div>
+            </section>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Level</th>
+                        </tr>
+                        <tr>
+                            <td>C++(Basic,OOP,Ds)</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>Algorithms</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Very Good</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>Git & GitHub</td>
+                            <td>learning Now</td>
+                        </tr>
+                        <tr>
+                            <td>Communication Skills</td>
+                            <td>Very Good</td>
+                        </tr>
+                        <tr>
+                            <td>Time Management</td>
+                            <td>Very Good</td>
+                        </tr>
+                        <tr>
+                            <td>Canva</td>
+                            <td>Learnning Now</td>
+                        </tr>
+                        <tr>
+                            <td>Figma</td>
+                            <td>Learnning Now</td>
+                        </tr>
+                    </table>
+                </div>     
+            </div> 
+        </div>
+        <br>
+        <br>
+        <div id="contact_me">
+            <br>
+            <br>
+            <h1>Contact_me</h1>
+            <br>
+            <div class="my_email_phone">
+            <ul>
+                <li style="display: inline;">
+                    Email: magdynahed648@gmail.com
+                </li>
+                <li style="display: inline; margin-left: 40%;">
+                    Phone: +20 11 20136551
+                </li>
+            </ul>
+            </div>
+            <br>
+            <p style="margin-left: 10%;margin-right: 10%;">Feel free to reach out to me by filling the form below. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <br>
+            <br>
+            <form action="index.html" method="get" style="margin-left: 10%;margin-right: 10%;">
+                <div class="name_age">
+                    <div>
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name"  placeholder="enter your name" required>
+                    </div>
+                    <div>
+                        <label for="ph">Your Phone</label>
+                        <input type="tel" name="phone" id="ph"  placeholder="enter your phone" required>
+                    </div>
+                    <div>
+                        <label for="age">Your Age</label>
+                        <input type="number" name="age" id="age" placeholder="enter your age">
+                    </div>
+                </div>
+                <br>
+                <div class="email_message">
+                    <div>
+                        <label for="email">Your email</label>
+                        <input type="email" name="email" id="email"placeholder="enter your email" required>
+                    </div>
+                    <div>
+                        <label for="id">Your ID</label>
+                        <input type="number" name="id" id="id" placeholder="enter your id">
+                    </div>
+                    <div>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Enter Your message"  required></textarea>
+                    </div>
+                </div>
+                <div id="submit_reset">
+                    <input type="submit" value="send">
+                    <input type="reset" value="delete" style="margin-left: 20px;">
+                </div>
+            </form>
+            <br>
+            <br>
+        </div>
+    </main>
+    <br>
+    <footer >
+        <hr>
+        <ul >
+                        <li style="display: inline;">
+                            <a href="https://www.facebook.com/share/1BjVekFnkK/?mibextid=qi2Omg">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+                                </svg>  
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://www.instagram.com/magdynahed647?igsh=aXN2ZW90ZGp5a3Nu">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="58" height="58" viewBox="0 0 65 65">
+                                    <path d="M 35.75 14 C 15.579 14 14 15.579 14 35.75 L 14 36.25 C 14 56.421 15.579 58 35.75 58 L 36.25 58 C 56.421 58 58 56.421 58 36.25 L 58 35.75 C 58 15.579 56.421 14 36.25 14 L 35.75 14 z M 48.996094 22.5 C 49.825094 22.498 50.498 23.168094 50.5 23.996094 C 50.502 24.825094 49.832906 25.498 49.003906 25.5 C 48.174906 25.502 47.502 24.832906 47.5 24.003906 C 47.498 23.174906 48.167094 22.502 48.996094 22.5 z M 35.976562 26 C 41.498562 25.987 45.987 30.454563 46 35.976562 C 46.013 41.498562 41.545437 45.987 36.023438 46 C 30.501437 46.013 26.013 41.545437 26 36.023438 C 25.987 30.501437 30.454563 26.013 35.976562 26 z M 35.990234 32 C 33.781234 32.006 31.995 33.800766 32 36.009766 C 32.006 38.218766 33.800766 40.005 36.009766 40 C 38.218766 39.995 40.005 38.199234 40 35.990234 C 39.994 33.781234 38.199234 31.995 35.990234 32 z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://youtube.com/@nahedmagdy-e7g?si=BayWV6XYg_pQ-52G">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://www.linkedin.com/in/nahed-magdy-969261308">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://github.com/Nahed0000">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+
+    </footer>
+</body>
+</html>
