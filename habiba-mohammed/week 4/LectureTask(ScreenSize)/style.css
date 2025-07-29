@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color:darkcyan;
+    height: 100vh;
+}
+.inner{
+    width: 23%;
+    height: 95%;
+    background-color:deeppink;
+    margin: 5px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 576px){
+   .inner{
+        width: 95%;
+        height: 23%;
+    }
+   
+}
+
+@media only screen and (min-width: 576px) and (max-width: 922px){
+    
+    .inner{
+        width: 48%;
+        height: 48%;
+    }
+        
+}
