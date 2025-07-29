@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="dashboard">
+    <meta name="keywords" content="dashboard">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <nav>
+        <div class="brand">
+            <div class="logo">
+                <p>MA</p>
+            </div>
+
+            <div class="info">
+                <P class="name">MAZEN_AHMED</P>
+                <P class="job" style="color: gray;">data analyst</P>
+            </div>
+        </div>
+
+        <div>
+            <ul>
+                <!-- links &icons to {dashboard,reports,promps,settings,logout} -->
+                <li><a href="#"> <i class="fa-solid fa-chart-line fa-bounce"></i> <span>Dashboard</span></a></li>
+                <li><a href="#"> <i class="fa-solid fa-file fa-beat"></i> <span>Reports</span></a></li>
+                <li><a href="#"> <i class="fa-solid fa-globe fa-bounce"></i> <span>Promps</span></a></li>
+                <li><a href="#"> <i class="fa-solid fa-gear fa-beat"></i> <span>Settings</span></a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <header>
+        <div class="address">
+            <p class="title">Dashboard</p>
+            <p class="subtitle">Monitor your brand's visibility across AI models</p>
+        </div>
+        <div class="report">
+            <button class="graybtn"> live data</button>
+            <button class="bluebtn"> <i class="fa-solid fa-download"></i> Export report</button>
+        </div>
+    </header>
+    <main>
+        <section class="cards">
+            <div class="cara1 card">
+                <section class="upper">
+                    <div class="icon">
+                        <i class="fa-regular fa-eye" style="color: #3B82F6;"></i>
+                    </div>
+                    <div class="details">
+                        <p style="color:#22C55E; font-size:.62rem;"><i class="fa-solid fa-arrow-trend-up"> +12.5%</i></p>
+
+                    </div>
+                </section>
+                <section class="lower">
+
+                    <p class="score">8.4</p>
+                    <p class="score_text">Visibility Score</p>
+                </section>
+            </div>
+            <div class="cara2 card">
+                <section class="upper">
+                    <div class="icon">
+                       <i class="fa-solid fa-bullseye" style="color: #22C55E;"></i>
+                    </div>
+                    <div class="details">
+                        <p style="color:#22C55E; font-size:.62rem;"><i class="fa-solid fa-arrow-trend-up"> +8.2%</i></p>
+
+                    </div>
+                </section>
+                <section class="lower">
+
+                    <p class="score">74%</p>
+                    <p class="score_text">Presence Score</p>
+                </section>
+            </div>
+            <div class="cara3 card">
+                <section class="upper">
+                    <div class="icon">
+                        <i class="fa-solid fa-trophy" style="color: #f7ad00;"></i>
+                    </div>
+                    <div class="details" >
+                        <p style="color:#EF4444; font-size:.62rem;"><i class="fa-solid fa-arrow-trend-up"> -0.4%</i></p>
+
+                    </div>
+                </section>
+                <section class="lower">
+
+                    <p class="score">2.3</p>
+                    <p class="score_text">Average Rank</p>
+                </section>
+            </div>
+            <div class="cara4 card">
+                <section class="upper">
+                    <div class="icon">
+                        <i class="fa-regular fa-message" style="color: #8B5CF6; font-size: 20px; "></i>
+                    </div>
+                    <div class="details">
+                        <p style="color:#22C55E; font-size:.62rem;"><i class="fa-solid fa-arrow-trend-up"> +32.3%</i></p>
+
+                    </div>
+                </section>
+                <section class="lower">
+
+                    <p class="score">1,247</p>
+                    <p class="score_text">Mentions</p>
+                </section>
+            </div>
+        </section>
+        <section class="graphs">
+            <div class="linechart">
+                <div class="lineinfo">
+                    <p>Visibility & Presence Trends</p>
+                    <p style="color: #A4AFC1; font-size: small;">Track your brand's performance across AI models over the last 7 days</p>
+
+                </div>
+            <canvas id="myChart" width="400" height="200"></canvas>
+            </div>
+             <div id="container">
+                <div class="pieinfo">
+                    <p style="font-weight: bolder ; color: white;">Site Optimization Score</p>
+                    <p style="color: #A4AFC1; font-size: small;">LLM visibility optimization status</p>
+                </div>
+   <canvas id="myDoughnutChart" width="300" height="300" style="width: 250px; height: 250px;"></canvas>
+
+    <div id="center-text">74%</div>
+  </div>
+
+        </section>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
