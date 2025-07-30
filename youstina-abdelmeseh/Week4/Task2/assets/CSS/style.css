@@ -1,5 +1,4 @@
 body{
-    position: relative;
     background-color: rgb(212, 241, 253);
     margin:0;
     padding:0;
@@ -46,8 +45,6 @@ h1{
 }
 #all-cards{
     margin:0 auto;
-    left: 40vh;
-    top:15vh;
     display: flex;
     gap:25px;
     justify-content: center;
