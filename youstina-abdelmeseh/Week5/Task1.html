@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>JS</title>
+    <style>
+        #Calculations{
+            position: relative;
+            top:100px;
+            left:30%;
+            width: 40%;
+            height: 68vh;
+            box-shadow: 5px 10px 18px #888888;
+            overflow: hidden;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+        }
+        button{
+            background-color: #4CAF50;
+            color: white;
+            border: #4CAF50;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        button:hover{
+             background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="Calculations">
+        <h1>Your Culculator !</h1>
+            <div style="margin: 40px 50px 40px 30px; font-size: 20px;" id="choose-method">
+                <div>Choose the method:</div>
+                <br>
+                <input type="radio" name="method" id="sum" value="sum">
+                <label for="sum">Summation</label>
+                <input type="radio" name="method" id="multiply" value="times">
+                <label for="multiply">multiplication</label>
+            </div>
+            <div style="margin: 40px 50px 40px 30px; font-size: 20px;"id="enter-no">
+                <div>Enter the 2 numbers: </div>
+                <br>
+                <label for="first-no">First number:</label>
+                <input type="number" name="first-no" id="first-no">
+                <br>
+                <br>
+                <label for="second-no">Second number:</label>
+                <input type="number" name="second-no" id="second-no">
+            </div>
+             <p style="font-size: 20px; text-align: start; margin-left: 140px;" id="result-holder"> </p>
+            <button type="button" style=" padding:14px;" id="calc" onclick="calc()">Culculate</button>
+    </div>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
