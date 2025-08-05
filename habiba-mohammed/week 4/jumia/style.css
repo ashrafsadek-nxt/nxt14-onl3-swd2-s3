@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(246, 241, 241);
+}
+#nav1{
+    background-image: url('../Images/jumia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8vh;
+}
+#nav2{
+    background-color:rgb(246, 241, 241);
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ul1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 60px;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#p1{
+    color:darkorange;
+    font-size: small;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#p2{
+    font-weight: bolder;
+}
+#p3{
+    color: rgb(160, 155, 155);
+}
+#p4{
+    color: rgb(160, 155, 155);
+    font-size: small;
+}
+#nav3{
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#ul2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+}
+#p5{
+    font-weight: bolder;
+    font-size: xx-large;
+    cursor: pointer;
+} 
+.p6{
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+.p6:hover{
+    color: darkorange;
+}
+#search{
+    width: 270px;
+    height: 35px;
+    padding: 5px;
+    cursor:auto;
+}
+#button{
+    background-color: darkorange;
+    color: white;
+    height: 35px;
+    padding: 5px;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#button:hover{
+    filter: brightness(90%);
+}
+.pla{
+    font-size:larger;
+}
