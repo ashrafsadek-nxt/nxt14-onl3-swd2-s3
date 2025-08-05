@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Show Object Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Information</h1>
+        <button id="showBtn">Show Me</button>
+        <div id="output"></div>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 25px 35px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+
+
+const person = {
+    firstName: "Kenzie",
+    lastName: "Ahmed",
+    age: 21,
+    occupation: "Frontend Developer"
+};
+
+document.getElementById("showBtn").addEventListener("click", function () {
+    const outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = `
+    <p><strong>First Name:</strong> ${person.firstName}</p>
+    <p><strong>Last Name:</strong> ${person.lastName}</p>
+    <p><strong>Age:</strong> ${person.age}</p>
+    <p><strong>Occupation:</strong> ${person.occupation}</p>
+  `;
+});
