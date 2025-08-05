@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Task</title>
+  </head>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 300px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    input,
+    select,
+    button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    #result {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    #output {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+  <body>
+    <h1>Simple Calculator</h1>
+    <form id="calculator">
+      <input type="number" id="num1" placeholder="first number" required />
+      <select id="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+      </select>
+      <input type="number" id="num2" placeholder="second number" required />
+      <button type="button" onclick="calculate()">Calculate</button>
+      <div id="result">Result: <span id="output"></span></div>
+    </form>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
