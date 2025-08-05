@@ -2,17 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Show Object Info</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div class="container">
         <h1>User Information</h1>
         <button id="showBtn">Show Me</button>
-        <div id="output"></div>
+
+        <div class="info-grid">
+            <div class="info-box" id="firstNameDiv"></div>
+            <div class="info-box" id="lastNameDiv"></div>
+            <div class="info-box" id="ageDiv"></div>
+            <div class="info-box" id="occupationDiv"></div>
+        </div>
     </div>
+
     <script src="code.js"></script>
 </body>
 
@@ -23,7 +30,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #eef2f5;
+    background-color: #f0f4f8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,24 +39,40 @@ body {
 }
 
 .container {
-    background-color: #fff;
-    padding: 25px 35px;
-    border-radius: 10px;
-    text-align: center;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
+    margin: 20px 0;
     cursor: pointer;
 }
 
-#output {
-    margin-top: 20px;
-    font-size: 18px;
+.info-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.info-box {
+    width: 150px;
+    height: 150px;
+    background-color: #e6f0ff;
+    border: 2px solid #3399ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -61,12 +84,10 @@ const person = {
     occupation: "Frontend Developer"
 };
 
+
 document.getElementById("showBtn").addEventListener("click", function () {
-    const outputDiv = document.getElementById("output");
-    outputDiv.innerHTML = `
-    <p><strong>First Name:</strong> ${person.firstName}</p>
-    <p><strong>Last Name:</strong> ${person.lastName}</p>
-    <p><strong>Age:</strong> ${person.age}</p>
-    <p><strong>Occupation:</strong> ${person.occupation}</p>
-  `;
+    document.getElementById("firstNameDiv").textContent = `First Name: ${person.firstName}`;
+    document.getElementById("lastNameDiv").textContent = `Last Name: ${person.lastName}`;
+    document.getElementById("ageDiv").textContent = `Age: ${person.age}`;
+    document.getElementById("occupationDiv").textContent = `Occupation: ${person.occupation}`;
 });
