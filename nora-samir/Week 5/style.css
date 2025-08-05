@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(245, 235, 220);
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    box-shadow: 4px 4px 10px rgb(188, 184, 184);
+}
