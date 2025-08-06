@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button {
+    margin: 40px;
+    /* width: 40px; */
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 150px;
+    background-color: blue;
+    color: #ffffff;
+    transition: background-color 0.3s;
+
+    & .moon {
+        width: 20px;
+    }
+}
+
+button:hover {
+    background-color: #0056b3;
+}
