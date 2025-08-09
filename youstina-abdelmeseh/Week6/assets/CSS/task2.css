@@ -1,0 +1,11 @@
+#container.Dark{
+    color:white;
+    background: black;
+}
+#container{
+    color:black;
+    background-color: white;
+    width:30%;
+    margin-left: 40px;
+    padding: 20px;
+}
