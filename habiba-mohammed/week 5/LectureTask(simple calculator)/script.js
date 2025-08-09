@@ -26,4 +26,8 @@ function result()
     {
         document.getElementById('result').innerText = num1 / num2;
     }
+    else
+    {
+        document.getElementById('result').innerText = "Error";
+    }
 }
