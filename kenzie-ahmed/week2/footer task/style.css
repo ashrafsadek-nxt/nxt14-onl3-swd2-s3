@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-center {
+    justify-content: center;
+}
+
+.footer-center a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-center a:hover {
+    transform: scale(1.2);
+    color: #00aced;
+}
+
+.footer-right i {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
