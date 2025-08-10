@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.info-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-box {
+    width: 150px;
+    height: 150px;
+    background-color: #e6f0ff;
+    border: 2px solid #3399ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+const person = {
+    firstName: "Kenzie",
+    lastName: "Ahmed",
+    age: 21,
+    occupation: "Frontend Developer"
+};
+
+
+document.getElementById("showBtn").addEventListener("click", function () {
+    document.getElementById("firstNameDiv").textContent = `First Name: ${person.firstName}`;
+    document.getElementById("lastNameDiv").textContent = `Last Name: ${person.lastName}`;
+    document.getElementById("ageDiv").textContent = `Age: ${person.age}`;
+    document.getElementById("occupationDiv").textContent = `Occupation: ${person.occupation}`;
+});
