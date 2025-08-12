@@ -5,7 +5,7 @@ function makecards()
     if(flag == false)
     {
         for(var i = 0; i < 4; i++){
-            divs.innerHTML += "<div class ='card'><h4>heading</h4><p>paragraph</p></div>";
+            divs.innerHTML += "<div class ='card'></p></div>";
         }
         flag = true;
     }
