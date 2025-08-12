@@ -1,15 +1,16 @@
+var btn = document.getElementById('mode');
+btn.addEventListener("click",mode)
 function mode(){
-    var mode = document.getElementById('mode');
     const all = document.getElementById('all');
-    let modevalue = mode.innerText;
+    let modevalue = btn.innerText;
 
     all.classList.toggle('dark')
     if(modevalue == 'dark')
     {
-        mode.innerText = 'light';
+        btn.innerText = 'light';
     }
     else if(modevalue =='light')
     {
-        mode.innerText = 'dark';
+        btn.innerText = 'dark';
     }
 }
