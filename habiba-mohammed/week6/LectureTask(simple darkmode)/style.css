@@ -1,0 +1,15 @@
+#all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+.dark{
+    background-color:black;
+    color: white;
+}
+.light{
+    background-color:white;
+    color: black;
+}
