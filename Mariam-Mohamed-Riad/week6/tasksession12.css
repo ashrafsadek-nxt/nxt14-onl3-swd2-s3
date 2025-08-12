@@ -1,0 +1,33 @@
+body{
+    background-color: #cc8080;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+#Btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4b594c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background-color: #edcece;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
