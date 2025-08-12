@@ -1,19 +1,19 @@
-function mode(){
-    var mode = document.getElementById('mode');
-    const all = document.getElementById('all');
-    let modevalue = mode.innerText;
-
-    if(modevalue == 'dark')
-    {
-        all.classList.add('dark');
-        all.classList.remove('light');
-        mode.innerText = 'light';
-    }
-    else if(modevalue =='light')
-    {
-        all.classList.add('light');
-        all.classList.remove('dark');
-        mode.innerText = 'dark';
-    }
-}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/darkmode.css">
+</head>
+<body>
+    <div id="all">
+        <h1>hello</h1>
+        <button id="mode">dark</button>
+    </div>
+    <script src="assets/JS/darkmode.js"></script>
+</body>
+</html>
