@@ -5,7 +5,7 @@ function makecards()
     if(flag == false)
     {
         for(var i = 0; i < 4; i++){
-            divs.innerHTML += "<div class ='card'></p></div>";
+            divs.innerHTML += `<div class ="card">${i+1}</div>`;
         }
         flag = true;
     }
