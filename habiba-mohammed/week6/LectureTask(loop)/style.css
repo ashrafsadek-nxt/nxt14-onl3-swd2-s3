@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 50vh;
+    border: 3px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    margin-left: 10px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
