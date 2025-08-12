@@ -1,0 +1,15 @@
+function mode(){
+    var mode = document.getElementById('mode');
+    const all = document.getElementById('all');
+    let modevalue = mode.innerText;
+
+    all.classList.toggle('dark')
+    if(modevalue == 'dark')
+    {
+        mode.innerText = 'light';
+    }
+    else if(modevalue =='light')
+    {
+        mode.innerText = 'dark';
+    }
+}
