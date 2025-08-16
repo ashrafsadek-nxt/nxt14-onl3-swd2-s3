@@ -1,0 +1,91 @@
+:root {
+    --bad: #c00;
+    --ok: #0a7a0a;
+    --ink: #222;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+}
+
+.card {
+    max-width: 760px;
+    margin: auto;
+    background: #fff;
+    padding: 24px 28px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    border: 3px solid #333;
+}
+
+label {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111;
+    margin-inline-end: 12px;
+    vertical-align: middle;
+}
+
+input {
+    width: 60%;
+    max-width: 420px;
+    font-size: 22px;
+    padding: .5rem .75rem;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+    outline: none;
+    vertical-align: middle;
+}
+
+input:focus {
+    border-color: #666
+}
+
+#status {
+    display: inline-block;
+    margin-inline-start: 14px;
+    font-size: 28px;
+    font-weight: 700
+}
+
+.bad {
+    color: var(--bad)
+}
+
+.ok {
+    color: var(--ok)
+}
+
+ul {
+    margin: 14px 0 0 0;
+    padding-inline-start: 22px;
+    list-style: disc
+}
+
+li {
+    font-size: 32px;
+    color: var(--bad);
+    margin: .25rem 0
+}
+
+.hint {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px
+}
+
+button {
+    margin-top: 14px;
+    padding: .6rem 1.1rem;
+    font-size: 22px;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    background: #f4f4f4;
+    cursor: pointer
+}
+
+button:disabled {
+    opacity: .5;
+    cursor: not-allowed
+}
