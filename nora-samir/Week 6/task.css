@@ -1,0 +1,31 @@
+.card{
+    width:20%;
+    height:25vh;
+    border:2px solid rgb(218, 162, 143);
+    border-radius:  12px;
+    box-shadow: 0px 4px 10px rgb(142, 138, 138)  ;
+    margin-left: 20px;
+    text-align: center;
+    /* padding: 70px 10px 10px 10px; */
+    margin-top: 20px;
+    background-color:rgb(218, 162, 143);
+    color: white;
+    align-content:center ;
+}
+#container{
+    display: flex;
+}
+#mybtn{
+    width:50px;
+     box-shadow: 0px 4px 10px lightgray  ;
+     background-color: black;
+     color: aliceblue;
+     padding: 10px;
+    transition: 0.1s all ease-in-out 0.3s;
+
+}
+#mybtn:hover{
+    transform: scale(1.02);
+    background-color: rgb(54, 43, 39);
+    
+}

@@ -1,0 +1,22 @@
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.style{
+    background-color: black;
+    color:white;
+}
+button{
+    background-color: rgb(250, 253, 253);
+    width: 150px;
+    align-content: center;
+    padding: 20px;
+    margin: 50px;
+    border: 1px solid rgb(235, 238, 238);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px;
+}
