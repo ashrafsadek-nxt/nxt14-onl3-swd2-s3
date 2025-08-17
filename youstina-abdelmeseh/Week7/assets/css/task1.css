@@ -1,0 +1,21 @@
+#pass{
+    padding: 5px;
+}
+#password{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+#check{
+    display: block;
+    margin-top: 50px;
+    margin-left: 190px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(26, 149, 26);
+    color: white;
+    font-size: 15px;
+}
+#check:hover{
+    background-color: rgb(42, 165, 42);
+}
