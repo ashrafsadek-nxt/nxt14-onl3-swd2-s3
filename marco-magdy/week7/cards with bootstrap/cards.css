@@ -1,0 +1,37 @@
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card:hover img{
+    transform: translate(-28px, -28px) scale(0.8);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-body{
+    transform:scale(0) translate(0px, 120px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card:hover .card-body{
+    transform:scale(1) translate(0px, -70px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .card:hover img{
+    transform: translate(-18px, -18px) scale(0.8);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card:hover .card-body{
+    transform:scale(1) translate(0px, -40px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+}
