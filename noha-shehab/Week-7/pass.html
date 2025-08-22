@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task</title>
+  </head>
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+    }
+    .passgroup {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .passgroup input {
+      width: 150px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .passgroup label {
+      font-size: 16px;
+    }
+    .passgroup button {
+      width: 100px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    .passgroup button:hover {
+      background-color: #0056b3;
+    }
+    .passgroup span {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+  <body>
+    <div class="passgroup">
+      <label for="pass">password</label>
+      <input type="password" name="password" id="pass" />
+      <span id="message"></span>
+      <button>validate</button>
+    </div>
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
