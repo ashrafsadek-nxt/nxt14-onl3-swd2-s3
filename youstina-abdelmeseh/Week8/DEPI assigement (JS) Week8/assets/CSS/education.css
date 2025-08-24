@@ -1,0 +1,78 @@
+#education-content{
+    flex:1;
+    margin: 40px 40px 40px 220px;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+#school-period{
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #6F4D38;
+    width: 300px;
+    height: 320px;
+    color:white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 15px;
+}
+#school-period:hover{
+ transform: scale(1.1);
+}
+#univeristy-period{
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #D5B893;
+    width: 320px;
+    height: 320px;
+    color:black;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left:180px;
+}
+#univeristy-period:hover{
+ transform: scale(1.1);
+}
+@media only screen and (max-width: 991px) {
+    #education-content {
+        margin: 20px;
+        text-align: center;
+    }
+    
+    #school-period, #univeristy-period {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+        font-size: 18px;
+        height: auto;
+        min-height: 280px;
+    }
+    
+    #univeristy-period {
+        margin-left: auto;
+    }
+    
+    #school-period:hover, #univeristy-period:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #education-content {
+        margin: 10px;
+    }
+    
+    #school-period, #univeristy-period {
+        width: 95%;
+        padding: 15px;
+        font-size: 16px;
+        margin: 15px auto;
+    }
+    
+    #school-period:hover, #univeristy-period:hover {
+        transform: none;
+    }
+}

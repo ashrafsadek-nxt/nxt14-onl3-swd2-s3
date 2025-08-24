@@ -1,0 +1,44 @@
+#contact-content{
+    transition: all 0.3s ease;
+    flex:1;
+    background-color: #617891;
+    width:550px;
+    min-height: 500px;
+    border-radius: 15px;
+    margin:30px 0px 70px 460px;
+    padding: 25px 25px 55px 25px;
+    color:white;
+    font-size: 20px;
+}
+#contact-content:hover{
+    transform: scale(1.1);
+}
+#contact-space, #contact{
+    padding:10px;
+}
+@media only screen and (max-width: 991px) {
+    #contact-content {
+        width: 90%;
+        margin: 30px auto 70px auto;
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+    #contact-content:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #contact-content {
+        width: 95%;
+        margin: 20px auto 40px auto;
+        padding: 15px;
+        font-size: 16px;
+        min-height: 400px;
+    }
+    
+    #contact-content:hover {
+        transform: none;
+    }
+}
