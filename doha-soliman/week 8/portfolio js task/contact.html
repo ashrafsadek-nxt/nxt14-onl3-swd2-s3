@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> contact </title>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h2> contact</h2>
+        <form id="form" action="contact.html" method="get">
+            <label for="name"> name </label>
+            <input type="text" class="input" id="Name" name="name" >
+            <br>
+            <label for="age"> date of birth </label>
+            <input type="date"  id="age" name="date of birth" >
+            <br>
+            <label for="email"> email </label>
+            <input type="email"id="email" name="email">
+            <br>
+            <span> GENDER </span>
+            <br>
+            <div class="gender">
+                <div class="option">
+                    <label for="female"> female </label>
+                    <input type="radio"  id="female" name="gender" value="female" >
+                </div>
+                <div class="option">
+                    <label for="male"> male </label>
+                    <input type="radio" id="male" name="gender" value="male" >
+                </div>
+
+            </div>
+            <br>
+            <span> reason of contact </span>
+            <div class="text">
+            <textarea name="purpose" id="box" cols="15" rows="5" minlength="6" maxlength="50"></textarea>
+            </div>
+            <br>
+            <button type="submit"> save </button>
+            <button type="reset" > delete </button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="form.js"></script>
+</body>
+</html>
