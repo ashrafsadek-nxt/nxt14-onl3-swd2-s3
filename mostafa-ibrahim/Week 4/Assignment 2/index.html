@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Josefin+Sans:ital,wght@0,500;1,500&family=Libre+Baskerville&family=Merriweather&family=Open+Sans:ital,wght@1,500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span class="_span">lio</span></h2>
+            <ul>
+                <li><a href="#hero">home</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#service">services</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+            <a href="#" class="btn">subscribe</a>
+        </nav>
+        <div class="contact">
+            <h4>Hello, my name is</h4>
+            <h1>Mostafa <span class="deif">Deif</span></h1>
+            <h3>I'm a Web Developer</h3>
+            <div class="sign">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name="submit" value="Lets Start">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="main">
+            <img class="myig" src="./WhatsApp Image 2023-08-05 at 13.32.17.jpg" alt="Me">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Student <span>& Developer</span></h5>
+                <p>I'm a software student at Benha National University, passionate about building modern, responsive websites using React, Next.js, and Firebase. I'm on a journey to become a full-stack developer.</p>
+                <button type="button">Let's Talk</button>
+            </div>
+        </div>
+    </section>
+    <!--service start -->
+    <div class="service" id="service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Web Developer</h5>
+                <div class="pra">
+                    <p>Building modern, responsive websites and web apps tailored to your needs.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-regular fa-user"></i>
+                <h5>UI/UX Design</h5>
+                <div class="pra">
+                    <p>Designing intuitive and engaging user interfaces for a seamless experience.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <i class="fa-regular fa-bell"></i>
+                <h5>Consulting</h5>
+                <div class="pra">
+                    <p>Offering expert advice on web technologies and project planning.</p>
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <div class="title">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-list">
+            <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-item"><i class="fa-brands fa-react"></i> React</div>
+            <div class="skill-item"><i class="fa-brands fa-node"></i> Node.js</div>
+            <div class="skill-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section class="contact-section" id="contact">
+        <div class="title">
+            <h2>Contact Me</h2>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer-social">
+            <a href="mailto:mostafa@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 Mostafa Deif. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
