@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="Assigment-3.css">
+    <title>My Website</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar Toggle and Links -->
+        <nav>
+            <h2>My Website</h2>
+            <div id="Toggle" class="menu-toggle">☰</div>
+            <ul id="menue-Sm-Size">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- button = hover , transform and transition -->
+        <div>
+            <button id="btn" class="btn">Click Me</button>
+        </div>
+        <hr>
+       <!-- Contact Form -->
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    </main>
+</body>
+<script src="Assigment-3.js"></script>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">MyBrand</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#Links">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse " id="Links">
+                <ul class="navbar-nav mx-auto  ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    </li >
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+                        <button class="btn btn-outline-light ms-auto">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- Forms -->
+    <div class="container">
+        <h1 class="text-primary text-center">Forms</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form class="p-5 border rounded shadow bg-secondary text-white">
+                    <div class="mb-3">
+                        <label for="txt" class="form-label">UserName</label>
+                        <input type="text" id="txt" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pass" class="form-label">password</label>
+                        <input type="password" id="pass" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="email" id="Email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <input type="checkbox" id="chick" class="form-check-input">
+                        <label for="chick" class="form-check-label">Remember me</label>
+                    </div>
+                    <button class="btn btn-outline-primary btn-light">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+<!-- Search -->
+    <div class="container">
+        <form class="d-flex">
+            <input type="search" placeholder="Ask Me..." class="form-control p-3">
+            <button class="btn btn-outline-success mx-3">Search</button>   
+        </form>
+    </div>
+    <br><hr>
+
+<!--Form - grad  -->
+    <div class="container">
+        <form class="my-4">
+            <div class="row">
+                    <div class="col-6 ">
+                        <input type="text" class="form-control" placeholder="UserName">
+                    </div>
+                    <div class="col-6 ">
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <button class="btn btn-warning w-100 p-2 text-center text-white mt-4" >Submit</button>
+            </div>
+        </form>
+    </div>
+    <br><hr>
+
+<!-- Meesage by text Erea -->
+    <div class="container">
+        <label for="mess" class="form-label ">Message</label>
+        <textarea name="mess" id="mess" class="form-control p-3 " rows="6" placeholder="Write Message Here..."></textarea>
+    </div>
+    <br><hr>
+
+<!-- Select -->
+    <div class="container">
+        <label for="coun" class="form-label text-danger fs-5 fw-bold">Country</label>
+        <select class="form-select" id="coun" >
+            <option selected>Choose Country .....</option>
+            <option value="1">Egypt</option>
+            <option value="2">Ksa</option>
+            <option value="3">UAE</option>
+            <option value="4">soudia</option>
+            <option value="5">phalastin</option>
+        </select>
+    </div>
+    <br><hr>
+
+<!-- Check box -->
+ <div class="container">
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="gender" id="male">
+        <label for="male" class="form-check-label">Male</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="gender" id="female">
+        <label for="female" class="form-check-label">Female</label>
+    </div>
+</div>
+                                                                                   
+<br><br><hr>
+<!-- Carousel -->
+    <div class="carousel slide mx-5 my-5 " id="carousel" >
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="Picture/Slide1.jpg" class="d-block w-100 " alt="1" style="height: 400px; ">
+            </div>
+            <div class="carousel-item">
+                <img src="Picture/Slide2.jpg" class="d-block w-100" alt="2" style="height: 400px; ">
+            </div>
+            <div class="carousel-item">
+                <img src="Picture/Slide3.jpg" class="d-block w-100" alt="3" style="height: 400px; ">
+            </div>
+            <div class="carousel-item">
+                <img src="Picture/Slide4.jpg" class="d-block w-100" alt="4" style="height: 400px; ">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Card -->
+     <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="Picture/Slide4.jpg" class="card-img-top" alt="img">
+            <div class="card-body">
+                <h3 class="card-title">Wilcome</h3>
+                <p class="card-text">zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
+                <a href="#" class="btn btn-outline-primary">Enter</a>
+            </div>
+        </div>
+     </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
