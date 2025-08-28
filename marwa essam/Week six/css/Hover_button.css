@@ -1,0 +1,23 @@
+#btn{
+    height: 50px;
+    background-color: rgba(205, 92, 92, 0.708);
+    color: aliceblue;
+
+}
+#container{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+   border: 5px solid rgba(230, 201, 191, 0.472);
+   border-radius: 20px;
+   padding: 20px;
+    background-color: rgba(0, 191, 255, 0.513);
+    gap: 50px;
+  
+
+}
+.hide{
+    display: none;
+}
