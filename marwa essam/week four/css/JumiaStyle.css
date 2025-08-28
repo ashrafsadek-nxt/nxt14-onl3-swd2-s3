@@ -1,0 +1,70 @@
+#offertap{
+
+height:30px ;
+background-color: rgba(133, 53, 207, 0.667);
+  position: sticky;
+    top:0px;
+border-radius: 5px;
+
+
+}
+#imgoffer{
+    height: 75%;
+    width: 100%;
+    position:relative ;
+    top : 5px;
+    
+  
+}
+
+#sec{
+    height: 20px;
+    background-color:rgba(134, 134, 134, 0.143);
+   
+}
+#imgicon{
+   height: 10px;
+   position: relative;
+   left: 3px;
+   top: 2px;
+}
+#sell{
+
+   text-align: left;
+   font-size: x-small;
+   text-decoration: none;
+   color: chocolate;
+}
+#container{
+    background-color:rgba(240, 248, 255, 0.739);
+    height: 70px;;
+}
+.head{
+ display: inline-block;
+    color:chocolate; 
+  text-shadow: 5px 5px  10px rgba(253, 105, 0, 0.865);
+    
+}
+#searchTap , #btn {
+    position: relative;
+    left: 70px;
+}
+#btn{
+    background-color: rgba(253, 105, 0, 0.865);
+}
+#nav{
+  font-size: small;
+  position: relative;
+ bottom:50px ;
+ right: 40px;
+  text-align:right;
+}
+.imgSmallIcon{
+    height: 10px;
+}
+.navicon:hover {
+   color: chocolate;
+}
+body{
+    height: 2000px;
+}

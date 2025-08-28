@@ -1,0 +1,33 @@
+#container{
+    display: flex;
+    background-color: rgba(217, 237, 237, 0.356);
+    height: 400px;
+    color: brown;
+    gap:10px;
+    justify-content: center;
+}
+.cardStyle{
+    background-image: url(/assets/images/OIP\ \(1\).webp);
+    background-size: cover;
+    height: 200px;
+    width: 150px;
+}
+@media(max-width : 600px){
+    #container{
+        flex-direction: column;
+    }
+    .cardStyle{
+        width: 100%;
+       background-size: contain;
+       background-position: center;
+       background-repeat: no-repeat;
+    }
+}
+@media (min-width : 601px)and(max-width : 992px){
+    #container{
+        flex-wrap:wrap ;
+    }
+    .cardStyle{
+        width: 50%;
+    }
+}
