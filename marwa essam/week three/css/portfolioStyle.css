@@ -1,0 +1,41 @@
+.header{
+    background-color: rgb(43, 186, 226);
+    font-size: large;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border:greenyellow  ;
+    border-radius: 60px;
+}
+
+#sec{
+    background-color: rgb(188, 144, 144);
+     font-size: small;
+     border: 5px rgb(115, 67, 67) solid;
+     border-radius: 35px 0px;
+     width:max-content;
+     text-align: center;
+}
+.project{
+    background-color: blanchedalmond;
+    width :max-content;
+    text-align: center;
+    border: 10px solid rgb(36, 160, 15) ;
+    border-radius: 50px 0px ;
+}
+
+.plang{
+    background-color: rgb(230, 24, 182);
+    width: max-content;
+}
+.con{
+   
+    color: rgb(15, 56, 12);
+    font-size: medium;
+   
+}
+.foo{
+    background-color: rgb(172, 172, 195);
+    border-radius: 40px ; 
+    
+}
