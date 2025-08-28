@@ -1,0 +1,19 @@
+#container{
+    height: 300px;
+   
+
+}
+.cards{
+    height: 100px;
+    width:50%;
+    background-color: rgba(117, 64, 143, 0.327);
+    border :solid violet 5px ;
+    padding: 30px;
+    margin: 30px;
+    position: relative;
+    left: 70px;
+   
+}
+.hide{
+    display: none;
+}
