@@ -1,0 +1,24 @@
+
+/* Hero Social Hover */
+.social-link:hover {
+  color: #c9a227 !important; /* دهبي */
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-in-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+section, .skills, .timeline, .vision, .projects-section, .contact-section {
+  opacity: 0;
+  transform: translateY(50px);
+}
