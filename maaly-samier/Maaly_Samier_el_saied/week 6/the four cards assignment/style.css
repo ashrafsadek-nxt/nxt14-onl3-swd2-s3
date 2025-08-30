@@ -1,0 +1,41 @@
+/* Parent: arranges children side by side */
+#container {
+    display: flex;
+    flex-wrap: wrap; /* allow them to go to the next line if too many */
+    gap: 20px;       /* space between cards */
+    justify-content: center; /* center the row */
+    margin-top: 20px;
+}
+
+/* Each card */
+.card {
+    height: 50vh;
+    width: 23%;
+    border: 3px solid gray;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+h1{
+    display: grid;/* just trying using grid :) */
+    justify-content: center;
+    color: lightslategray;
+}
+#go{
+    background-color: green;
+    color:white;
+    padding :12px 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+#go:hover{
+background-color: darkgreen;
+    box-shadow: 5px 5px 5px rgb(151, 145, 145);
+
+}

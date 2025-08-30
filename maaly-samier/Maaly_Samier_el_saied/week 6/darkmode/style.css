@@ -1,0 +1,20 @@
+button{
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(13, 72, 92);
+padding: 15px 30px ;
+display: felx;
+justify-content: center ;
+align-items: center;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: rgb(63, 117, 161);
+    box-shadow: -2px 2px 5px rgb(0, 0, 0);
+}
