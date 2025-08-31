@@ -1,0 +1,28 @@
+  body{
+    background-color: #F6F5EC;
+    text-align: center;
+    
+}
+nav{
+   display:flex;
+    justify-content:center;
+    align-items: center;
+}
+table{
+    border: 2px solid black;
+    text-align: center;
+    width: 600px;
+}
+table td ,tr{
+     border: 1px solid black;
+}
+#text{
+  text-align: center;
+  background-color: rgb(179, 160, 163);
+  margin-left: 500px;
+  margin-right: 500px;
+  font-style: italic;
+  font-size: x-large;
+  font-weight: 50px;
+  border-radius: 12px;
+}

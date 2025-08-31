@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+}
+.mycontainer{
+  background-image: url(assets/laptop.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 35vh; 
+  position: relative;
+  margin-bottom: 10px;
+ 
+}
+.con{
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    color:white;
+    top:0px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+   
+}
+.btn{
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 4px 10px;
+    cursor: pointer;
+}
+section{
+    text-align: center;
+    margin-top: 50px;
+}
+main{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+#phone{
+    font-size: 80px;
+    text-align: left;
+}
+#divy{
+  text-align: left;
+}
+#maildiv{
+    text-align: right;
+}
+#mail{
+    font-size: 80px;
+    text-align: center;
+    padding-right: 50px;
+    
+}
+#whatdiv{
+    text-align: center;
+}
+#whatsapp{
+  
+    text-align: center;
+    font-size: 80px;
+    
+}
