@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Cards</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+          url("assets/img/hero.avif") no-repeat center center/cover;
+        color: white;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+      /* Card hover */
+      .game-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .game-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      }
+      /* Footer */
+      footer {
+        background-color: #111827;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="#">🎮 GameZone</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#games">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <h1>Discover & Download Your Favorite Games</h1>
+        <p>Thousands of free games available at your fingertips</p>
+        <a href="#games" class="btn btn-primary btn-lg">Browse Games</a>
+      </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Popular Games</h2>
+        <div class="row g-4">
+          <!-- Game Card -->
+          <div class="col-md-4">
+            <div class="card game-card h-100">
+              <img src="assets/img/1.png" class="card-img-top" alt="Game 1" />
+              <div class="card-body">
+                <h5 class="card-title">Game One</h5>
+                <p class="card-text">
+                  An epic action game with breathtaking graphics and thrilling
+                  gameplay.
+                </p>
+                <a href="#" class="btn btn-primary w-100">Download</a>
+              </div>
+            </div>
+          </div>
+          <!-- Game Card -->
+          <div class="col-md-4">
+            <div class="card game-card h-100">
+              <img src="assets/img/2.jpg" class="card-img-top" alt="Game 2" />
+              <div class="card-body">
+                <h5 class="card-title">Puzzle Quest</h5>
+                <p class="card-text">
+                  Solve challenging puzzles and unlock new levels of excitement.
+                </p>
+                <a href="#" class="btn btn-primary w-100">Download</a>
+              </div>
+            </div>
+          </div>
+          <!-- Game Card -->
+          <div class="col-md-4">
+            <div class="card game-card h-100">
+              <img src="assets/img/3.jpeg" class="card-img-top" alt="Game 3" />
+              <div class="card-body">
+                <h5 class="card-title">Racing Pro</h5>
+                <p class="card-text">
+                  High-speed racing with stunning tracks and multiplayer modes.
+                </p>
+                <a href="#" class="btn btn-primary w-100">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5 text-center">
+      <div class="container">
+        <h2 class="fw-bold">About GameZone</h2>
+        <p class="lead">
+          We provide a huge library of free-to-download games, from action to
+          puzzles, for players around the world.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold">Contact Us</h2>
+        <p>Email: support@gamezone.com</p>
+        <p>Follow us on social media for updates!</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+      <p class="mb-0">© 2025 GameZone. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
