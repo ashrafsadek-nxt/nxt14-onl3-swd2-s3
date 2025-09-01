@@ -1,0 +1,36 @@
+body {
+    background-color: #081420;
+}
+
+.navbar {
+    background-color: #c0cee1;
+}
+
+.navbar-brand,
+.nav-link,
+.btn-outline-info,
+.nav-item .dropdown-item {
+    color: #03080e !important;
+}
+
+.btn-outline-info:hover {
+    color: #fff !important;
+    background-color: #0d6efd;
+}
+
+.text-custom-info {
+    color: #7abeff;
+}
+
+/* --- تنسيقات صفحة المهارات (Skills) --- */
+
+.skill-card {
+    background-color: #1f2937;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}

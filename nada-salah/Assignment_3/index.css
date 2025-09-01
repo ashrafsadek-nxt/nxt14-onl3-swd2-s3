@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #081420;
+}
+
+/* Custom styles for Navbar and links */
+.navbar {
+    background-color: #c0cee1;
+}
+
+.navbar-brand,
+.nav-link,
+.btn-outline-info,
+.nav-item .dropdown-item {
+    color: #03080e !important;
+}
+
+.btn-outline-info:hover {
+    color: #fff !important;
+    background-color: #0d6efd;
+    /* A dark blue for hover */
+}
+.nameColor{
+    color: #5098dccc
+}
