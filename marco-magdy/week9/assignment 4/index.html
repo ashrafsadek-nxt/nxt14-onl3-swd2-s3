@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Marco Magdy - Computer Engineering Student & Web Developer Portfolio</title>
+    <meta name="title" content="Marco Magdy - Computer Engineering Student & Web Developer Portfolio">
+    <meta name="description" content="Passionate computer engineering student skilled in Java, web development, UI/UX design, and innovative software solutions. View my projects and get in touch!">
+    <meta name="keywords" content="Marco Magdy, computer engineering, web developer, Java developer, React developer, portfolio, software development, UI/UX design">
+    <meta name="author" content="Marco Magdy">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#0d6efd">
+    <meta name="msapplication-TileColor" content="#0d6efd">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Marco Magdy Portfolio">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/marco-magdy-high-resolution-logo-transparent.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/marco-magdy-high-resolution-logo-transparent.png">
+    <link rel="apple-touch-icon" href="assets/marco-magdy-high-resolution-logo-transparent.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="bootstrap-5.3.7-dist/css/bootstrap.min.css" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- AOS Animation Library -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- first section -->
+   <section class="first-section" id="home">
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid d-flex justify-content-between">
+          <!-- logo -->
+          <a class="navbar-brand" href="#" style="display: inline; width: 10%;"><img src="assets/marco-magdy-high-resolution-logo-transparent.png" alt="logo" class="logo img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content:flex-end;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+              </li>
+              <!-- dropdown -->
+              <li class="nav-item dropdown">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="about">About Me</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-1" href="#info">My Story</a></li>
+                  <li><a class="dropdown-2" href="#education">My Education</a></li>
+                  <li><a class="dropdown-3" href="#skills">My Skills</a></li>
+                  <li><a class="dropdown-4" href="#experience">My Experience</a></li>
+                  <li><a class="dropdown-5" href="#projects">My Projects</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Get In Touch</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+     <!--first container -->
+    <div class="container first-container d-flex justify-content-center align-items-center" >
+          <!-- image container -->
+    <div class="container image-container d-flex justify-content-center align-items-center frame-image" style="z-index: 2;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <img src="assets/Untitled-1.png" alt="portfolio image" class="img-fluid portfolio-image">
+    </div>
+    <!-- text container -->
+        <div class="text-center">
+            <h1 class="display-4 fw-bold text-white">Hello,I'm 
+            <h1 class="display-4 fw-bold name" style="color: var(--primary-color);">Marco Magdy</h1></h1>
+            <p class="lead text-white">A passionate web developer and designer.</p>
+            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+            <!-- social media -->
+            <div class="social-media mt-4">
+                <a href="https://www.facebook.com/marco.magdy.1884" class="text-white me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://linkedin.com/in/marco-magdy-99a5b82a3" class="text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Marcomagdy908" class="text-white ms-3"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:marcomagdy200@gmail.com" class="text-white ms-3"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        </section>
+        <!-- end first section -->
+         
+         <!-- second section info -->
+          <section class="second-section" id="info">
+              <div class="container text-center py-5" style="z-index: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                  <h2 class="fw-bold mb-4">About Me</h2>
+                  <p class="lead mb-4"> I'm a driven computer engineering student with apassion for software development and extensive experiences in
+                        building interactive applications, including 2D games and web projects. Proficient in Java, utilizing Swing to create
+                        intuitive and user-friendly GUIs with dynamic game mechanics and user input validation. Skilled in HTML, CSS, and
+                        JavaScript, demonstrated through the development of a fully functional cinema website featuring responsive design,
+                        interactive seat selection. Strong expertise in object-oriented programming, UI/UX design, and comprehensive project
+                        documentation. Exceptional team player with excellent problem-solving skills, clear communication, and a proven
+                        ability to adapt to new challenges while managing time efficiently. Eager to leverage academic knowledge and hands-on
+                        experience to deliver innovative, high-quality solutions in a professional software development environment</p>
+                  <a href="https://drive.google.com/file/d/1JaVQlig2N1N0nbj-vHr8Uj3BkOQVPB9G/view?usp=sharing" class="btn btn-primary btn-lg" style="z-index: 10; position: relative;" target="_blank">Download My Resume</a>
+              <!-- flying icons -->
+                <div class="container d-flex justify-content-center align-items-center flying-icons">
+                    <div class ="overlay"><i class="fa-brands fa-html5"></i></div>
+                    <div class ="overlay"><i class="fa-brands fa-css3"></i></div>
+                    <div class ="overlay"><i class="fa-brands fa-python"></i></div>
+                    <div class ="overlay"><i class="fa-brands fa-bootstrap"></i></div>
+                    <div class ="overlay"><i class="fa-brands fa-react"></i></div>
+                    <div class ="overlay"><i class="fa-brands fa-node-js"></i></div>
+                    <div class ="overlay"><i class="fa-brands fa-square-js"></i></div>
+                </div>
+              </div>
+              <!-- end flying icons -->
+              <!-- education -->
+              <div class="container-fluid education  align-items-center" style="z-index: 2;" id="education">
+                  <h1 class="fw-bold mb-4 text-center text-dark">Education</h1>
+                  <div class="underline"></div>
+                  <div class="row text-start text-dark education-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="timeline">
+                        <h5 class="date">2023-2028</h5>
+                        <h2>Helwan University</h2>
+                        <p>Faculty of Engineering - Computer and Systems Engineering</p>
+                        <p>Major: Software Engineering</p>
+                        <p>GPA: 3.2</p>  
+                        </div>
+                  </div>
+              </div>
+              <!-- end education -->
+              <!-- skills -->
+              <div class="container-fluid skills  align-items-center" style="z-index: 2;" id="skills">
+                  <h1 class="fw-bold mb-4 text-center text-light">Skills</h1>
+                  <div class="underline"></div>
+                  <div class="row text-start text-light skills-info">
+                    <div class="tech col-md-12 col-sm-12 col-lg-12">
+                      <h3 class="fw-bold">Technical skills:</h3>
+                      <ul class="d-flex flex-wrap">
+                        <li data-aos="flip-left" data-aos-delay="50"><i class="fa-brands fa-python"></i>
+                          <p>Python</p>
+                        </li>
+                        <li data-aos="flip-right" data-aos-delay="100"><i class="fa-brands fa-java"></i>
+                          <p>Java</p>
+                        </li>
+                        <li data-aos="flip-left" data-aos-delay="200"><i class="fa-brands fa-c"></i>
+                          <p>C++</p>
+                        </li>
+                        <li data-aos="flip-right" data-aos-delay="250"><i class="fa-brands fa-square-js"></i>
+                          <p>JavaScript</p>
+                          </li>
+                        <li data-aos="flip-left" data-aos-delay="300"><i class="fa-brands fa-html5"></i>
+                          <p>HTML5</p>
+                        </li>
+                        <li data-aos="flip-right" data-aos-delay="350"><i class="fa-brands fa-css3"></i>
+                          <p>CSS</p>
+                        </li>
+                        <li data-aos="flip-left" data-aos-delay="400"><i class="fa-brands fa-bootstrap"></i>
+                          <p>Bootstrap</p>
+                        </li>
+                        <li data-aos="flip-right" data-aos-delay="450"><i class="fa-brands fa-react"></i>
+                          <p>React.js</p>
+                        </li>
+                        <li data-aos="flip-left" data-aos-delay="500"><i class="fa-brands fa-node-js"></i>
+                          <p>Node.js</p>
+                        </li>
+                      </ul>
+                    </div>
+                  <div class="tech col-md-12 col-sm-12 col-lg-12">
+                      <h3  class="fw-bold">Other Skills:</h3>
+                      <ul class="d-flex flex-wrap">
+                        <li data-aos="flip-left" data-aos-delay="550"><i class="fa-solid fa-lightbulb"></i>
+                          <p>Problem Solving</p>
+                          </li>
+                        <li data-aos="flip-right" data-aos-delay="600"><i class="fa-solid fa-clock"></i>
+                          <p>Time Management</p>
+                        </li>
+                        <li data-aos="flip-left" data-aos-delay="650"><i class="fa-solid fa-comments"></i>
+                          <p>Communication</p>
+                        </li>
+                        <li data-aos="flip-right" data-aos-delay="700"><i class="fa-solid fa-handshake"></i>
+                          <p>Teamwork</p>
+                        </li>
+                        <li data-aos="flip-left" data-aos-delay="750"><i class="fa-solid fa-trophy"></i>
+                          <p>Leadership</p>
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+              <!-- end skills -->
+              <!-- experience -->
+              <div class="container-fluid experience  align-items-center" style="z-index: 2;" id="experience">
+                  <h1 class="fw-bold mb-4 text-center text-dark">Experience</h1>
+                  <div class="underline"></div>
+                  <div class="row" style="z-index: 2; gap: 30px; margin-top: 20px; margin-bottom: 20px; justify-content: center;">
+                  <div class="col-md-8 col-sm-8 col-lg-5 col-8 text-start text-dark experience-info" data-aos="fade-right">
+                    <div class="timeline">
+                        <h5 class="date"> 2025 Feb - 2025 May</h5>
+                        <h2> Volunteer Mentor</h2>
+                        <ul style="margin-top: -30px;">
+                          <li>Trained students in algorithms and data structures for programming competitions</li>
+                          <li>Mentored beginners and fostered collaborative learning environment</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8 col-lg-5 col-8 text-start text-dark experience-info" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline">
+                        <h5 class="date">2025 Jun - 2026 Dec</h5>
+                        <h2> React Frontend Web Developer Internship</h2>
+                        <ul>
+                          <li>Developed responsive web applications using React.js, HTML, CSS, and JavaScript</li>
+                          <li>Collaborated with cross-functional teams to deliver high-quality projects on time</li>
+                          <li>Implemented user-friendly interfaces and optimized performance for better user experience</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8 col-lg-5 col-8 text-start text-dark experience-info" data-aos="fade-left" data-aos-delay="100">
+                    <div class="timeline">
+                        <h5 class="date">June 2025 - Jul 2025</h5>
+                        <h2>Summer Internship</h2>
+                        <ul>
+                          <li>Developed strong skills in Python, leveraging its versatility for data analysis, visualization, and application development</li>
+                          <li> Utilized Pandas to manipulate, clean, and analyze datasets, enabling efficient data processing and insights extraction</li>
+                          <li>Created compelling visualizations using Matplotlib and Seaborn to present data trends and patterns effectively</li>
+                          <li>Built responsive and interactive web interfaces, combining HTML for structure, CSS for styling, and JavaScript for dynamic functionality.</li>
+                          <li>Designed and implemented projects using embedded systems, applying knowledge to create functional and optimized solutions</li>
+                          <li>Developed an interactive Rock, Paper, Scissors game using embedded systems, demonstrating skills in logic design and user interaction</li>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <!-- end experience -->  
+               <!-- projects -->
+                <div class="container-fluid projects  align-items-center" style="z-index: 2;" id="projects">
+                    <h1 class="fw-bold mb-4 text-center text-light">Projects</h1>
+                    <div class="underline"></div>
+                    <div class="row text-start text-light projects-info">
+                      <div class="col-md-6 col-sm-10 col-8 col-lg-4 mb-4" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card h-100 bg-transparent project-card">
+                          <img src="assets/cenima.png" class="card-img-top" alt="Cinema Website">
+                          <div class="card-body">
+                            <h5 class="card-title fw-bold text-light">Cinema Website</h5>
+                            <p class="card-text text-light"> Created a responsive cinema website as part of team project using HTML5 and CSS3
+                                                           featuring movie listings, showtimes, and a styled booking layout. </p>
+                            <p class="card-text text-light">  Focused on clean structure, modern design, and UX/UI best practices for an engaging user experience. </p>
+                            <p class="card-text text-light">  Optimizedformultiple screen sizes with responsive layout techniques..</p>
+                            <a href="https://github.com/pavly111/PMG-Web-Project.git" class="btn btn-primary">View Project on github</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-10 col-8 col-lg-4 mb-4"  data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 bg-transparent project-card">
+                          <img src="assets/game.png" class="card-img-top" alt="Game">
+                          <div class="card-body">
+                            <h5 class="card-title fw-bold text-light">2D Game</h5>
+                            <p class="card-text text-light">  Developed a 2D game with Java as part of a team project.</p>
+                            <p class="card-text text-light"> Designed and implemented core gameplay mechanics , including character movement , 
+                                     physics , combat system  and levels.</p>
+                            <p class="card-text text-light">Created engaging visuals and optimized performance for PC. Integrated scoring , UI , audio effects to enhance user experience.</p>
+                            <a href="https://github.com/Marcomagdy908/2d-game.git" class="btn btn-primary">View Project in github</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-10 col-8 col-lg-4 mb-4" data-aos="flip-right" data-aos-delay="100">
+                        <div class="card h-100 bg-transparent project-card">
+                          <img src="assets/to-do.png" class="card-img-top" alt="to do list">
+                          <div class="card-body">
+                            <h5 class="card-title fw-bold text-light">To-DO List</h5>
+                            <p class="card-text text-light"> Developed a dynamic, responsive to-do list web application to enhance user productivity. </p>
+                            <p class="card-text text-light">Built with HTML, CSS, and JavaScript, featuring task creation, deletion, and prioritization functionalities. </p>
+                            <p class="card-text text-light">Implemented Simple UI/UX design, ensuring accessibility and responsiveness across devices. </p>
+                            <p class="card-text text-light">The project enhanced task management capabilities, providing users with a streamlined interface to manage daily activities effectively.</p>
+                            <a href="https://github.com/Marcomagdy908/to-do-list" class="btn btn-primary" style="margin-top: 10px;">View Project in github</a>
+                            <a href="https://to-do-list85623.netlify.app/" class="btn btn-primary" style="margin-top:10px ;">View Demo</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- end projects -->
+
+          </section>
+          <!-- end second section -->
+
+          <!-- third section -->
+          <section class="third-section" id="contact">
+            <div class="container text-center py-5 align-items-center d-flex justify-content-center flex-column" style="z-index: 2;">
+                <h2 class="fw-bold mb-4">Get In Touch</h2>
+                <div class="underline" style="width: 180px; margin: auto;"></div>
+                  <div class="row " style="gap: 30px; margin-top: 20px; margin-bottom: 20px; justify-content: center;">
+                    <div class="col-md-5 col-sm-12 col-lg-5 text-start text-dark contact-info d-flex flex-column justify-content-center align-items-start">
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100"> I'm currently open to new opportunities and collaborations. Whether you have a project in mind, want to discuss potential roles, or simply want to connect, feel free to reach out. I'm excited to hear from you!</p>
+                      <div class="contact-form" data-aos="fade-right" data-aos-delay="200"> 
+                        <form>
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                      </div>
+
+                    </div>
+                  </div>
+            </div>
+
+          </section>
+          <!-- end third section -->
+
+          <!-- footer -->
+          <footer class="footer">
+            <div class="row" style="justify-content: center; border-bottom: 0.5px solid rgb(58, 58, 58);">
+              <div class="col-md-3 col-sm-6 col-lg-2 d-flex justify-content-center align-items-center flex-column footer-text">
+                <h4>Marco Magdy</h4>
+                <p>Passionate computer engineering student skilled in Java, web development, UI/UX, and innovative software solutions.</p>
+              </div>
+              <div class="col-md-3 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
+                <h4>Qick Links</h4>
+                <a href="#home" class="text-decoration-none mb-2 text-white">Home</a>
+                <a href="#info" class="text-decoration-none mb-2 text-white">My Story</a>
+                <a href="#education" class="text-decoration-none mb-2 text-white">My Education</a>
+                <a href="#skills" class="text-decoration-none mb-2 text-white">My Skills</a>
+                <a href="#experience" class="text-decoration-none mb-2 text-white">My Experience</a>
+                <a href="#projects" class="text-decoration-none mb-2 text-white">My Projects</a>
+              </div>
+              <div class="col-md-3 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
+                <h4>Contact Me</h4>
+                <p class="mb-2">Email: Marcomagdy200@gmail.com</p>
+                <p class="mb-2">Phone: +20 1025300167
+                </p>
+                <p class="mb-2">Address: Cairo, Egypt</p>
+              </div>
+              <div class="col-md-3 col-sm-6 col-lg-3 d-flex justify-content-center align-items-center flex-column">
+                <h4>Follow Me</h4>
+                <div class="social-media-icons">
+                    <a href="https://github.com/Marcomagdy908" class="fa-brands fa-github"></a>
+                    <a href="https://linkedin.com/in/marco-magdy-99a5b82a3" class="fa-brands fa-linkedin-in"></a>
+                    <a href="https://www.facebook.com/marco.magdy.1884" class="fa-brands fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/marcomgdy/" class="fa-brands fa-instagram"></a>
+                    <a href="https://wa.me/qr/ZYP6PSWUZEZXJ1" class="fa-brands fa-whatsapp"></a>
+                </div>
+            </div>
+            <div class="container text-center py-3">
+                <p class="mb-0">© 2025 Marco Magdy. All rights reserved.</p>
+            </div>
+          </footer>
+          <!-- end footer -->
+
+        
+
+
+    
+    
+
+<script src="portfolio.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
