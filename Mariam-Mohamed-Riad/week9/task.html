@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Glow-skin</title>
+    <link rel="stylesheet" href="C:\Users\Moustafa\.vscode\rowaddd\sections\bootstrap-5.3.7-dist\css\bootstrap.min.css"> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+ .brand-gradient {
+  background: linear-gradient(135deg, #1A1A1D, #3B1C32, #6A1E55, #A64D79);
+}
+.section-pad {
+  padding: 80px 0; 
+}
+.shadow-soft {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15); 
+}
+
+</style>
+<body class="bg-body-tertiary">
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background-color: #1A1A1D;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home" style="color: #A64D79;">
+      <i class="bi bi-flower1 me-1"></i>GlowSkin
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" 
+            aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-light" href="#routine">Routine</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#tips">Tips</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header id="home" class="brand-gradient text-white">
+  <div class="container section-pad">
+    <div class="row align-items-center g-4">
+
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold mb-3">A Simple Routine for Healthy, Glowing Skin ✨</h1>
+        <p class="lead opacity-90">
+          Easy morning & night steps + and simplified information about active ingredients.
+        </p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#routine" class="btn btn-light text-nowrap">
+            <i class="bi bi-list-check ms-1"></i> Start the Routine
+          </a>
+          <a href="#products" class="btn btn-outline-light">Discover Products</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="bg-white text-dark rounded-2xl p-3 shadow-soft">
+          <img src="img1.jpg" 
+               alt="Skincare Routine" 
+               class="w-100 rounded-2xl" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+
+
+<section id="routine" class="section-pad" style="background-color: #1A1A1D;">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold" style="color: #A64D79;">Daily Skincare Routine</h2>
+
+    <div id="routineCarousel" class="carousel slide" data-bs-ride="carousel">
+ 
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#routineCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#routineCarousel" data-bs-slide-to="1"></button>
+      </div>
+
+ 
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="card shadow-sm border-0 rounded-3 p-4 brand-gradient text-white" style="width: 500px; margin: auto; text-align: center; justify-content: center;">
+            <div class="card-body">
+              <h3 class="card-title fw-bold ">🌞 Morning Routine</h3>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle me-2"></i> Gentle Cleanser</li>
+                <li><i class="bi bi-check-circle me-2"></i> Hydrating Toner</li>
+                <li><i class="bi bi-check-circle me-2"></i> Vitamin C Serum</li>
+                <li><i class="bi bi-check-circle me-2"></i> Moisturizer</li>
+                <li><i class="bi bi-check-circle me-2"></i> Sunscreen</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    
+        <div class="carousel-item">
+          <div class="card shadow-sm border-0 rounded-3 p-4 brand-gradient text-white" style="width: 500px; margin: auto; text-align: center; justify-content: center;">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">🌙 Night Routine</h3>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle me-2"></i> Makeup Remover / Cleanser</li>
+                <li><i class="bi bi-check-circle me-2"></i> Exfoliator (2-3 times per week)</li>
+                <li><i class="bi bi-check-circle me-2"></i> Retinol / Treatment</li>
+                <li><i class="bi bi-check-circle me-2"></i> Hydrating Serum</li>
+                <li><i class="bi bi-check-circle me-2"></i> Night Cream</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#routineCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#routineCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="section-pad" style="background-color: #1A1A1D;">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4">
+      <h2 class="h3 m-0" style="color: #A64D79;">Recommended Products (Educational)</h2>
+      <small class="text-secondary" style="color: #A64D79;">General examples — choose according to your skin type</small>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card h-100 shadow-soft brand-gradient text-white">
+          <img src="img2.jpg" class="card-img-top" alt="Cleanser"/>
+
+          <div class="card-body">
+            <h3 class="h5">Gentle Gel Cleanser</h3>
+            <p class="text-secondary small">Suitable for most skin types — free of strong fragrance.</p>
+
+            <div class="rating text-warning" aria-label="Rating 4 out of 5">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="col-md-4">
+        <div class="card product-card h-100 shadow-soft brand-gradient text-white">
+          <img src="img3.jpg" style="height: 355px;" class="card-img-top" alt="Vitamin C Serum"/>
+          <div class="card-body">
+            <h3 class="h5">Vitamin C Serum 10%</h3>
+            <p class="text-secondary small">Brightening and antioxidant protection — beginner friendly.</p>
+            <div class="rating text-warning" aria-label="Rating 5 out of 5">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-4">
+        <div class="card product-card h-100 shadow-soft brand-gradient text-white">
+          <img src="img4.jpg" style="height: 355px;" class="card-img-top" alt="Sunscreen"/>
+          <div class="card-body">
+            <h3 class="h5">Sunscreen SPF 50</h3>
+            <p class="text-secondary small">Lightweight texture, non-greasy — perfect under makeup.</p>
+            <div class="rating text-warning" aria-label="Rating 4.5 out of 5">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--tips-->
+<section id="tips" class="section-pad" style="background-color: #1A1A1D;">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: #A64D79;">Skincare Tips</h2>
+        <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-soft brand-gradient text-white p-4">
+            <h3 class="h5">Stay Hydrated</h3>
+            <p>Drink plenty of water throughout the day to keep your skin hydrated from within.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-soft brand-gradient text-white p-4">
+            <h3 class="h5">Avoid Over-Exfoliating</h3>
+            <p>Limit exfoliation to 2-3 times a week to prevent irritation and maintain skin barrier health.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-soft brand-gradient text-white p-4">
+            <h3 class="h5">Get Enough Sleep</h3>
+            <p>Aim for 7-9 hours of quality sleep each night to allow your skin to repair and regenerate.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!--contact-->
+<section id="contact" class="section-pad" style="background-color: #1A1A1D;">
+  <div class="container">
+    <form class="mx-auto" style="max-width: 600px;">
+      <h2 class="text-center mb-4 fw-bold" style="color: #A64D79;">Get in Touch</h2>
+      <div class="mb-3">
+        <label for="name" class="form-label text-white">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label
+    text-white">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label text-white">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-outline-light">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!--footer-->
+<footer class="text-center text-white py-4" style="background-color:#3B1C32;">
+  <div class="container">   
+    <p class="mb-0 small">&copy; 2024 GlowSkin. All rights reserved.</p>
+    </div>
+</footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
