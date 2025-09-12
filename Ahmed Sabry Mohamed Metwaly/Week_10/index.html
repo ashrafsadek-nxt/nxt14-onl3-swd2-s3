@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>متجر ستيم | Bootstrap E‑Commerce</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --brand:#111827;          /* Slate-900 */
+      --brand-2:#0ea5e9;        /* Sky-500 */
+      --muted:#6b7280;          /* Gray-500 */
+      --soft:#f1f5f9;           /* Slate-100 */
+      --card:#ffffff;
+      --radius:1.2rem;
+    }
+    body { background: var(--soft); }
+    .glass {
+      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,.6);
+      border:1px solid rgba(255,255,255,.5);
+    }
+    .navbar { box-shadow: 0 10px 30px rgba(2,6,23,.08); }
+    .brand-badge {
+      background: linear-gradient(135deg,var(--brand-2),#22c55e);
+      color:#fff; border-radius: .8rem; padding:.35rem .6rem; font-weight:700;
+    }
+    .search-wrap { max-width: 700px; }
+    .hero-card { border-radius: var(--radius); overflow:hidden; }
+    .ad-card { border-radius: var(--radius); background:linear-gradient(135deg,#ecfeff,#f0f9ff); border:1px dashed #bae6fd }
+    .product-card { border:0; border-radius: calc(var(--radius) - .2rem); overflow:hidden; box-shadow: 0 12px 30px rgba(2,6,23,.06); transition: transform .2s ease, box-shadow .2s ease; }
+    .product-card:hover { transform: translateY(-3px); box-shadow:0 16px 40px rgba(2,6,23,.12) }
+    .product-img { height: 200px; object-fit: cover; }
+    .price { font-weight:800 }
+    .old { color:var(--muted); text-decoration: line-through; font-weight:600; margin-inline-start:.35rem }
+    .rating i { color:#f59e0b }
+    .section-title { font-weight:800; color:var(--brand) }
+    .pill { border-radius: 999px; }
+    .footer { background:#0b1220; color:#cbd5e1 }
+    .offcanvas { border-top-left-radius: 1rem; border-bottom-left-radius: 1rem; }
+
+    /* pseudo-pagination dots */
+    .dots .dot { width:10px; height:10px; border-radius:999px; background:#cbd5e1; display:inline-block; margin:0 .18rem }
+    .dots .dot.active { background:var(--brand-2) }
+
+    /* Minimal router visibility */
+    section[data-page] { display:none; }
+    section[data-page].active { display:block; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white sticky-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home" data-link>
+        <span class="brand-badge">MF</span>
+        <span class="fw-bold">متجر ستيم</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="topNav">
+        <div class="search-wrap mx-lg-auto my-3 my-lg-0 w-100">
+          <div class="input-group">
+            <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+            <input id="searchInput" type="text" class="form-control" placeholder="إبحث عن منتج…" />
+            <button class="btn btn-dark" id="searchBtn">بحث</button>
+          </div>
+        </div>
+        <ul class="navbar-nav ms-lg-3 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home" data-link>الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop" data-link>المتجر</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-link>من نحن</a></li>
+          <li class="nav-item">
+            <button class="btn btn-outline-dark position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">
+              <i class="bi bi-bag"></i>
+              <span id="cartQty" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" data-page class="active">
+    <div class="container py-4 py-lg-5">
+      <div class="row g-4 align-items-stretch">
+        <!-- Carousel -->
+        <div class="col-lg-9">
+          <div id="hero" class="carousel slide hero-card">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#hero" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#hero" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://picsum.photos/seed/hero1/1200/520" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-start">
+                  <h2 class="fw-bold">خصومات الصيف</h2>
+                  <p>إلحق لحد 50% على الإلكترونيات.</p>
+                  <a href="#shop" data-link class="btn btn-light">تسوق الآن</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/seed/hero2/1200/520" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                  <h2 class="fw-bold">أحدث الموضة</h2>
+                  <p>منتجات مختارة بعناية.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/seed/hero3/1200/520" class="d-block w-100" alt="...">
+                <div class="carousel-caption text-end">
+                  <h2 class="fw-bold">توصيل سريع</h2>
+                  <p>لكل المحافظات خلال 48 ساعة.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+        <!-- Sidebar Ads / CTA -->
+        <div class="col-lg-3">
+          <div class="ad-card p-4 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="fw-bold mb-2">كوبون خصم</h5>
+              <p class="text-secondary small mb-4">استخدم الرمز <span class="badge bg-dark">LUX10</span> واحصل على 10% خصم إضافي.</p>
+            </div>
+            <div class="text-center">
+              <img src="https://picsum.photos/seed/ad1/260/160" class="img-fluid rounded mb-3" alt="ad" />
+              <a href="#shop" data-link class="btn btn-dark w-100">ابدأ التسوق</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured row -->
+      <div class="mt-5 d-flex justify-content-between align-items-end">
+        <h3 class="section-title">منتجات مختارة</h3>
+        <div class="dots"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-1" id="featuredRow"></div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" data-page>
+    <div class="container py-4 py-lg-5">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+        <h3 class="section-title m-0">كل المنتجات</h3>
+        <div class="d-flex gap-2">
+          <select id="catFilter" class="form-select form-select-sm pill" style="min-width:160px">
+            <option value="all" selected>كل التصنيفات</option>
+          </select>
+          <select id="sortSelect" class="form-select form-select-sm pill" style="min-width:160px">
+            <option value="popular">الأكثر شيوعاً</option>
+            <option value="price-asc">السعر: من الأقل للأعلى</option>
+            <option value="price-desc">السعر: من الأعلى للأقل</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Filters (left on desktop, offcanvas on mobile) -->
+        <aside class="col-lg-3">
+          <div class="card border-0 glass p-3">
+            <h6 class="fw-bold mb-3">تصفية متقدمة</h6>
+            <div class="mb-3">
+              <label class="form-label small">السعر</label>
+              <input type="range" class="form-range" min="0" max="5000" step="50" id="priceRange">
+              <div class="d-flex justify-content-between small text-secondary"><span>0</span><span id="priceVal">5000</span></div>
+            </div>
+            <div class="mb-2">
+              <label class="form-label small">العلامات</label>
+              <div id="brandChecks" class="d-grid gap-2"></div>
+            </div>
+            <button id="clearFilters" class="btn btn-outline-secondary w-100 mt-2">مسح التصفية</button>
+          </div>
+          <div class="card mt-3 border-0 p-3 ad-card">
+            <div class="small text-secondary mb-2">إعلان</div>
+            <img src="" class="img-fluid rounded" alt>
+          </div>
+        </aside>
+
+        <!-- Products grid -->
+        <div class="col-lg-9">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="productsRow"></div>
+          <nav class="mt-4 d-flex justify-content-center">
+            <ul class="pagination pagination-sm pill shadow-sm">
+              <li class="page-item"><a class="page-link" href="#" id="prevPage">السابق</a></li>
+              <li class="page-item disabled"><span class="page-link" id="pageState">1 / 1</span></li>
+              <li class="page-item"><a class="page-link" href="#" id="nextPage">التالي</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" data-page>
+    <div class="container py-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <img src="https://picsum.photos/seed/team/900/600" class="img-fluid rounded-4 shadow" alt>
+        </div>
+        <div class="col-md-6">
+          <h3 class="section-title mb-3">من نحن</h3>
+          <p class="text-secondary">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</p>
+          <ul class="list-unstyled small text-secondary">
+            <li><i class="bi bi-check2-circle"></i> $$$$$$$$$$$$$$$$$$$$$$$$$$</li>
+            <li><i class="bi bi-check2-circle"></i> $$$$$$$$$$$$$$$$$$$$$$$$$$</li>
+            <li><i class="bi bi-check2-circle"></i> $$$$$$$$$$$$$$$$$$$$$$$$$$</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-5 pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <span class="brand-badge">MF</span>
+            <span class="fw-bold">متجر فخم</span>
+          </div>
+          <p class="small">قالب تجارة إلكترونية جاهز بـ HTML + Bootstrap + JS.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h6 class="fw-bold">روابط</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#home" data-link class="link-light text-decoration-none">الرئيسية</a></li>
+            <li><a href="#shop" data-link class="link-light text-decoration-none">المتجر</a></li>
+            <li><a href="#about" data-link class="link-light text-decoration-none">من نحن</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h6 class="fw-bold">النشرة البريدية</h6>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="إيميلك">
+            <button class="btn btn-light">إشترك</button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center small mt-4">© <span id="year"></span> متجر فخم</div>
+    </div>
+  </footer>
+
+  <!-- Offcanvas Cart -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="cartCanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">سلة المشتريات</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <ul id="cartList" class="list-group list-group-flush mb-3"></ul>
+      <div class="mt-auto">
+        <div class="d-flex justify-content-between fw-bold mb-2">
+          <span>الإجمالي</span>
+          <span id="cartTotal">0 جنيه</span>
+        </div>
+        <button class="btn btn-dark w-100">إتمام الشراء</button>
+      </div>
+    </div>
+  </div>
+
+  <template id="productCardTpl">
+    <div class="col">
+      <div class="card product-card h-100">
+        <img class="product-img" alt>
+        <div class="card-body d-flex flex-column">
+          <div class="d-flex justify-content-between align-items-start mb-2">
+            <h6 class="card-title mb-0 name"></h6>
+            <button class="btn btn-sm btn-outline-secondary wishlist" title="إضافة للمفضلة"><i class="bi bi-heart"></i></button>
+          </div>
+          <div class="rating mb-1 small"></div>
+          <div class="mb-2"><span class="price"></span> <span class="old small"></span></div>
+          <div class="mt-auto d-flex gap-2">
+            <button class="btn btn-dark flex-grow-1 add">أضف للسلة</button>
+            <button class="btn btn-outline-dark view" data-bs-toggle="modal" data-bs-target="#quickModal">عرض</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Quick View Modal -->
+  <div class="modal fade" id="quickModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img id="qImg" class="w-100 h-100" style="object-fit:cover" alt>
+            </div>
+            <div class="col-md-6 p-4">
+              <h5 id="qName" class="fw-bold"></h5>
+              <div id="qRating" class="rating mb-2"></div>
+              <div class="mb-3"><span id="qPrice" class="price"></span> <span id="qOld" class="old small"></span></div>
+              <p id="qDesc" class="text-secondary small">وصف مختصر للمنتج يظهر هنا.</p>
+              <button id="qAdd" class="btn btn-dark w-100">أضف للسلة</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ===== Dummy data =====
+    const PRODUCTS = [
+      {id:1, name:'سماعات لاسلكية Pro', price:1499, old:1899, rating:4.6, brand:'LuxSound', cat:'الكترونيات', img:'https://picsum.photos/seed/p1/600/400'},
+      {id:2, name:'ساعة ذكية Neo', price:2199, old:2599, rating:4.2, brand:'Cronix', cat:'الكترونيات', img:'https://picsum.photos/seed/p2/600/400'},
+      {id:3, name:'حقيبة ظهر جلد', price:899, old:1099, rating:4.4, brand:'UrbanX', cat:'موضة', img:'https://picsum.photos/seed/p3/600/400'},
+      {id:4, name:'حذاء رياضي AirFlex', price:1299, old:1599, rating:4.3, brand:'UrbanX', cat:'موضة', img:'https://picsum.photos/seed/p4/600/400'},
+      {id:5, name:'ماكينة قهوة Mini', price:1899, old:2299, rating:4.5, brand:'Homefy', cat:'منزل', img:'https://picsum.photos/seed/p5/600/400'},
+      {id:6, name:'عطر Noir 50ml', price:699, old:899, rating:4.1, brand:'Aroma', cat:'جمال', img:'https://picsum.photos/seed/p6/600/400'},
+      {id:7, name:'كيبورد ميكانيكي', price:999, old:1299, rating:4.7, brand:'LuxSound', cat:'الكترونيات', img:'https://picsum.photos/seed/p7/600/400'},
+      {id:8, name:'جاكيت خفيف', price:649, old:799, rating:4.0, brand:'UrbanX', cat:'موضة', img:'https://picsum.photos/seed/p8/600/400'},
+      {id:9, name:'خلاط يدوي 3في1', price:549, old:699, rating:3.9, brand:'Homefy', cat:'منزل', img:'https://picsum.photos/seed/p9/600/400'},
+      {id:10, name:'روج مطفي', price:199, old:249, rating:4.3, brand:'Aroma', cat:'جمال', img:'https://picsum.photos/seed/p10/600/400'},
+      {id:11, name:'سماعات فوق الأذن', price:1199, old:1499, rating:4.5, brand:'LuxSound', cat:'الكترونيات', img:'https://picsum.photos/seed/p11/600/400'},
+      {id:12, name:'تيشيرت كاجوال', price:249, old:299, rating:4.1, brand:'UrbanX', cat:'موضة', img:'https://picsum.photos/seed/p12/600/400'}
+    ];
+
+    // ===== State =====
+    let cart = JSON.parse(localStorage.getItem('cart')||'[]');
+    let currentPage = 1; const PER_PAGE = 6;
+    let currentSearch = '';
+
+    // ===== Utils =====
+    const E = (sel, root=document) => root.querySelector(sel);
+    const EA = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+    const money = v => `${v.toLocaleString('ar-EG')} جنيه`;
+    const setYear = () => E('#year').textContent = new Date().getFullYear();
+
+    // ===== Mini Router (hash) =====
+    function route(){
+      const hash = location.hash.replace('#','') || 'home';
+      EA('section[data-page]').forEach(s=>s.classList.remove('active'));
+      const page = E(`#${hash}`); if(page) page.classList.add('active');
+      // focus search on shop
+      if(hash==='shop') E('#searchInput').focus();
+    }
+    window.addEventListener('hashchange', route);
+
+    // ===== Build filters =====
+    function initFilters(){
+      // categories
+      const cats = ['الكترونيات','موضة','منزل','جمال'];
+      const catSel = E('#catFilter');
+      cats.forEach(c=>{ const opt = document.createElement('option'); opt.value=c; opt.textContent=c; catSel.appendChild(opt); });
+      // brands
+      const brands = [...new Set(PRODUCTS.map(p=>p.brand))];
+      const wrap = E('#brandChecks');
+      brands.forEach(b=>{
+        const id = `brand_${b}`;
+        wrap.insertAdjacentHTML('beforeend', `
+          <div class="form-check">
+            <input class="form-check-input brandCheck" type="checkbox" value="${b}" id="${id}">
+            <label class="form-check-label" for="${id}">${b}</label>
+          </div>
+        `);
+      })
+      E('#priceRange').addEventListener('input', e=> E('#priceVal').textContent = e.target.value);
+      E('#clearFilters').addEventListener('click', ()=>{
+        E('#catFilter').value='all';
+        EA('.brandCheck').forEach(ch=> ch.checked=false);
+        E('#priceRange').value = 5000; E('#priceVal').textContent = 5000;
+        renderProducts();
+      })
+      E('#catFilter').addEventListener('change', renderProducts);
+      E('#sortSelect').addEventListener('change', renderProducts);
+      EA('.brandCheck').forEach(ch=> ch.addEventListener('change', renderProducts));
+      E('#priceRange').addEventListener('change', renderProducts);
+    }
+
+    // ===== Render stars =====
+    function stars(r){
+      const full = Math.floor(r); const half = r%1 >= .5; const empty = 5 - full - (half?1:0);
+      return '<i class="bi bi-star-fill"></i>'.repeat(full) + (half?'<i class="bi bi-star-half"></i>':'') + '<i class="bi bi-star"></i>'.repeat(empty);
+    }
+
+    // ===== Product card =====
+    function productCard(p){
+      const tpl = E('#productCardTpl').content.cloneNode(true);
+      tpl.querySelector('img').src = p.img;
+      tpl.querySelector('.name').textContent = p.name;
+      tpl.querySelector('.rating').innerHTML = stars(p.rating);
+      tpl.querySelector('.price').textContent = money(p.price);
+      tpl.querySelector('.old').textContent = p.old ? money(p.old): '';
+      tpl.querySelector('.add').addEventListener('click', ()=> addToCart(p.id));
+      tpl.querySelector('.view').addEventListener('click', ()=> openQuick(p));
+      tpl.querySelector('.wishlist').addEventListener('click', (e)=> e.currentTarget.classList.toggle('btn-outline-secondary'));
+      return tpl;
+    }
+
+    // ===== Render Featured =====
+    function renderFeatured(){
+      const row = E('#featuredRow'); row.innerHTML='';
+      PRODUCTS.slice(0,4).forEach(p=> row.appendChild(productCard(p)) );
+    }
+
+    // ===== Render Products with paging/filters =====
+    function getFiltered(){
+      const maxPrice = +E('#priceRange').value || 5000;
+      const cat = E('#catFilter').value;
+      const brands = EA('.brandCheck:checked').map(c=>c.value);
+      let items = PRODUCTS.filter(p=> p.price <= maxPrice);
+      if(cat!=='all') items = items.filter(p=> p.cat===cat);
+      if(brands.length) items = items.filter(p=> brands.includes(p.brand));
+      if(currentSearch) items = items.filter(p=> p.name.includes(currentSearch));
+      const sort = E('#sortSelect').value;
+      if(sort==='price-asc') items.sort((a,b)=>a.price-b.price);
+      if(sort==='price-desc') items.sort((a,b)=>b.price-a.price);
+      return items;
+    }
+
+    function renderProducts(){
+      const row = E('#productsRow'); row.innerHTML='';
+      const items = getFiltered();
+      const pages = Math.max(1, Math.ceil(items.length / PER_PAGE));
+      currentPage = Math.min(currentPage, pages);
+      const start = (currentPage-1)*PER_PAGE;
+      items.slice(start, start+PER_PAGE).forEach(p=> row.appendChild(productCard(p)) );
+      E('#pageState').textContent = `${currentPage} / ${pages}`;
+      E('#prevPage').parentElement.classList.toggle('disabled', currentPage===1);
+      E('#nextPage').parentElement.classList.toggle('disabled', currentPage===pages);
+    }
+
+    // ===== Cart =====
+    function syncCart(){
+      localStorage.setItem('cart', JSON.stringify(cart));
+      E('#cartQty').textContent = cart.reduce((s,i)=> s+i.qty, 0);
+      const list = E('#cartList'); list.innerHTML='';
+      let total = 0;
+      cart.forEach(item=>{
+        const p = PRODUCTS.find(x=>x.id===item.id);
+        total += p.price * item.qty;
+        const li = document.createElement('li');
+        li.className='list-group-item d-flex align-items-center gap-2';
+        li.innerHTML = `
+          <img src="${p.img}" width="48" height="48" class="rounded" style="object-fit:cover"/>
+          <div class="flex-grow-1">
+            <div class="small fw-bold">${p.name}</div>
+            <div class="small text-secondary">${money(p.price)} × ${item.qty}</div>
+          </div>
+          <div class="btn-group btn-group-sm">
+            <button class="btn btn-outline-secondary" aria-label="-">−</button>
+            <button class="btn btn-outline-secondary" aria-label="+">+</button>
+            <button class="btn btn-outline-danger" aria-label="x"><i class="bi bi-trash"></i></button>
+          </div>`;
+        const [minus, plus, del] = li.querySelectorAll('button');
+        minus.addEventListener('click', ()=> updateQty(item.id, -1));
+        plus.addEventListener('click', ()=> updateQty(item.id, +1));
+        del.addEventListener('click', ()=> removeFromCart(item.id));
+        list.appendChild(li);
+      })
+      E('#cartTotal').textContent = money(total);
+    }
+
+    function addToCart(id){
+      const found = cart.find(i=>i.id===id);
+      if(found) found.qty++; else cart.push({id, qty:1});
+      syncCart();
+      // open offcanvas
+      const off = bootstrap.Offcanvas.getOrCreateInstance('#cartCanvas');
+      off.show();
+    }
+    function updateQty(id, d){
+      const item = cart.find(i=>i.id===id); if(!item) return;
+      item.qty += d; if(item.qty<=0) cart = cart.filter(i=>i.id!==id);
+      syncCart();
+    }
+    function removeFromCart(id){ cart = cart.filter(i=>i.id!==id); syncCart(); }
+
+    // ===== Quick view =====
+    let quickCurrent = null;
+    function openQuick(p){
+      quickCurrent = p;
+      E('#qImg').src = p.img; E('#qName').textContent = p.name;
+      E('#qRating').innerHTML = stars(p.rating);
+      E('#qPrice').textContent = money(p.price);
+      E('#qOld').textContent = p.old? money(p.old): '';
+      E('#qDesc').textContent = 'هذا وصف تجريبي يمكنك استبداله بوصف المنتج الحقيقي.';
+    }
+    E('#qAdd').addEventListener('click', ()=>{ if(quickCurrent) addToCart(quickCurrent.id); });
+
+    // ===== Search =====
+    E('#searchBtn').addEventListener('click', ()=>{ currentSearch = E('#searchInput').value.trim(); route(); location.hash='#shop'; renderProducts(); });
+    E('#searchInput').addEventListener('keydown', (e)=>{ if(e.key==='Enter'){ E('#searchBtn').click(); }});
+
+    // ===== Pagination buttons =====
+    E('#prevPage').addEventListener('click', (e)=>{ e.preventDefault(); if(currentPage>1){ currentPage--; renderProducts(); }});
+    E('#nextPage').addEventListener('click', (e)=>{ e.preventDefault(); currentPage++; renderProducts(); });
+
+    // ===== In-page links =====
+    EA('[data-link]').forEach(a=> a.addEventListener('click', (e)=>{
+      // allow anchor but ensure router sync
+      setTimeout(route, 0);
+    }));
+
+    // ===== Boot =====
+    setYear();
+    route();
+    initFilters();
+    renderFeatured();
+    renderProducts();
+    syncCart();
+  </script>
+</body>
+</html>
