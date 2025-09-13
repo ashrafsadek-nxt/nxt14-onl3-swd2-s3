@@ -1,4 +1,4 @@
- function showData(): void {
+function showData(): void {
     const outputDv = document.getElementById('output');
     let firstname: string = "ahmed";
     let age: number = 24;
