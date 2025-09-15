@@ -1,0 +1,28 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: purple;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: purple;
+    font-weight: 500;
+    padding: 10px;
+    min-height: 40px;
+}
+
+#showBtn{
+    background-color:purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius:50px;
+    cursor: pointer;
+}
