@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mycontainer{
+
+  background-image: url(back.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 90vh; 
+  position: relative;
+}
+.con{
+    background-color: rgba(128, 128, 128, 0.5);
+}
