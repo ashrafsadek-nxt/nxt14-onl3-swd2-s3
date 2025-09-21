@@ -1,0 +1,13 @@
+
+.card-body{
+    transition: 0.5s;
+    cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+    .card:hover img{
+    transform: translate(-40px, -40px) scale(0.8);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+}
