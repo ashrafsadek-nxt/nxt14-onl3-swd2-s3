@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="password">
+      <label for="pass">Password: </label>
+      <input type="password" name="password" id="pass" required />
+
+      <!-- زر عادي -->
+      <button id="check">Save</button>
+    </div>
+
+    <script>
+      function CheckPass() {
+        const pass = document.getElementById("pass").value;
+
+        const upper = /[A-Z]/;
+        const lower = /[a-z]/;
+        const num = /[0-9]/;
+        const special = /[!@#$%^&*(),.?":{}|<>]/;
+
+        let errors = [];
+
+        if (!upper.test(pass)) {
+          errors.push("• Password must contain at least one uppercase letter.");
+        }
+        if (!lower.test(pass)) {
+          errors.push("• Password must contain at least one lowercase letter.");
+        }
+        if (!num.test(pass)) {
+          errors.push("• Password must contain at least one number.");
+        }
+        if (!special.test(pass)) {
+          errors.push(
+            "• Password must contain at least one special character."
+          );
+        }
+        if (pass.length < 8) {
+          errors.push("• Password must be at least 8 characters.");
+        }
+
+        if (errors.length > 0) {
+          alert(errors.join("\n"));
+        } else {
+          alert("Password is valid!");
+        }
+      }
+
+      document.getElementById("check").addEventListener("click", CheckPass);
+    </script>
+  </body>
+</html>
