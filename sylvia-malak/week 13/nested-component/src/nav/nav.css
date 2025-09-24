@@ -1,0 +1,62 @@
+.nav-bar {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 20px;
+  border: none;
+  border-radius: 0 10px;
+  box-shadow: 0 4px 10px rgba(50, 50, 50, 0.15);
+  background-color: #f4f2ef; 
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 400px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #2e3b2f; 
+}
+
+input {
+  background-color: #e2dedb;
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+/* Links */
+
+.links {
+  display: flex;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.links a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  color: #2e3b2f;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4f6b4f;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
