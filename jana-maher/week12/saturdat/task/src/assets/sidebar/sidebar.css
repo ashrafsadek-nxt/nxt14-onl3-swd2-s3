@@ -1,0 +1,40 @@
+.sidebar {
+  background: #f3f4f6;
+  width: 168px; 
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 0.75rem 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  color: #111827;
+}
+
+.sidebar li:hover {
+  color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-layout {
+    grid-template-areas:
+      "navbar"
+      "content"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
