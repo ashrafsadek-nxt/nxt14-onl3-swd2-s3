@@ -1,0 +1,22 @@
+.sidebar{
+    background-color: lightgray;
+    color: black;
+    padding: 20px;
+    min-height: 90vh;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li{
+    margin: 15px 0px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+.row{
+    margin: 0;
+    height: 90vh;
+}

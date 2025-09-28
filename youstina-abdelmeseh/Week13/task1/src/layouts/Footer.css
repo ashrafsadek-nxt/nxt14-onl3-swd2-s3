@@ -1,0 +1,23 @@
+.footer, .leftFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+.footer{
+    background-color: lightblue;
+    position: absolute;
+    bottom: 0;
+    width:inherit;
+}
+ul{
+    padding: 0px;
+    list-style: none;
+    font-size: 30px;
+}
+a{
+    color:rgb(55, 92, 64);
+}
+.brand{
+    width: 50%;
+}
