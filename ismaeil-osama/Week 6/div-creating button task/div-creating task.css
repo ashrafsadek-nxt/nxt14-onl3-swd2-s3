@@ -1,0 +1,19 @@
+#button{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+.child-Div{
+    background-color: rgb(27, 193, 113);
+    height: 100px;
+    width: 100px;
+    border: 3px solid rgb(20, 81, 161);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#parent-Div{
+    display: flex;
+    justify-content: center;
+}
