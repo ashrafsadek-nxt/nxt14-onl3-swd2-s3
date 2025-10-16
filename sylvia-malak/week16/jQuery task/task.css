@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#animatedDiv {
+    width: 50vw;
+    height: 50vh;
+    background: rgb(235, 194, 194);
+    opacity: 1;
+    position: relative;
+    margin: 20px auto;
+    transition: 0.3s;
+    border: none;
+    border-radius: 10px;
+}
+#examples {
+    text-align: center;
+    margin-top: 20px;
+}
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #ddd;
+}
+
+
