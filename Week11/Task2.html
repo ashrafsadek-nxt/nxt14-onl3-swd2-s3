@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=7">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Log in</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+   <style>
+  #login {
+    background-color: #1e3a8a; 
+    margin-top: 150px;
+    padding: 50px 35px 90px 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #login:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+  }
+
+  .form-label {
+    font-size: 18px;
+    color: #e0eaff;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  #Login-submit-button {
+    background-color: #60a5fa; 
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 22px;
+    transition: all 0.3s ease;
+  }
+
+  #Login-submit-button:hover {
+    background-color: #3b82f6; 
+    color: #fff;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+</style>
+
+</head>
+<body>
+    <div class="container w-50  text-light" id="login">
+        <div class="container ligin-title text-center">
+            <h2>Welcome Back !</h2>
+            <p>Log in to enjoy our services.</p>
+         </div>
+        <form  id="LogInForm">
+            <div class="inputs mt-5">
+                <label class="form-label"  for="username">Username:</label>
+                <input type="text" class="form-control bg-light" id="username" name="Username" required>
+            </div>
+            <div class="inputs mt-4">
+                <label class="form-label" for="password">Password:</label>
+                <input type="password" class="form-control bg-light" id="password" name="password" required>
+            </div>
+            <div class="inputs mt-5">
+                <input type="submit" class="btn w-100" id="Login-submit-button" value="Submit">
+            </div>
+        </form>
+    </div>
+
+<script src="assets/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="assets/js/task2.js"></script>
+</body>
+</html>
